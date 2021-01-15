@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# My Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo is an online version of my resume and
+an exposition of various projects I've done. This includes engineering,
+research, and software development. This is also hosted on GitHub pages, under
+[this link](http://codax2000.github.io/personal-website).
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+This is the frontend only, built with React, D3, and Bootstrap. Part of it
+uses an API that I wrote for fetching earthquake data, which is written in
+Spring Boot and hosted on Microsoft Azure. The API is part of a separate repo
+for ease of deployment, and is at [this link](https://github.com/Codax2000/usgs-earthquake-feed).
 
-### `npm start`
+## Deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+All that is necessary to deploy this site is to run `npm run deploy` in the
+command line, and the website files will be deployed to the `gh-pages` branch
+of this repo. After this, changes should always be pushed to the `master` branch
+to save the updates.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Projects
 
-### `npm test`
+Here is a short list of the projects that I've worked on - this is only
+a supplement to what is on the website, which is based on results.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Avionics
 
-### `npm run build`
+This was a project I did with a partner in Arduino, which uses a condensed
+version of C++.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Gun Violence Research
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I did this project with a partner in Python, in an introductory class in
+data programming. It was done initially with Seaborn and Pandas,
+although I went through after the class was over and redid it in Altair, which
+looks much nicer on the web, as it is vector-based.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### EarthquakeWatch
 
-### `npm run eject`
+This was a project where I wanted to learn Maven, Spring Boot, React.js, and
+D3.js. Getting D3.js to work with React was incredibly difficult to
+troubleshoot, as it doesn't seem to be a common approach. I finally found a
+talk on Youtube that explained how to use hooks well enough with D3 to let me
+make the visualization that I wanted to.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### UW CADathon
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This was a project that I did with a partner for fun, competing for a week in
+a 3D modeling competition. We used SolidWorks, since we were both familiar with
+it and it was easy to access via remote desktop at UW. The victory was
+incredibly satisfying, since we beat graduate students and mechanical engineering
+students, even though we were freshmen and I was more of an electrical person.

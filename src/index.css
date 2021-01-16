@@ -4,18 +4,24 @@ nav img {
 }
 
 svg {
-  border: 1px solid black;
+  border: 1px solid rgba(58, 58, 58, 0.459);
+  border-radius: 5px;
 }
 
 #home {
-  background: linear-gradient(rgba(146, 146, 146, 0.4), rgba(146, 146, 146, 0.4)), url('./img/seattle-skyline-vanilla.jpg');
+  background: linear-gradient(
+      rgba(146, 146, 146, 0.4),
+      rgba(146, 146, 146, 0.4)
+    ),
+    url("./img/seattle-skyline-vanilla.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   height: 400px;
 }
 
-#gallery div, #gallery div img {
+#gallery div,
+#gallery div img {
   width: 300px;
 }
 

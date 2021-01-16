@@ -1,7 +1,7 @@
 /**
  * Alex Knowlton
  * 9/15/2020
- * 
+ *
  * Main container for my Earthquake project. Contains
  * initial statement and manages state for the project
  */
@@ -29,6 +29,8 @@ export default function EarthquakeWatch() {
         "adapted for my own use. It uses the USGS earthquake feed to build up a MongoDB database, " +
         "which is hosted on Microsoft Azure. The website is also hosted on Azure, as it makes " +
         "sense to me to deploy the app where the database is located.",
+      "There is currently a problem with CORS blocking the request, so queries have been disabled" +
+        "for now. I am working on the problem and will fix it as soon as possible",
     ],
   };
 

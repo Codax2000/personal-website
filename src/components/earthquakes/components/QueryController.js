@@ -1,7 +1,7 @@
 /**
  * Alex Knowlton
  * 9/15/2020
- * 
+ *
  * Controller that retrieves data from the database based on
  * parameters provided by the user. sets the overall data of the app
  * based on the result from the backend
@@ -12,6 +12,7 @@ import { Container, Form, Col, Button, Spinner } from "react-bootstrap";
 export default function QueryController({ setData }) {
   let timeOptions = ["Hour", "Day", "Week", "Month"];
   let sortOptions = ["Magnitude", "Time"];
+  const API_URL = "https://earthquake-api.azurewebsites.net";
 
   function earthquakeQuery(event) {
     event.preventDefault();
@@ -25,15 +26,17 @@ export default function QueryController({ setData }) {
     let minOption = document.querySelector("#min-select").value;
     let maxOption = document.querySelector("#max-select").value;
     sortOption = sortOption === 0; // /earthquakes?time=12312312&min=1.4&max=6.0&sortByMagnitude=false
-    let queryUrl = `/earthquakes?min=${minOption}&max=${maxOption}&sortByMagnitude=${sortOption}&time=${getOffsetTime(timeOption)}`;
+    let queryUrl = `${API_URL}/earthquakes?min=${minOption}&max=${maxOption}&sortByMagnitude=${sortOption}&time=${getOffsetTime(
+      timeOption
+    )}`;
     fetch(queryUrl)
-      .then(checkStatus)
       .then((res) => res.json())
       .then((res) => {
         setData(res);
         document.getElementById("query-submit-btn").classList.remove("hidden");
         document.getElementById("loading-spinner").hidden = true;
-      });
+      })
+      .catch(console.log);
   }
 
   function getOffsetTime(time) {
@@ -48,12 +51,12 @@ export default function QueryController({ setData }) {
     return now.setMonth(now.getMonth() - 1);
   }
 
-  function checkStatus(response) {
+  /*function checkStatus(response) {
     if (response.ok) {
       return response;
     }
-    throw Error("Error in request: " + response.statusText);
-  }
+    throw Error(response);
+  }*/
 
   return (
     <Container className="mt-3 mb-1">
@@ -61,7 +64,7 @@ export default function QueryController({ setData }) {
         <Form.Group>
           <Form.Row className="d-flex align-items-center justify-content-center">
             <Col xs="auto" className="pl-0">
-              <Form.Label className="pt-2">Earthquakes from:</Form.Label>
+              <Form.Label className="pt-2">Earthquakes from:&nbsp;</Form.Label>
             </Col>
             <Col xs="auto">
               <Form.Control as="select" custom id="time-select">
@@ -73,7 +76,7 @@ export default function QueryController({ setData }) {
               </Form.Control>
             </Col>
             <Col xs="auto">
-              <Form.Label className="pt-2">Magnitude</Form.Label>
+              <Form.Label className="pt-2"> &nbsp;Magnitude &nbsp;</Form.Label>
             </Col>
             <Col xs="auto">
               <Form.Control
@@ -87,7 +90,7 @@ export default function QueryController({ setData }) {
               />
             </Col>
             <Col xs="auto">
-              <Form.Label className="pt-2">To</Form.Label>
+              <Form.Label className="pt-2">&nbsp;To&nbsp;</Form.Label>
             </Col>
             <Col xs="auto">
               <Form.Control
@@ -100,7 +103,7 @@ export default function QueryController({ setData }) {
                 required
               />
             </Col>
-            <Form.Label className="pt-2">Sort By</Form.Label>
+            <Form.Label className="pt-2">&nbsp;Sort By&nbsp;</Form.Label>
             <Col xs="auto">
               <Form.Control as="select" custom id="sort-select">
                 {sortOptions.map((value, index) => (
@@ -110,10 +113,16 @@ export default function QueryController({ setData }) {
                 ))}
               </Form.Control>
             </Col>
-            <Button id="query-submit-btn" type="submit" >
+            &nbsp;
+            <Button id="query-submit-btn" type="submit" disabled>
               Submit
             </Button>
-            <Spinner id="loading-spinner" animation="border" variant="primary" hidden />
+            <Spinner
+              id="loading-spinner"
+              animation="border"
+              variant="primary"
+              hidden
+            />
           </Form.Row>
         </Form.Group>
       </Form>

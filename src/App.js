@@ -12,7 +12,7 @@ import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import AvionicsReport from "./components/AvionicsReport";
-import CadathonReport from "./components/CadathonReport";
+import CadathonReport from "./components/cadathon/CadathonReport";
 import GunResearchReport from "./components/GunResearchReport";
 import EarthquakeWatch from "./components/earthquakes/components/EarthquakeWatch";
 

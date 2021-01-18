@@ -1,0 +1,120 @@
+{
+  "abstract": ["As part of a class I took on data programming with Python, a partner and I did research surrounding gun violence in the US. The study covered the period from 2014 the the first three months of 2018. Analysis was done with Python to examine gun violence over time, the most dangerous places in the US for gun violence, and the causes of gun violence. For change over time, gun violence tends to be seasonal, decreasing significantly during the winter. Also, there was a dip around the beginning of 2018 that warrants further research. The distribution of gun violence is heavily skewed towards a few counties in the US, so that only a few counties are responsible for a vast majority of the gun crime in the US, especially Chicago, Detroit, Seattle, LA, and relatively few others. This study also examined gun ownership, population, and disposable income as possible causes of gun violence, using regression analysis and machine learning models to find which of the chosen causes could be best used to predict the amount of gun violence in a particular area."],
+  "change_over_time": {
+    "content": ["The graph of gun violence over time reveals that gun violence is very seasonal, increasing during the summer tapering off during winter. There is also a generally upward trend throughout most of the graph, until late 2017/early 2018, when it seems to go back down. The cause is unclear, but warrants further investigation."],
+    "caption": "Figure 2.1 - Gun Violence in the Period 2014-2018"
+  },
+  "county_distribution": {
+    "content": [
+      "When plotting a distribution of the number of incidents in all counties in the US, it is immediately clear that it is heavily skewed towards a few counties. The plot on the right only contains those counties in which there was one or more incidents involving a gun over the entire period of the study, 2014 to the first part of 2018. Of the roughly 3200 counties in the US, only about 300 of them had any incidents at all - these are shown at right. Of these, it is immediately noticeable that there are a tremendous number of very high outliers. It is not visible from this chart, but the third quartile of these counties is 38 incidents over the entire course of the study. For reference, anything above the third quartile of the top 300 counties is roughly 75 counties, or 2.5% of the counties nationally. This in turn means that 97.5% of counties nationally have had less than 40 gun-related incidents over the entire course of our study, which is slightly more than 4 years. This also means that 2.5% of the counties in the US are responsible for the vast majority of the gun crime in the US. A conservative estimate places the top 2.5% of counties in the US responsible for over 95% of the national gun crime.",
+      "Some of the highest outliers in the graph to the right include Chicago, Detroit, Seattle, LA, and several other areas with extremely high populations."
+    ],
+    "caption": "Figure 3.1 - Distribution of Non-zero Gun Crime Counties"
+  },
+  "county_map": {
+    "before": [
+      "The results of the previous section beg the question of where the worst counties are. The skewed distribution above makes a centroid map well-suited to this task."
+    ],
+    "after":[
+      "From this graph, it is again evident that there are relatively few counties which account for almost all the crime in the US. The biggest ones include Chicago, LA, Detroit, Seattle, and several areas of the east coast. The scale on the right shows that a small circle on the map still corresponds to 2000 incidents, which is a huge amount, based on the distribution above.",
+      "Therefore, any county with a visible circle on this map has an unusually high amount of gun violence."
+    ]
+  },
+  "about": {
+    "methods": "This project was originally done in Winter 2020, in CSE 163, Data Programming with Python. Data was organized into county using geospatial analysis with Geopandas. The plots were originally done with Matplotlib and Seaborn, but I have since gone back and redone them with Altair, which provides a cleaner look. The machine learning was done with scikit-learn, using the DecisionTreeRegressor model. I did this project originally with a partner named Cody Murphy, but I rewrote this project for the web alone.",
+    "github": "The code for this project is not on my github, as the code is messy and the files are disorganized. I am working to remedy this problem, but please feel free to contact me if you would like to discuss it.",
+    "databases": [
+      {
+        "link": "https://github.com/jamesqo/gun-violence-data",
+        "source": "James Quo on GitHub",
+        "name": "Gun Violence Data"
+      },
+      {
+        "link": "https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html",
+        "source": "US Census Shapefile",
+        "name": "US Shapefile Data"
+      },
+      {
+        "link": "https://apps.bea.gov/regional/downloadzip.cfm",
+        "source": "Annual Personal Income by State",
+        "name": "Personal Income"
+      },
+      {
+        "link": "https://www.kaggle.com/doj/federal-firearm-licensees",
+        "source": "Kaggle",
+        "name": "Gun Licensees"
+      },
+      {
+        "link": "https://www.census.gov/programs-surveys/decennial-census/2020-census.html",
+        "source": "US Census",
+        "name": "State Populations"
+      },
+      {
+        "link": "https://vega.github.io/vega-datasets/",
+        "source": "Vega Datasets",
+        "name": "US Topojson Map"
+      }
+    ]
+  },
+  "causes": {
+    "intro": [
+      "Three possible causes of gun violence were identified: population, income, and gun ownership. The number of gun retailers, or 'licensees', in a particular state was used as a proxy for gun ownership, and disposable income was used as a proxy for average income. This data is at a state level, so the results of this section are excellent indicators of good topics for further research.",
+      "Each possible cause of gun violence was plotted against the number of gun-related incidents in the lower 48 states and the District of Columbia, with a regression line. The Pearson r-value was also calculated to measure the strength of each regression."
+    ],
+    "ml-results" :[
+      {
+        "input": "Population",
+        "mse": "644,171"
+      },
+      {
+        "input": "Income",
+        "mse": "3,361,734"
+      },
+      {
+        "input": "Licensee Count",
+        "mse": "1,184,572"
+      },
+      {
+        "input": "Population, Disposable Income",
+        "mse": "591,809"
+      },
+      {
+        "input": "Population, Licensee Count",
+        "mse": "559,237"
+      },
+      {
+        "input": "Disposable Income, Licensee Count",
+        "mse": "915,882"
+      },
+      {
+        "input": "All Three",
+        "mse": "588,160"
+      }
+    ],
+    "correlation-graphs": [
+      {
+        "id": "vs-population",
+        "caption": "Population, r = 0.91"
+      },
+      {
+        "id": "vs-income",
+        "caption": "Income, r = -0.07"
+      },
+      {
+        "id": "vs-licensees",
+        "caption": "# of Licensees, r = 0.80"
+      }
+
+    ],
+    "graph-analysis": [
+      "The first graph is not a surprise, given the map in the previous section. It seems that areas with higher population have higher levels of gun violence.",
+      "The second shows that there is no correlation with disposable income and the amount of gun violence, which indicates affluence does not discourage gun violence.",
+      "The third graph indicates a moderate correlation between the number of gun licensees and the amount of gun violence. However, these are not adjusted for population, so there may be a confounding variable."
+    ],
+    "ml-analysis": [
+      "Machine learning was then used to analyze whether any particular cause would allow accurate predictions of gun violence in a state. Models were trained on combinations of causes, and the mean squared error of their predictions was calculated on testing data that had not been used to train the models.",
+      "The results, in the table at right, show the results of the machine learning. The most important and evident conclusion made from this data is that none of these are very good predictors of gun violence. However, there is some evidence of which causes are better or worse than each other at predicting gun violence.",
+      "Of the seven combinations of possible causes of gun violence, the four that contained population were far more accurate than the three that did not. Furthermore, the difference between population only and population with gun licensees does not appear to be significant, meaning gun ownership does not appear to be a good predictor of gun violence. This indicates that the correlation above is indeed because of the lurking variable of population, rather than indicating causality."
+    ]
+  }
+}

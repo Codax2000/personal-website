@@ -10,10 +10,10 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
-import HomePage from "./components/HomePage";
-import AvionicsReport from "./components/AvionicsReport";
+import HomePage from "./components/main/HomePage";
+import AvionicsReport from "./components/avionics/AvionicsReport";
 import CadathonReport from "./components/cadathon/CadathonReport";
-import GunResearchReport from "./components/GunResearchReport";
+import GunResearchReport from "./components/guns/GunResearchReport";
 import EarthquakeWatch from "./components/earthquakes/components/EarthquakeWatch";
 
 function App() {

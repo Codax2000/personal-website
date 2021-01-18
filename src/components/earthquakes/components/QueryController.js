@@ -13,7 +13,7 @@ export default function QueryController({ setData }) {
   let timeOptions = ["Hour", "Day", "Week", "Month"];
   let sortOptions = ["Magnitude", "Time"];
   const API_URL = "https://earthquake-api.azurewebsites.net";
-
+  //TODO: Find out a way to make this not get blocked
   function earthquakeQuery(event) {
     event.preventDefault();
     document.getElementById("query-submit-btn").classList.add("hidden");

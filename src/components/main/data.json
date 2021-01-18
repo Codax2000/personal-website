@@ -1,0 +1,134 @@
+{
+  "statement": [
+    "I am an electical engineering student and software developer based in Seattle, WA, currently attending classes at the University of Washington. I appreciate clean, efficient design and have worked on multiple projects in several areas, including research, aircraft controls, and full stack web development.",
+    "In my spare time, I work on learning new libraries and frameworks for Python and JavaScript, and I am a TA for the Allen School of Computer Science."
+  ],
+  "schools": [
+    {
+      "main": "University of Washington",
+      "details": "B.S. in Electrical Engineering (IP), Statistics Minor (IP)",
+      "date": "September 2019 - June 2023"
+    },
+    {
+      "main": "Glacier Peak High School",
+      "details": "High School Degree, Valedictorian, National Merit Letter of Recommendation",
+      "date": "September 2015 - June 2019"
+    }
+  ],
+  "jobs": [
+    {
+      "main": "University of Washington Allen School",
+      "details": "Computer Science TA",
+      "date": "March 30, 2020 - Present"
+    },
+    {
+      "main": "Design, Build, Fly at University of Washington",
+      "details": "Avionics Lead",
+      "date": "January 5, 2019 - March 30, 2020"
+    },
+    {
+      "main": "Varsity Tutors",
+      "details": "Mathematics Tutor",
+      "date": "June 30, 2019 - January 30, 2020"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Controls",
+      "url": "./controls",
+      "short": "Aircraft controls for competition RC aircraft using Arduino"
+    },
+    {
+      "name": "EarthquakeWatch",
+      "url": "./earthquakewatch",
+      "short": "Earthquake monitor with RSS feed and interactive chart"
+    },
+    {
+      "name": "CADathon",
+      "url": "./cadd",
+      "short": "Winning entry for 3D design competition with SolidWorks"
+    },
+    {
+      "name": "Guns and States",
+      "url": "./guns",
+      "short": "Research into gun violence across the US with Python"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Languages",
+      "skills": [
+        "HTML & CSS",
+        "JavaScript",
+        "Python",
+        "Java",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Libraries",
+      "skills": [
+        "Scikit-Learn",
+        "Matplotlib",
+        "Express",
+        "Node.js",
+        "React.js",
+        "Pandas",
+        "Flask"
+      ]
+    },
+    {
+      "title": "Tools",
+      "skills": [
+        "Git & GitHub",
+        "SolidWorks",
+        "Git Bash",
+        "Anaconda",
+        "Postman",
+        "HSMworks",
+        "Slack"
+      ]
+    },
+    {
+      "title": "Engineering",
+      "skills": [
+        "Problem Decomposition",
+        "Data Visualization",
+        "Iterative Design",
+        "Data Analysis",
+        "Prototyping",
+        "Teamwork"
+      ]
+    }
+  ],
+  "sources": {
+    "citations": [
+      {
+        "creator": "Sarmu",
+        "name": "Seattle from Kerry Park",
+        "link": "https://search.creativecommons.org/photos/994599f0-65c3-43cf-ab6c-81133a17e94d"
+      },
+      {
+        "creator": "Lyle58",
+        "name": "US Pistols and Revolvers",
+        "link": "https://search.creativecommons.org/photos/07dbb1bf-574c-4ef3-aa14-364747f478c5"
+      },
+      {
+        "creator": "gabriella_levine",
+        "name": "arduino",
+        "link": "https://search.creativecommons.org/photos/343a650e-f10b-49bd-9ff9-b4d9cfad642e"
+      },
+      {
+        "creator": "Dave Schumaker",
+        "name": "Earthquake Seismogram",
+        "link": "https://search.creativecommons.org/photos/6b5d4ad0-2b1a-441f-9554-d4621108cda7"
+      },
+      {
+        "creator": "logomakr.com",
+        "name": "Page Icon",
+        "link": "https://my.logomakr.com/"
+      }
+    ],
+    "statement": "There are several images and a logo on this site that I have used for backgrounds the page icon. Here is credit to the creators and links to where I found them. The SolidWorks drawings were mine and my partner's, whose LinkedIn is present, and I can't find my partner for the gun violence research."
+  }
+}

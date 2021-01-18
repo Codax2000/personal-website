@@ -26,7 +26,7 @@ export default function NavMenu() {
           >
             <img src={linkedin} height={height} alt="My LinkedIn Profile" />
           </Nav.Link>
-          <Nav.Link href="">Home</Nav.Link>
+          <Nav.Link href="/personal-website">Home</Nav.Link>
           <Nav.Link href="mailto:aknowlti2000@gmail.com">Contact Me</Nav.Link>
           <NavDropdown title="Projects" id="basic-nav-dropdown">
             <NavDropdown.Item href="#/controls">Avionics</NavDropdown.Item>

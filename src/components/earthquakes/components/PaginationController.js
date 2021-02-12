@@ -41,11 +41,11 @@ export default function PaginationController({ selectedPage, setPage, numPages }
             }
         }} />);
         if (hasBeginningEllipsis) {
-            paginationArray.push(<Pagination.Ellipsis />);
+            paginationArray.push(<Pagination.Ellipsis className="ellipsis" disabled />);
         }
         for (let i = startOfPageRange; i < endOfPageRange; i++) {
             if (i === selectedPage) {
-                paginationArray.push(<Pagination.Item active onClick={() => {
+                paginationArray.push(<Pagination.Item active activeLabel={false} onClick={() => {
                     setPage(i)
                 }}>{i + 1}</Pagination.Item>);
             } else {
@@ -55,7 +55,7 @@ export default function PaginationController({ selectedPage, setPage, numPages }
             }
         }
         if (hasEndEllipsis) {
-            paginationArray.push(<Pagination.Ellipsis />);
+            paginationArray.push(<Pagination.Ellipsis className="ellipsis" disabled />);
         }
         paginationArray.push(<Pagination.Next onClick={() => {
             if (selectedPage !== numPages - 1) {

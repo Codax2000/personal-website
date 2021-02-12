@@ -92,3 +92,8 @@ svg {
 .hidden {
   display: none;
 }
+
+/* disable aria on pagination ellipses */
+.ellipsis .sr-only {
+  display: none;
+}

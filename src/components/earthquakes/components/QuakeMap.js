@@ -11,7 +11,7 @@ import * as d3 from "d3";
 import * as topojson from "topojson-client";
 import mapTileData from "../data/countries.json";
 
-export default function EfficientQuakeMap({ earthquakes }) {
+export default function QuakeMap({ earthquakes }) {
   // DOM references
   const mapRef = useRef();
   const scatterRef = useRef();
@@ -78,7 +78,7 @@ export default function EfficientQuakeMap({ earthquakes }) {
     const scatterplot = d3.select(scatterRef.current);
     const projection = d3.geoEquirectangular();
     const path = d3.geoPath().projection(projection);
-    const zoom = d3.zoom().scaleExtent([1, 8]).on("zoom", zoomed);
+    const zoom = d3.zoom().scaleExtent([1, 3]).on("zoom", zoomed);
     const STROKE_WIDTH = 0.5;
 
     // necessary functions for interaction
@@ -96,6 +96,7 @@ export default function EfficientQuakeMap({ earthquakes }) {
     function zoomed(event) {
       const { transform } = event;
       mapZoom.attr("transform", transform);
+      mapCircleMerged.attr("r", (d) => radius(d.magnitude / Math.sqrt(transform.k)))
       mapTileOutlines.attr("stroke-width", STROKE_WIDTH / transform.k);
     }
 

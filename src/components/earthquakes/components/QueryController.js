@@ -12,8 +12,7 @@ import { Container, Form, Col, Button, Spinner } from "react-bootstrap";
 export default function QueryController({ setData }) {
   let timeOptions = ["Hour", "Day", "Week", "Month"];
   let sortOptions = ["Magnitude", "Time"];
-  const API_URL = "https://earthquake-api.azurewebsites.net";
-  //TODO: Find out a way to make this not get blocked
+
   function earthquakeQuery(event) {
     event.preventDefault();
     document.getElementById("query-submit-btn").classList.add("hidden");
@@ -26,11 +25,13 @@ export default function QueryController({ setData }) {
     let minOption = document.querySelector("#min-select").value;
     let maxOption = document.querySelector("#max-select").value;
     sortOption = sortOption === 0; // /earthquakes?time=12312312&min=1.4&max=6.0&sortByMagnitude=false
-    let queryUrl = `${API_URL}/earthquakes?min=${minOption}&max=${maxOption}&sortByMagnitude=${sortOption}&time=${getOffsetTime(
-      timeOption
-    )}`;
+    
+    let queryUrl = `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_month.geojson`;
+
     fetch(queryUrl)
+      .then(checkStatus)
       .then((res) => res.json())
+      .then((res) => processEarthquakes(res, minOption, maxOption, getOffsetTime(timeOption), sortOption))
       .then((res) => {
         setData(res);
         document.getElementById("query-submit-btn").classList.remove("hidden");
@@ -51,12 +52,33 @@ export default function QueryController({ setData }) {
     return now.setMonth(now.getMonth() - 1);
   }
 
-  /*function checkStatus(response) {
+  function checkStatus(response) {
     if (response.ok) {
       return response;
     }
     throw Error(response);
-  }*/
+  }
+
+  function processEarthquakes(data, min, max, minTime, sortByMagnitude) {
+    data = data.features;
+    let result = [];
+    for (let quake of data) {
+      let time = quake.properties.time;
+      let longitude = quake.geometry.coordinates[0];
+      let latitude = quake.geometry.coordinates[1];
+      let magnitude = quake.properties.mag;
+      let id = quake.id;
+      if (magnitude >= min & magnitude <= max & time >= minTime) {
+        result.push({"id": id, "time": time, "longitude": longitude, "latitude": latitude, "magnitude": magnitude})
+      }
+    }
+    if (sortByMagnitude) {
+      result = result.sort((a, b) => b.magnitude - a.magnitude);
+    } else {
+      result = result.sort((a, b) => b.time - a.time)
+    }
+    return result;
+  }
 
   return (
     <Container className="mt-3 mb-1">
@@ -114,7 +136,7 @@ export default function QueryController({ setData }) {
               </Form.Control>
             </Col>
             &nbsp;
-            <Button id="query-submit-btn" type="submit" disabled>
+            <Button id="query-submit-btn" type="submit">
               Submit
             </Button>
             <Spinner

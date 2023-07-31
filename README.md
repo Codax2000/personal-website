@@ -7,10 +7,10 @@ research, and software development. This is also hosted on GitHub pages, under
 
 ## About
 
-This is the frontend only, built with React, D3, and Bootstrap. Part of it
-uses an API that I wrote for fetching earthquake data, which is written in
-Spring Boot and hosted on Microsoft Azure. The API is part of a separate repo
-for ease of deployment, and is at [this link](https://github.com/Codax2000/usgs-earthquake-feed).
+This is the frontend only, built with React, D3, and Bootstrap. It is my playground
+for pushing myself to build and learn new ideas and web design concepts. It was
+initially deployed to Microsoft Azure and backed by a Spring Boot API, but that
+became difficult to manage and extremely slow, and Github Pages was a good alternative.
 
 ## Deployment
 

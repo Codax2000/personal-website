@@ -52,6 +52,46 @@
       "name": "Guns and States",
       "url": "./guns",
       "short": "Research into gun violence across the US with Python"
+    },
+    {
+      "name": "SNC Internship",
+      "url": "./snc",
+      "short": "Cleared system integration internship on a Boeing 737"
+    },
+    {
+      "name": "Embedded Cannon",
+      "url": "./cannon",
+      "short": "Embedded programming meets 3D printing for some Arduino fun"
+    },
+    {
+      "name": "Wireline Transceiver",
+      "url": "./transceiver",
+      "short": "12.5 Gbps wireline transceiver in FreePDK 45nm"
+    },
+    {
+      "name": "FAST Neural Net",
+      "url": "./zynet",
+      "short": "A neural network for full-duplex SI cancellation on a Xilinx RFSoC"
+    },
+    {
+      "name": "CADathon Reloaded",
+      "url": "./cadd2",
+      "short": "3rd place 3D modeling entry using SolidWorks, now with animation"
+    },
+    {
+      "name": "ROS Cart",
+      "url": "./ros",
+      "short": "Using RosPY to complete an obstacle course"
+    },
+    {
+      "name": "CNC Chess Set",
+      "url": "./cnc",
+      "short": "Cutting an aluminum chess set using a CNC lathe and 5-axis mill"
+    },
+    {
+      "name": "IC Times Two",
+      "url": "./multiplier",
+      "short": "A 200 MHz switch-capacitor multiply-by-two amplifier in TSMC 65nm"
     }
   ],
   "skills": [
@@ -127,6 +167,11 @@
         "creator": "logomakr.com",
         "name": "Page Icon",
         "link": "https://my.logomakr.com/"
+      },
+      {
+        "creator": "wbaiv",
+        "name": "Boeing 737 Plan and Exterior Lights",
+        "link": "https://openverse.org/image/a8e1774a-5893-4c3f-bc86-0f151820746d?q=737"
       }
     ],
     "statement": "There are several images and a logo on this site that I have used for backgrounds the page icon. Here is credit to the creators and links to where I found them. The SolidWorks drawings were mine and my partner's, whose LinkedIn is present, and I can't find my partner for the gun violence research."

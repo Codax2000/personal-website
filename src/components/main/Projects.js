@@ -9,24 +9,25 @@ import React from "react";
 import { Container, CardDeck, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import arduino from "./img/arduino.jpg";
-import cadd from "./img/cadd.JPG";
+import cadd from "./img/cadd.jpg";
 import gun from "./img/gun.jpg";
 import seismograph from "./img/seismograph.jpg";
-import plane from "TODO:";
-import cannon from "TODO:";
-import transceiver from "TODO:";
-import zynet from "TODO:";
-import bedframe from "TODO:";
-import ros from "TODO:";
-import cnc from "TODO:";
-import amplifier from "TODO:";
+import plane from "./img/plane.jpg";
+import cannon from "./img/cannon.jpg";
+import transceiver from "./img/transceiver.jpg";
+import zynet from "./img/cnn.jpg";
+import bedframe from "./img/bed.jpg";
+import ros from "./img/ros.jpg";
+import cnc from "./img/chess.jpg";
+import amplifier from "./img/amplifier.jpg";
 import data from "./data.json";
 
 const nRows = 3;
 const nCols = 4;
 
 export default function Projects() {
-  let images = [arduino, seismograph, cadd, gun];
+  let images = [arduino, seismograph, cadd, gun, plane, cannon, transceiver,
+                zynet, bedframe, ros, cnc, amplifier];
 
   return (
     <Container fluid id="projects" className="front-article">
@@ -34,11 +35,11 @@ export default function Projects() {
         <h2 className="text-center mb-4">Some Things I've Worked On</h2>
         {Array.from(Array(nRows).keys()).map((item, i) =>
           <Row>
-            <CardDeck className="d-flex justify-content-around">
+            <CardDeck className="d-flex justify-content-around mb-5">
               {data["projects"].slice(nCols * i, nCols * (i + 1)).map((item, j) => (
                 <ProjectCard
                   key={i * nRows + j}
-                  image={images[i * nRows + j]}
+                  image={images[i * nCols + j]}
                   name={item.name}
                   url={item.url}
                   short={item.short}

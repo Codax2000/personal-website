@@ -1,0 +1,14 @@
+{
+  "article": {
+    "title": "Abstract",
+    "content": [
+      "This entry was my friend Emily's (https://www.linkedin.com/in/emilycameron/) and my second submission to the UW ASME CADathon. We had a teriffic amount of fun with this submission, since at this point, engineering course loads were getting difficult and we felt like some humor in the middle of COVID would fit well. So, we decided to create a submission with a fun premise and a great story to go with it.",
+      "Our submission (in response to the prompt, 'Design something to solve an inconvenience') was to make a bedframe that not only helped you get to sleep, but also to wake you up in the morning. We called it Cloud Eight, in that it would be just like sleeping on a cloud...until it wasn't.",
+      "We brainstormed every comfort we could think of to put into a IoT-connected bedframe, and came up with: power outlet, heated bedframe, and lights in the bedposts that could turn on or off automatically. However, the extra solve-the-inconvenience factor was that the frame can tilt the mattress by a few degrees when set to do so. Anybody who has ever gone camping can attest that it is very difficult to sleep when you feel like you're about to roll downhill, so we pitched it that way. Additionally, we added safety railings (one of which could come down for convenience).",
+      "The focus of our work in this case was to learn how to do a decent animation in SolidWorks and add it to our success last year with branding (note the logo, and we made sure to come up with a fun name as well). We figured out how to do so, and our hard work paid off. We came away with a 3rd-place win, in a much more competitive field than had been the previous year."
+    ],
+    "image": {
+      "caption": "Finished assembly of the bed with everything in place"
+    }
+  }
+}

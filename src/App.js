@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import HomePage from "./components/main/HomePage";
 import AvionicsReport from "./components/avionics/AvionicsReport";
 import CadathonReport from "./components/cadathon/CadathonReport";
+import Cadathon2Report from "./components/cadathon2/Cadathon2Report";
 import GunResearchReport from "./components/guns/GunResearchReport";
 import EarthquakeWatch from "./components/earthquakes/components/EarthquakeWatch";
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/earthquakewatch" exact component={EarthquakeWatch} />
         <Route path="/cadd" exact component={CadathonReport} />
         <Route path="/guns" exact component={GunResearchReport} />
+        <Route path="/bed" exact component={Cadathon2Report} />
       </Switch>
       <Footer />
     </div>

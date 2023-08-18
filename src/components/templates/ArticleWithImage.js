@@ -19,7 +19,7 @@ export default function ArticleWithImage(props) {
         <div className="d-flex mt-4">
           <div>
             {content.map((item, i) => (
-              <p key={i} className="text-left">
+              <p key={i} className="text-left mr-4">
                 {item}
               </p>
             ))}
@@ -29,7 +29,7 @@ export default function ArticleWithImage(props) {
               src={graph}
               alt={caption}
               width={STANDARD_WIDTH}
-              className="ml-2 mb-2"
+              className="mx-2 mb-2"
             />
             <figcaption className="text-muted mb-4">{caption}</figcaption>
           </div>

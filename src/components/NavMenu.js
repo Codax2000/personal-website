@@ -30,11 +30,17 @@ export default function NavMenu() {
           <Nav.Link href="mailto:aknowlti2000@gmail.com">Contact Me</Nav.Link>
           <NavDropdown title="Projects" id="basic-nav-dropdown">
             <NavDropdown.Item href="#/controls">Avionics</NavDropdown.Item>
-            <NavDropdown.Item href="#/earthquakewatch">
-              EarthquakeWatch
-            </NavDropdown.Item>
+            <NavDropdown.Item href="#/earthquakewatch">EarthquakeWatch</NavDropdown.Item>
             <NavDropdown.Item href="#/cadd">UW CADathon</NavDropdown.Item>
-            <NavDropdown.Item href="#/guns">Gun Research</NavDropdown.Item>
+            <NavDropdown.Item href="#/cnn">Radio Cancellation CNN</NavDropdown.Item>
+            <NavDropdown.Item href="#/transceiver">Wireline Transceiver</NavDropdown.Item>
+            <NavDropdown.Item href="#/amplifier">Switch-Cap Amplifier</NavDropdown.Item>
+            <NavDropdown.Item href="#/bed">CADathon Year 2</NavDropdown.Item>
+            <NavDropdown.Item href="#/cannon">Rubber Band Cannon</NavDropdown.Item>
+            <NavDropdown.Item href="#/chess">CNC Chess Set</NavDropdown.Item>
+            <NavDropdown.Item href="#/plane">SNC Internship</NavDropdown.Item>
+            <NavDropdown.Item href="#/ros">Robotics Controls</NavDropdown.Item>
+            <NavDropdown.Item href="#/guns">Gun Research</NavDropdown.Item> 
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

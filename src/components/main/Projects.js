@@ -6,7 +6,7 @@
  * links for each one.
  */
 import React from "react";
-import { Container, CardDeck, Row, Col } from "react-bootstrap";
+import { Container, CardDeck, Row } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import arduino from "./img/arduino.jpg";
 import cadd from "./img/cadd.jpg";

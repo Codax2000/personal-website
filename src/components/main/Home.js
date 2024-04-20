@@ -14,7 +14,7 @@ export default function Home() {
           Hi, I'm Alex
           </h2>
         <p>
-          I'm an Electrical Engineering student at the University of Washington.
+          I'm an Electrical Engineer studying analog IC design at the University of Michigan.
           </p>
       </Container>
     </Jumbotron>

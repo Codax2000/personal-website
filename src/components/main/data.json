@@ -1,12 +1,18 @@
 {
   "statement": [
-    "I am an electical engineering student and software developer based in Seattle, WA, currently attending classes at the University of Washington. I appreciate clean, efficient design and have worked on multiple projects in several areas, including research, aircraft controls, and full stack web development.",
-    "In my spare time, I work on learning new libraries and frameworks for Python and JavaScript, and I am a TA for the Allen School of Computer Science."
+    "I am an electical engineering Master's student and hobbyist software developer based in Seattle, WA, currently attending classes at the University of Michigan. I appreciate clean, efficient design and have worked on multiple projects in several areas, including research, aircraft controls, and full stack web development.",
+    "I specialize in analog and mixed-signal IC design with an additional background in Digital VLSI and software. I am equally experienced with Python and with Matlab, and I am also familiar with web development and data science.",
+    "In my spare time, I enjoy classic literature, hiking, fishing, and chess."
   ],
   "schools": [
     {
+      "main": "University of Michigan",
+      "details": "M.S. in Electrical Engineering (IP)",
+      "date": "September 2019 - June 2023"
+    },
+    {
       "main": "University of Washington",
-      "details": "B.S. in Electrical Engineering (IP), Statistics Minor (IP)",
+      "details": "B.S. in Electrical Engineering, Magna Cum Laude, Dean's List",
       "date": "September 2019 - June 2023"
     },
     {
@@ -17,19 +23,44 @@
   ],
   "jobs": [
     {
+      "main": "Texas Instruments",
+      "details": "Analog IC Design Intern",
+      "date": "May 2024 - August 2024 (Upcoming)"
+    },
+    {
+      "main": "MICL at University of Michigan",
+      "details": "Graduate Student Research Assistant",
+      "date": "October 2023 - Present"
+    },
+    {
+      "main": "FAST Lab at the University of Washington",
+      "details": "Undergraduate Researcher",
+      "date": "October 2022 - June 2023"
+    },
+    {
+      "main": "Volunteer for UW College of Engineering",
+      "details": "Engineering Peer Educator",
+      "date": "October 2022 - December 2022"
+    },
+    {
+      "main": "Sierra Nevada Corporation",
+      "details": "Electrical Engineering Intern",
+      "date": "June 2022 - September 2022"
+    },
+    {
       "main": "University of Washington Allen School",
       "details": "Computer Science TA",
-      "date": "March 30, 2020 - Present"
+      "date": "March 2020 - March 2022"
     },
     {
       "main": "Design, Build, Fly at University of Washington",
-      "details": "Avionics Lead",
-      "date": "January 5, 2019 - March 30, 2020"
+      "details": "Avionics Engineer",
+      "date": "October 2019 - March 2020"
     },
     {
       "main": "Varsity Tutors",
       "details": "Mathematics Tutor",
-      "date": "June 30, 2019 - January 30, 2020"
+      "date": "June 2019 - January 2020"
     }
   ],
   "projects": [
@@ -47,11 +78,6 @@
       "name": "CADathon",
       "url": "./cadd",
       "short": "Winning entry for 3D design competition with SolidWorks"
-    },
-    {
-      "name": "Guns and States",
-      "url": "./guns",
-      "short": "Research into gun violence across the US with Python"
     },
     {
       "name": "SNC Internship",
@@ -79,11 +105,6 @@
       "short": "3rd place 3D modeling entry using SolidWorks, now with animation"
     },
     {
-      "name": "ROS Cart",
-      "url": "./ros",
-      "short": "Using RosPY to complete an obstacle course"
-    },
-    {
       "name": "CNC Chess Set",
       "url": "./cnc",
       "short": "Cutting an aluminum chess set using a CNC lathe and 5-axis mill"
@@ -92,17 +113,29 @@
       "name": "IC Times Two",
       "url": "./multiplier",
       "short": "A 200 MHz switch-capacitor multiply-by-two amplifier in TSMC 65nm"
+    },
+    {
+      "name": "RISC-II",
+      "url": "./processor",
+      "short": "A 200 MHz, 2-stage, tapeout-ready microprocessor"
+    },
+    {
+      "name": "ADCs in Matlab",
+      "url": "./adcs",
+      "short": "Matlab simulations of modern ADCs"
     }
   ],
   "skills": [
     {
       "title": "Languages",
       "skills": [
+        "SystemVerilog",
+        "Matlab",
+        "Python",
         "HTML & CSS",
         "JavaScript",
         "Python",
-        "Java",
-        "SQL"
+        "Java"
       ]
     },
     {
@@ -110,8 +143,8 @@
       "skills": [
         "Scikit-Learn",
         "Matplotlib",
-        "Express",
-        "Node.js",
+        "Numpy",
+        "Pandas",
         "React.js",
         "Pandas",
         "Flask"
@@ -120,19 +153,19 @@
     {
       "title": "Tools",
       "skills": [
-        "Git & GitHub",
-        "SolidWorks",
-        "Git Bash",
-        "Anaconda",
-        "Postman",
-        "HSMworks",
-        "Slack"
+        "Cadence Virtuoso",
+        "Cadence Innovus",
+        "Synopsis Design Compiler",
+        "Matlab Communications Toolbox",
+        "Autodesk Fusion 360",
+        "SolidWorks"
       ]
     },
     {
       "title": "Engineering",
       "skills": [
         "Problem Decomposition",
+        "Technical Writing",
         "Data Visualization",
         "Iterative Design",
         "Data Analysis",
@@ -147,11 +180,6 @@
         "creator": "Sarmu",
         "name": "Seattle from Kerry Park",
         "link": "https://search.creativecommons.org/photos/994599f0-65c3-43cf-ab6c-81133a17e94d"
-      },
-      {
-        "creator": "Lyle58",
-        "name": "US Pistols and Revolvers",
-        "link": "https://search.creativecommons.org/photos/07dbb1bf-574c-4ef3-aa14-364747f478c5"
       },
       {
         "creator": "gabriella_levine",
@@ -174,6 +202,6 @@
         "link": "https://openverse.org/image/a8e1774a-5893-4c3f-bc86-0f151820746d?q=737"
       }
     ],
-    "statement": "There are several images and a logo on this site that I have used for backgrounds the page icon. Here is credit to the creators and links to where I found them. The SolidWorks drawings were mine and my partner's, whose LinkedIn is present, and I can't find my partner for the gun violence research."
+    "statement": "There are several images and a logo on this site that I have used for backgrounds the page icon. All photos were either used from Creative Commons at time of citation or from a website with the required credit. Here is credit to the creators and links to where I found them. The SolidWorks drawings were mine and my partner's, whose LinkedIn is present, and I can't find my partner for the gun violence research. All other pictures were taken either by me or by other members of teams I was working with at the time."
   }
 }

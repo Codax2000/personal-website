@@ -21,7 +21,7 @@ export default function NavMenu() {
             <img src={github} height={height} alt="My GitHub Page" />
           </Nav.Link>
           <Nav.Link
-            href="https://www.linkedin.com/in/alexander-knowlton-2b0b4418b/"
+            href="https://www.linkedin.com/in/alexander-knowlton/"
             target="_blank"
           >
             <img src={linkedin} height={height} alt="My LinkedIn Profile" />

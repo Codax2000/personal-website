@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="footer text-left text-muted bg-light p-2">
       <p className="clear-spacing">
-        Site created with React, React-Bootstrap, D3.js, and Spring Boot
+        Site created with React, React-Bootstrap, and D3.js.
       </p>
     </footer>
   );

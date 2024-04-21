@@ -49,7 +49,7 @@ export default function CadathonReport() {
   return (
     <Container fluid className="report-article">
       <Container fluid className="report-article">
-        <h1 className="text-center">UW CADathon</h1>
+        <h1 className="text-center">UW CADathon, Year 2</h1>
         <ArticleWithImage
           title={data["article"]["title"]}
           content={data["article"]["content"]}

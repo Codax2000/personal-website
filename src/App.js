@@ -16,6 +16,8 @@ import CadathonReport from "./components/cadathon/CadathonReport";
 import Cadathon2Report from "./components/cadathon2/Cadathon2Report";
 import GunResearchReport from "./components/guns/GunResearchReport";
 import EarthquakeWatch from "./components/earthquakes/components/EarthquakeWatch";
+import BandgapReference from "./components/bandgap_reference/BandgapReferenceReport";
+import RubberBandCannon from "./components/rubberband_cannon/RubberBandCannon";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/cadd" exact component={CadathonReport} />
         <Route path="/guns" exact component={GunResearchReport} />
         <Route path="/bed" exact component={Cadathon2Report} />
+        <Route path="/bandgap" exact component={BandgapReference} />
+        <Route path="/cannon" exact component={RubberBandCannon} />
       </Switch>
       <Footer />
     </div>

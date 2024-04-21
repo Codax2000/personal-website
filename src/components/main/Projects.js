@@ -11,7 +11,7 @@ import ProjectCard from "./ProjectCard";
 import arduino from "./img/arduino.jpg";
 import cadd from "./img/cadd.jpg";
 import seismograph from "./img/seismograph.jpg";
-import bandgap from "./img/placeholder.jpg";
+import bandgap from "./img/bandgap.jpg";
 import cannon from "./img/cannon.jpg";
 import transceiver from "./img/transceiver.jpg";
 import zynet from "./img/cnn.jpg";

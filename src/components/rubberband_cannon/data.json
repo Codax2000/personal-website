@@ -1,0 +1,13 @@
+{
+  "abstract": {
+    "title": "Abstract",
+    "content": [
+      "At the University of Washington, the pre-capstone class for embedded systems, ECE 474, focused on embedded C programming. The final project focused on using FreeRTOS. I worked with a partner, Robert Crist (https://www.linkedin.com/in/robert-crist) on a project in which we used FreeRTOS to build a rubber band gun inspired by Star Wars. I unfortunately can't yet publish the repository we used, since it contained both our work for the homework assignments and for the final project.",
+      "We designed the rubber band gun to be controllable in the lateral direction by joystick, and the sensor on the front detects the distance to the nearest target and set the pitch. We were able to hit targets accurately between 2 and almost 8 feet, at which point air resistance would cause simple kinematics equations we used to break down.",
+      "I used a 3D printer to print the body and the legs of the device, and the rectangular slots are precisely sized to hold standard servo motors."
+    ],
+    "image": {
+      "caption": "Rubber band gun base"
+    }
+  }
+}

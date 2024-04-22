@@ -2,25 +2,31 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "My team designed a 2-stage, 16-bit, RISC microprocessor capable of running a subset of the RISC-V instruction set. We also added a ring-oscillator based physically uncloneable function (PUF) block."
+      "My team designed a 2-stage, 16-bit, RISC microprocessor capable of running a subset of the RISC-V instruction set. We also added a ring-oscillator based physically uncloneable function (PUF) block.",
+      "Another graduate student, Rahul Narasimha (https://www.linkedin.com/in/rahulnnarasimha/) and I generally became the design leads due to a better understanding of the architecture and more experience in digital IC design.",
+      "We tested the design by running Spectre simulations on the datapath and verilog simulations on anything higher-level than that. The final simulation was to run the first several elements of the Fibonacci sequence. At right is the datapath schematic, which has several larger blocks, including data memory, a left shifter, an ALU, and a regfile."
     ],
     "image": {
-      "caption": "Microprocessor schematic"
+      "caption": "Microprocessor datapath schematic"
     }
   },
   "design": {
     "title": "Layout",
     "content": [
-      "My team was given the SRAM blocks for instruction and data memory. We used DC Compiler and Cadence Innovus to run place-and-route for the instruction register and program counter, since they were not on the critical path of the processor. However, we laid out the datapath by hand."  
+      "My team was given the SRAM blocks for instruction and data memory. We used DC Compiler and Cadence Innovus to run place-and-route for the instruction register and program counter, since they were not on the critical path of the processor. However, we laid out the datapath by hand.",
+      "The final integration involved adding a pad and IO ring to the processor. The only inputs and outputs are the power and ground lines and a scan chain that can scan directly to the instruction register or the program counter.",
+      "The layout was a lot of work. It was my idea to lay out a series of standard cells (since we weren't given access to the standard cell library for this assignment), and our personal standard cell library helped with design and layout significantly. However, the layout of an entire datapath was still time-consuming and difficult. We also used an aggressive bit-slice width, which made routing that much more difficult.",
+      "At the top right of the layout is the PUF block, which is implemented using a series of ring oscillators and a phase/frequency detector (PFD) that compares the frequencies of two ring oscillators and randomly outputs a 1 or 0 based on which oscillator is faster."  
     ],
     "image": {
-      "caption": "Microprocessor layout"
+      "caption": "Microprocessor layout with pad and IO ring"
     }
   },
   "results": {
     "title": "Toplevel Simulation",
     "content": [
-      "To prove the processor functionality, we set the processor to calculate the Fibonacci sequence. The toplevel NCVerilog simulation is at right."  
+      "To prove the processor functionality, we set the processor to calculate the first ten elements of the Fibonacci sequence. The toplevel NCVerilog simulation is at right. Each element of the Fibonacci sequence is stored at the corresponding memory address. There is also a conditional jump (not shown) that moves on to a different subroutine once the tenth Fibonacci element has been computed.",
+      "The project was an overall success, with a mix of APR blocks, memory macros, and full-custom laid out blocks."
     ],
     "image": {
       "caption": "Toplevel verilog simulation"

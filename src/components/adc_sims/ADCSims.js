@@ -8,7 +8,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import ArticleWithImage from "../templates/ArticleWithImage";
 import data from "./data.json";
-import DSM2_block from './img/placeholder.jpg';
+import DSM2_block from './img/dsm2_block.jpg';
 import DSM2 from './img/placeholder.jpg';
 import SAR_EF from './img/placeholder.jpg';
 

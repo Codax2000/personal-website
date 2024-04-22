@@ -8,9 +8,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import ArticleWithImage from "../templates/ArticleWithImage";
 import data from "./data.json";
-import schematic from './img/placeholder.jpg';
-import layout from './img/placeholder.jpg';
-import final_simulation from './img/placeholder.jpg';
+import schematic from './img/schematic.jpg';
+import layout from './img/layout.jpg';
+import final_simulation from './img/simulation.jpg';
 
 export default function Microprocessor() {
   return (

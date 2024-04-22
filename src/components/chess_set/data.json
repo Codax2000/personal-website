@@ -1,0 +1,20 @@
+{
+  "abstract": {
+    "title": "Abstract",
+    "content": [
+      "In my senior year of high school, I began to learn chess, and I wanted a set to travel with. However, I didn't like any of the designs that I saw on Amazon, so I decided to make my own. I had access to an impressive machine shop and equally impressive CAD tools, so I decided to make my own set out of aluminum."  
+    ],
+    "image": {
+      "caption": "Original chess set rendering"
+    }
+  },
+  "knight": {
+    "title": "5-Axis Knight Machining",
+    "content": [
+      "The main problem was the knight, since it is the only piece on the board that cannot be turned and still look like a traditional knight. It would be immensely difficult to cut on a 3-axis machine, but not nearly so difficult on a 5-axis machine. Luckily for me, the UW has just such a machine in one of the engineering makerspaces." 
+    ],
+    "image": {
+      "caption": "5-axis machined chess knight"
+    }
+  }
+}

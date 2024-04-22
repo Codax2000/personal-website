@@ -1,0 +1,39 @@
+{
+  "abstract": {
+    "title": "Abstract",
+    "content": [
+      "I took the UW digital VLSI capstone class with a mix of graduate and undergraduate students. I worked with Eugene Liu (https://www.linkedin.com/in/eugeneliu2023) to implement a convolutional neural network on a Xylinx FPGA.",
+      "Our project had two possible endpoints. The first, which we did not think we could achieve, was to fit the neural network onto a Xilinx RFSoC FPGA. The second, which was unexpectedly difficult, was to lay the neural net out in FreePDK 45nm using Synopsis Design Compiler and IC Compiler."
+    ],
+    "image": {
+      "caption": "CNN Block Diagram"
+    }
+  },
+  "approach": {
+    "title": "System Design",
+    "content": [
+      "While Eugene developed the central blocks, of which he had a much deeper understanding, I developed the handshake system we used for inter-layer communication in addition to the convolutional and fully-connected layers."
+    ],
+    "image": {
+      "caption": "Placed design in Xilinx Vivado"
+    }
+  },
+  "apr": {
+    "title": "Implementation",
+    "content": [
+      "We had to proceed on two fronts. The first was to keep working in Vivado to try and implement the network on the FPGA like we had originally intended. Failing that, we also had to develop the necessary SAPR scripts to lay the chip out in 45nm CMOS."
+    ],
+    "image": {
+      "caption": "Final ICC layout"
+    }
+  },
+  "results": {
+    "title": "Results",
+    "content": [
+      "One of the most difficult parts of this project was in managing the immense scale. SAPR took a week, and by the time that it had finished, we did not have time to run it again."  
+    ],
+    "image": {
+      "caption": "Data from Vivado ILA"
+    }
+  }
+}

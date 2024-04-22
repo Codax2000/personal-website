@@ -1,0 +1,29 @@
+{
+  "abstract": {
+    "title": "Abstract",
+    "content": [
+      "My team designed a 2-stage, 16-bit, RISC microprocessor capable of running a subset of the RISC-V instruction set. We also added a ring-oscillator based physically uncloneable function (PUF) block."
+    ],
+    "image": {
+      "caption": "Microprocessor schematic"
+    }
+  },
+  "design": {
+    "title": "Layout",
+    "content": [
+      "My team was given the SRAM blocks for instruction and data memory. We used DC Compiler and Cadence Innovus to run place-and-route for the instruction register and program counter, since they were not on the critical path of the processor. However, we laid out the datapath by hand."  
+    ],
+    "image": {
+      "caption": "Microprocessor layout"
+    }
+  },
+  "results": {
+    "title": "Toplevel Simulation",
+    "content": [
+      "To prove the processor functionality, we set the processor to calculate the Fibonacci sequence. The toplevel NCVerilog simulation is at right."  
+    ],
+    "image": {
+      "caption": "Toplevel verilog simulation"
+    }
+  }
+}

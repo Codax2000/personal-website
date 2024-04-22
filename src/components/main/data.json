@@ -110,9 +110,9 @@
       "short": "Cutting an aluminum chess set using a CNC lathe and 5-axis mill"
     },
     {
-      "name": "IC Times Two",
-      "url": "./multiplier",
-      "short": "A 200 MHz switch-capacitor multiply-by-two amplifier in TSMC 65nm"
+      "name": "SC Amplifier",
+      "url": "./sc_amp",
+      "short": "A 100 MHz switch-capacitor sample-and-hold circuit in 130nm"
     },
     {
       "name": "RISC-II",
@@ -121,7 +121,7 @@
     },
     {
       "name": "ADCs in Matlab",
-      "url": "./adcs",
+      "url": "./adc_sims",
       "short": "Matlab simulations of modern ADCs"
     }
   ],

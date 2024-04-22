@@ -1,0 +1,30 @@
+{
+  "abstract": {
+    "title": "Abstract",
+    "content": [
+      "One assignment I had to work on was a single-stage, switched-capacitor amplifier as a precursor to the larger system design of an ADC."  
+    ],
+    "image": {
+      "caption": "SC amplifier schematic"
+    }
+  },
+  "design": {
+    "title": "Amplifier Simulation",
+    "content": [
+      "The amplifier had to have a gain of 45 dB with a 100 MHz unity-gain frequency when driving a load of 1 pF. I was able to meet these specs by using a single-stage cascode topology.",
+      "I had done a similar project in my undergraduate work, but that project required a second stage with much higher gain and load capacitance, and so it required Miller compensation. Luckily, that wasn't necessary for this project. For this project, I did not lay out the amplifier, but I did have to set up the biasing."  
+    ],
+    "image": {
+      "caption": "AC amplifier simulation"
+    }
+  },
+  "results": {
+    "title": "SHA Results",
+    "content": [
+      "At right is the final switched-cap transient results. Shown on the top is the input voltage, a 100 MHz sinusoidal wave. Below that is the SHA output voltage."  
+    ],
+    "image": {
+      "caption": "SC transient simulation"
+    }
+  }
+}

@@ -20,6 +20,9 @@ import RubberBandCannon from "./components/rubberband_cannon/RubberBandCannon";
 import WirelineTransceiverReport from "./components/transceiver/WirelineTransceiverReport";
 import NeuralNetworkReport from "./components/vlsi_capstone/NeuralNetworkReport";
 import ChessSetReport from "./components/chess_set/ChessSetReport";
+import SwitchCapAmplifier from "./components/switch_cap_amp/SwitchCapAmplifier";
+import Microprocessor from "./components/microprocessor/Microprocessor";
+import ADCSims from "./components/adc_sims/ADCSims";
 
 function App() {
   return (
@@ -36,6 +39,9 @@ function App() {
         <Route path="/transceiver" exact component={WirelineTransceiverReport} />
         <Route path="/cnn" exact component={NeuralNetworkReport} />
         <Route path="/chess" exact component={ChessSetReport} />
+        <Route path="/sc_amp" exact component={SwitchCapAmplifier} />
+        <Route path="/processor" exact component={Microprocessor} />
+        <Route path="/adc_sims" exact component={ADCSims} />
       </Switch>
       <Footer />
     </div>

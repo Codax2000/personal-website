@@ -40,7 +40,7 @@ export default function NavMenu() {
             <NavDropdown.Item href="#/chess">CNC Chess Set</NavDropdown.Item>
             <NavDropdown.Item href="#/amplifier">Switch-Cap Amplifier</NavDropdown.Item>
             <NavDropdown.Item href="#/processor">RISC Microprocessor</NavDropdown.Item>
-            <NavDropdown.Item href="#/adcs">Matlab ADCs</NavDropdown.Item>
+            <NavDropdown.Item href="#/adc_sims">Matlab ADCs</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

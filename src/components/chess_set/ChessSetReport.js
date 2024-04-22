@@ -8,8 +8,8 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import ArticleWithImage from "../templates/ArticleWithImage";
 import data from "./data.json";
-import rendering from './img/placeholder.jpg';
-import knight from './img/placeholder.jpg';
+import rendering from './img/original_rendering.jpg';
+import knight from './img/wood_knight.jpg';
 
 export default function NeuralNetwork() {
   return (

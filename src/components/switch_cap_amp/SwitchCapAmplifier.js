@@ -8,9 +8,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import ArticleWithImage from "../templates/ArticleWithImage";
 import data from "./data.json";
-import schematic from './img/placeholder.jpg';
-import simulation1 from './img/placeholder.jpg';
-import simulation2 from './img/placeholder.jpg';
+import schematic from './img/schematic.jpg';
+import simulation1 from './img/ac_sweep.jpg';
+import simulation2 from './img/transient.jpg';
 
 export default function SwitchCapAmplifier() {
   return (

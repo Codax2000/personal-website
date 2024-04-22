@@ -112,7 +112,7 @@
     {
       "name": "SC Amplifier",
       "url": "./sc_amp",
-      "short": "A 100 MHz switch-capacitor sample-and-hold circuit in 130nm"
+      "short": "A 10 MHz switch-capacitor sample-and-hold circuit in 130nm"
     },
     {
       "name": "RISC-II",

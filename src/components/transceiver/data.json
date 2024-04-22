@@ -32,7 +32,7 @@
     "content": [
       "In the end, we were able to serialize and deserialize data at 12.5 Gb/s. The main digital problem was how to use flip flops that were fast enough to serialize the data, but the use of TSPC flip flops and latches solved that problem. The eye opening was not quite as wide as Matlab predicted, but it was plenty wide enough to successfully transmit data.",
       "We did have to make several assumptions for this to work. For one, we did not deal with correct clocking of the circuit at all, which could easily have covered another class. We used ideally matched clocks to recover data. We also did not run Monte Carlo or corner analysis, nor did we lay out either Tx or Rx blocks.",
-      "Part of this stop in the project was the scope of the class. Part of it was that one of the other members of the team (Eugene) and I were also working on our digital capstone at the time, which took much more of our time, so we could not focus on this project as much as we wanted to."
+      "Part of the small scope of the project was the scope of the class. Part of it was that one of the other members of the team (Eugene) and I were also working on our digital capstone at the time, which took much more of our time, so we could not focus on this project as much as we wanted to."
     ],
     "image": {
       "caption": "Final eye diagram"

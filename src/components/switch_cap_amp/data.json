@@ -2,7 +2,9 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "One assignment I had to work on was a single-stage, switched-capacitor amplifier as a precursor to the larger system design of an ADC."  
+      "One assignment I had to work on was a single-stage, switched-capacitor amplifier as a precursor to the larger system design of an ADC. I was given a 10 uA reference current and a reference clock of 10 MHz. I had to create a simple non-overlapping clock generator and the bias network based on the 10 uA reference." ,
+      "At right is the schematic of the overall amplifier (without the surrounding switch-cap circuitry). Also not shown is the expanded biasing network. However, you can see the telescopic cascode circuitry and the DDA feedback circuit.",
+      "I designed the amplifier using a graph-based design approach. By using a plot of transconductance vs. current and length with a fixed width, I was able to find the bias current and device sizes that worked well for this design. Since I knew the unity-gain frequency and load capacitance, I was able to quickly move from an ideal model to a fabricable design with little to no revision necessary." 
     ],
     "image": {
       "caption": "SC amplifier schematic"
@@ -12,8 +14,9 @@
     "title": "Amplifier Simulation",
     "content": [
       "The amplifier had to have a gain of 45 dB with a 100 MHz unity-gain frequency when driving a load of 1 pF. I was able to meet these specs by using a single-stage cascode topology.",
-      "I had done a similar project in my undergraduate work, but that project required a second stage with much higher gain and load capacitance, and so it required Miller compensation. Luckily, that wasn't necessary for this project. For this project, I did not lay out the amplifier, but I did have to set up the biasing."  
-    ],
+      "I had done a similar project in my undergraduate work, but that project required a second stage with much higher gain and load capacitance, and so it required Miller compensation. Luckily, that wasn't necessary for this project. For this project, I did not lay out the amplifier, but I did have to set up the biasing.",
+      "The AC sweep data, plotted in Matlab, shows a single pole and high enough gain to satisfy specs."
+      ],
     "image": {
       "caption": "AC amplifier simulation"
     }
@@ -21,7 +24,10 @@
   "results": {
     "title": "SHA Results",
     "content": [
-      "At right is the final switched-cap transient results. Shown on the top is the input voltage, a 100 MHz sinusoidal wave. Below that is the SHA output voltage."  
+      "At right is the final switched-cap transient results. Shown on the top is the input voltage, a 100 MHz sinusoidal wave. Below that is the SHA output voltage.",
+      "One of the difficulties with the biasing was that I wanted to use minimal current for the bias network to equally minimize power. I therefore used stacked devices in the triode region to generate a higher voltage to bias the NMOS cascode devices.",
+      "My favorite part of this design was in using a DDA circuit to bias the PMOS load devices. It uses smaller devices and does not load the output, which I count as a bonus, though it does burn static current. I could then accurately gauge the effectiveness of the circuit without having to worry about whether devices were in saturation.",
+      "The transient data at right shows the DDA circuit in action in holding the common-mode voltage of the output relatively stable. The output voltage is also clearly sampling and holding a copy of the input and multiplying it by a constant."      
     ],
     "image": {
       "caption": "SC transient simulation"

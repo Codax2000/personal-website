@@ -2,17 +2,22 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "I took the UW digital VLSI capstone class with a mix of graduate and undergraduate students. I worked with Eugene Liu (https://www.linkedin.com/in/eugeneliu2023) to implement a convolutional neural network on a Xylinx FPGA.",
-      "Our project had two possible endpoints. The first, which we did not think we could achieve, was to fit the neural network onto a Xilinx RFSoC FPGA. The second, which was unexpectedly difficult, was to lay the neural net out in FreePDK 45nm using Synopsis Design Compiler and IC Compiler."
+      "I took the UW digital VLSI capstone class with a mix of graduate and undergraduate students. I worked with Eugene Liu (https://www.linkedin.com/in/eugeneliu2023) to implement a convolutional neural network on a Xylinx FPGA for eventually tuning RF frontends.",
+      "Our project had two possible endpoints. The first, which we did not think we could achieve, was to fit the neural network onto a Xilinx RFSoC FPGA. The second, which was unexpectedly difficult, was to lay the neural net out in FreePDK 45nm using Synopsis Design Compiler and IC Compiler.",
+      "Eugene and I not only successfully implemented and tested the network on the FPGA, but we also laid it out in 45nm FreePDK with support for SRAM via an off-chip handshake protocol. We did not test the laid out version, but were able to successfully prove functionality on the FPGA.",
+      "As a result, Eugene and I won the VLSI capstone competition out of 11 teams, which were a mix of graduate and undergraduate students. Further work with this project would involve testing the laid out version and integrating the FPGA project into a larger RF system."
     ],
     "image": {
-      "caption": "CNN Block Diagram"
+      "caption": "Neural Net Block Diagram"
     }
   },
   "approach": {
     "title": "System Design",
     "content": [
-      "While Eugene developed the central blocks, of which he had a much deeper understanding, I developed the handshake system we used for inter-layer communication in addition to the convolutional and fully-connected layers."
+      "While Eugene developed the central blocks, of which he had a much deeper understanding, I developed the handshake system we used for inter-layer communication in addition to the convolutional and fully-connected layers.",
+      "Eugene built the Global Average Pooling and Batch Normalization layers, in addition to training the neural network and generating memory files.",
+      "I built the fully-connected layers and convolutional layers. One of the main difficulties was that the convolutional layers especially were small, but required a lot of resources. Eugene and I solved it by mapping the convolutional layers to DSP slices on the board. This effectively led to the layer being pipelined, and it took less area as well. However, the logic is much more complicated and the code was very difficult to write.",
+      "At right is the final placed design showing logic utilization on the RFSoC. It is clear that the utilization is high, but it still fits on the board."
     ],
     "image": {
       "caption": "Placed design in Xilinx Vivado"
@@ -21,7 +26,10 @@
   "apr": {
     "title": "Implementation",
     "content": [
-      "We had to proceed on two fronts. The first was to keep working in Vivado to try and implement the network on the FPGA like we had originally intended. Failing that, we also had to develop the necessary SAPR scripts to lay the chip out in 45nm CMOS."
+      "We had to proceed on two fronts. The first was to keep working in Vivado to try and implement the network on the FPGA like we had originally intended. Failing that, we also had to develop the necessary SAPR scripts to lay the chip out in 45nm CMOS.",
+      "The reason for the dual plans is that before we knew about DSP slices, everything was synthesizing to lookup tables. In addition to being slower, the FPGA did not have the necessary resources to fit the design. Even after we changed to DSPs, I had to rewrite the convolutional layer to use fewer DSPs by pipelining and more effectively using the resources we had. However, even then, we wrote the SAPR scripts and edited the verilog to be compatible with Synopsis tools in case the design wasn't compatible with the board.",
+      "We also used Vivado memory macros to load the network weights onto the board. Eugene generated the weights in Matlab, and I wrote a Python script to convert the weight files to Vivado .mif files. The size of the design and the difficulty of the memory files made it impossible in the time we had to run simulations in Synopsis VCS. Instead, we ran simulations in Vivado to prove our final design.",
+      "I especially enjoyed using Vivado to close timing and clocking constraints instead of doing so in Synopsis. We did so in both Synopsis and Vivado, but it was more cohesive in Vivado."
     ],
     "image": {
       "caption": "Final ICC layout"
@@ -30,7 +38,9 @@
   "results": {
     "title": "Results",
     "content": [
-      "One of the most difficult parts of this project was in managing the immense scale. SAPR took a week, and by the time that it had finished, we did not have time to run it again."  
+      "One of the most difficult parts of this project was in managing the immense scale. SAPR took a week, and by the time that it had finished, we did not have time to run it again. It would have been better to run SAPR on smaller segments, such as individual layers, and then place them manually in the toplevel design. However, I did not have enough time or experience enough to do so.",
+      "Since each layer needed an individual SRAM, I used an SRAM generator instead of the Vivado memory macros and placed blockages in the IC Compiler floorplan so that the SRAMs would fit and not cause problems. The final APR was mostly DRC clean, except for some problems with the SRAM. At that point, we were successful with the FPGA implementation and therefore stopped refining the APR layout.",
+      "We tested our design on the FPGA by using the internal logic analyzer (ILA) native to Vivado. At right is the final output waveform from the design. We synthesized a module that tested the design using known inputs and outputs. We had previously simulated the expected results in Vivado using assertion testing, so we already knew what outputs we were expecting. All we then had to do was capture the outputs in the ILA and compare them to the Matlab simulation. All testcases were successful, marking a successful resolution of the project."
     ],
     "image": {
       "caption": "Data from Vivado ILA"

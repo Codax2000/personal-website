@@ -96,7 +96,7 @@
     },
     {
       "name": "FAST Neural Net",
-      "url": "./zynet",
+      "url": "./cnn",
       "short": "A neural network for full-duplex SI cancellation on a Xilinx RFSoC"
     },
     {
@@ -106,7 +106,7 @@
     },
     {
       "name": "CNC Chess Set",
-      "url": "./cnc",
+      "url": "./chess",
       "short": "Cutting an aluminum chess set using a CNC lathe and 5-axis mill"
     },
     {

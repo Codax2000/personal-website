@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.bf6eaf72.css",
-    "main.js": "/personal-website/static/js/main.73d97281.js",
+    "main.js": "/personal-website/static/js/main.0b1fb92b.js",
     "static/media/wood_knight.jpg": "/personal-website/static/media/wood_knight.0620fd683da7cbcc0458.jpg",
     "static/media/wiring.jpg": "/personal-website/static/media/wiring.29d077eb7ac73d3d088c.jpg",
     "static/media/chess.jpg": "/personal-website/static/media/chess.78875f378ad3209da7f2.jpg",
@@ -47,7 +47,7 @@
     "static/media/linkedin.png": "/personal-website/static/media/linkedin.5a4ebea4060fe01c7387.png",
     "static/media/wheel-front.JPG": "/personal-website/static/media/wheel-front.91064c5c46637e471651.JPG",
     "static/media/control_panel_in_place_tilt.JPG": "/personal-website/static/media/control_panel_in_place_tilt.9deb36354a634b9884e1.JPG",
-    "static/media/bed.jpg": "/personal-website/static/media/bed.1088cb96fa7e44114521.jpg",
+    "static/media/bedframe.jpg": "/personal-website/static/media/bedframe.1088cb96fa7e44114521.jpg",
     "static/media/seismograph.jpg": "/personal-website/static/media/seismograph.0716629193a1bab8a632.jpg",
     "static/media/bandgap.jpg": "/personal-website/static/media/bandgap.727c51ebc63b214d5e13.jpg",
     "static/media/light_in_place.JPG": "/personal-website/static/media/light_in_place.b343d173270bf98adc1e.JPG",
@@ -56,10 +56,10 @@
     "static/media/dsm2_block.jpg": "/personal-website/static/media/dsm2_block.9cc54390751faeae193e.jpg",
     "index.html": "/personal-website/index.html",
     "main.bf6eaf72.css.map": "/personal-website/static/css/main.bf6eaf72.css.map",
-    "main.73d97281.js.map": "/personal-website/static/js/main.73d97281.js.map"
+    "main.0b1fb92b.js.map": "/personal-website/static/js/main.0b1fb92b.js.map"
   },
   "entrypoints": [
     "static/css/main.bf6eaf72.css",
-    "static/js/main.73d97281.js"
+    "static/js/main.0b1fb92b.js"
   ]
 }

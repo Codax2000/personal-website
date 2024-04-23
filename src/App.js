@@ -14,8 +14,15 @@ import HomePage from "./components/main/HomePage";
 import AvionicsReport from "./components/avionics/AvionicsReport";
 import CadathonReport from "./components/cadathon/CadathonReport";
 import Cadathon2Report from "./components/cadathon2/Cadathon2Report";
-import GunResearchReport from "./components/guns/GunResearchReport";
 import EarthquakeWatch from "./components/earthquakes/components/EarthquakeWatch";
+import BandgapReference from "./components/bandgap_reference/BandgapReferenceReport";
+import RubberBandCannon from "./components/rubberband_cannon/RubberBandCannon";
+import WirelineTransceiverReport from "./components/transceiver/WirelineTransceiverReport";
+import NeuralNetworkReport from "./components/vlsi_capstone/NeuralNetworkReport";
+import ChessSetReport from "./components/chess_set/ChessSetReport";
+import SwitchCapAmplifier from "./components/switch_cap_amp/SwitchCapAmplifier";
+import Microprocessor from "./components/microprocessor/Microprocessor";
+import ADCSims from "./components/adc_sims/ADCSims";
 
 function App() {
   return (
@@ -26,8 +33,15 @@ function App() {
         <Route path="/controls" exact component={AvionicsReport} />
         <Route path="/earthquakewatch" exact component={EarthquakeWatch} />
         <Route path="/cadd" exact component={CadathonReport} />
-        <Route path="/guns" exact component={GunResearchReport} />
         <Route path="/bed" exact component={Cadathon2Report} />
+        <Route path="/bandgap" exact component={BandgapReference} />
+        <Route path="/cannon" exact component={RubberBandCannon} />
+        <Route path="/transceiver" exact component={WirelineTransceiverReport} />
+        <Route path="/cnn" exact component={NeuralNetworkReport} />
+        <Route path="/chess" exact component={ChessSetReport} />
+        <Route path="/sc_amp" exact component={SwitchCapAmplifier} />
+        <Route path="/processor" exact component={Microprocessor} />
+        <Route path="/adc_sims" exact component={ADCSims} />
       </Switch>
       <Footer />
     </div>

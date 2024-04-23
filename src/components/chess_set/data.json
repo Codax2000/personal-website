@@ -1,0 +1,23 @@
+{
+  "abstract": {
+    "title": "Abstract",
+    "content": [
+      "In my senior year of high school, I began to learn chess, and I wanted a set to travel with. However, I didn't like any of the designs that I saw on Amazon, so I decided to make my own. I had access to an impressive machine shop and equally impressive CAD tools, so I decided to make my own set out of aluminum.",
+      "At right is one of the original renderings of the entire set. I modeled each piece in SolidWorks and exported the STL files to Rhino 3D, where I was then able to render them with Flamingo. The board is a later project and one that I could cut on standard woodworking tools. I have a model and a process planned, but the pieces will come first.",
+      "Apart from the knight and one face of the king, the pieces are finished. I turned them on a HAAS 4-tool CNC lathe. Unfortunately, I did not have the foresight to take videos at the time, and my backup models were stolen with my laptop just before college."
+    ],
+    "image": {
+      "caption": "Original chess set rendering"
+    }
+  },
+  "knight": {
+    "title": "5-Axis Knight Machining",
+    "content": [
+      "The main problem was the knight, since it is the only piece on the board that cannot be turned and still look like a traditional knight. It would be immensely difficult to cut on a 3-axis machine, but not nearly so difficult on a 5-axis machine. Luckily for me, the UW has just such a machine in one of the engineering makerspaces.",
+      "I have no margin for error with the final aluminum blanks, so I am currently prototyping the knight in wood on a Pocket NC desktop machine. At right is a 1 3/8 to 1 scale model in wood that I successfully cut. I now have to solve a problem with software updates on the machine and figure out how to cut aluminum on such a small machine." 
+    ],
+    "image": {
+      "caption": "5-axis machined chess knight"
+    }
+  }
+}

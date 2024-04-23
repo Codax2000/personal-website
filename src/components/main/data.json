@@ -1,14 +1,14 @@
 {
   "statement": [
     "I am an electical engineering Master's student and hobbyist software developer based in Seattle, WA, currently attending classes at the University of Michigan. I appreciate clean, efficient design and have worked on multiple projects in several areas, including research, aircraft controls, and full stack web development.",
-    "I specialize in analog and mixed-signal IC design with an additional background in Digital VLSI and software. I am equally experienced with Python and with Matlab, and I am also familiar with web development and data science.",
+    "I specialize in analog and mixed-signal IC design with an additional background in Digital VLSI and software and embedded systems. I am equally experienced with Python and with Matlab, and I am also familiar with web development and data science.",
     "In my spare time, I enjoy classic literature, hiking, fishing, and chess."
   ],
   "schools": [
     {
       "main": "University of Michigan",
       "details": "M.S. in Electrical Engineering (IP)",
-      "date": "September 2019 - June 2023"
+      "date": "August 2023 - December 2024"
     },
     {
       "main": "University of Washington",
@@ -80,9 +80,9 @@
       "short": "Winning entry for 3D design competition with SolidWorks"
     },
     {
-      "name": "SNC Internship",
-      "url": "./snc",
-      "short": "Cleared system integration internship on a Boeing 737"
+      "name": "Bandgap Reference",
+      "url": "./bandgap",
+      "short": "Designed a low-voltage bandgap voltage reference in 130nm CMOS"
     },
     {
       "name": "Embedded Cannon",
@@ -96,7 +96,7 @@
     },
     {
       "name": "FAST Neural Net",
-      "url": "./zynet",
+      "url": "./cnn",
       "short": "A neural network for full-duplex SI cancellation on a Xilinx RFSoC"
     },
     {
@@ -106,13 +106,13 @@
     },
     {
       "name": "CNC Chess Set",
-      "url": "./cnc",
+      "url": "./chess",
       "short": "Cutting an aluminum chess set using a CNC lathe and 5-axis mill"
     },
     {
-      "name": "IC Times Two",
-      "url": "./multiplier",
-      "short": "A 200 MHz switch-capacitor multiply-by-two amplifier in TSMC 65nm"
+      "name": "SC Amplifier",
+      "url": "./sc_amp",
+      "short": "A 10 MHz switch-capacitor sample-and-hold circuit in 130nm"
     },
     {
       "name": "RISC-II",
@@ -121,7 +121,7 @@
     },
     {
       "name": "ADCs in Matlab",
-      "url": "./adcs",
+      "url": "./adc_sims",
       "short": "Matlab simulations of modern ADCs"
     }
   ],

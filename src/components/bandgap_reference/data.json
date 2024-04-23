@@ -1,0 +1,43 @@
+{
+  "abstract": {
+    "title": "Abstract",
+    "content": [
+      "For EECS 413 at the University of Michigan, my team was tasked with designing a bandgap voltage reference. As part of the assignment, we were given a power spec of 100 uW, and we decided to implement the circuit such that it would work with a supply voltage of 1.2 V. I worked with three teammates, and my job was to design and lay out the bandgap core. Pratik Joshi designed the startup circuit, and Guanchen Tao worked with Yuhao Yuan to design the amplifier for the core.",
+      "Shown at right is the overall schematic of the low-voltage bandgap reference. The left of the schematic is a startup circuit that ensures the reference voltage settles at the correct value."
+    ],
+    "image": {
+      "caption": "Schematic of low-voltage bandgap reference"
+    }
+  },
+  "transient": {
+    "title": "Transient Simulation",
+    "content": [
+      "At right is the transient simulation showing the startup circuit in action, where the supply voltage is ramped up from 0 to 1.2 V. Notice that even though the startup circuit has a different response for different MC samples, it still settles to the same spot.",
+      "This transient simulation is also post-PEX, so it is nearly tapeout-ready. The only thing we were not able to do was add the pad ring."
+    ],
+    "image": {
+      "caption": "Transient simulation with Monte Carlo sampling"
+    }
+  },
+  "monte_carlo": {
+    "title": "Monte Carlo Results",
+    "content": [
+      "The distribution of the settled reference voltage shows a mean of 541 mV and a standard deviation of 12.9 mV. The roughly bell-shaped distribution indicates that the startup circuit is working well, and therefore the yield is relatively high, even with 500 samples.",
+      "If the startup circuit was not working, we would have seen (and did see early in development) low outliers, where the startup circuit never kicked in. Since there are no outliers, we concluded that the startup circuit is functional."
+    ],
+    "image": {
+      "caption": "Distribution of reference voltage"
+    }
+  },
+  "corners": {
+    "title": "Process Corner Results",
+    "content": [
+      "The last notable requirement was to ensure behavior over PVT variation. This meant using the FF and SS process corners, in addition to supply voltage variation of 10% and a temperature sweep from 0 to 70 degrees Celsius.",
+      "The simulation at right is the temperature sweep. The temperature variation is less than 50 ppm.",
+      "The central red line is the TT corner with a supply voltage of 1.2 V. Note that even though the variation looks dramatic, the Y axis only spans about 2 mV. Careful reading of the dropped markers shows the voltage variation over temperature."
+    ],
+    "image": {
+      "caption": "Temperature sweep with corner variation"
+    }
+  }
+}

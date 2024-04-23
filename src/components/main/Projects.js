@@ -11,7 +11,7 @@ import ProjectCard from "./ProjectCard";
 import arduino from "./img/arduino.jpg";
 import cadd from "./img/cadd.jpg";
 import seismograph from "./img/seismograph.jpg";
-import plane from "./img/plane.jpg";
+import bandgap from "./img/bandgap.jpg";
 import cannon from "./img/cannon.jpg";
 import transceiver from "./img/transceiver.jpg";
 import zynet from "./img/cnn.jpg";
@@ -20,13 +20,13 @@ import cnc from "./img/chess.jpg";
 import amplifier from "./img/amplifier.jpg";
 import data from "./data.json";
 import processor from "./img/processor.jpg";
-import adc_sims from "./img/setanddown.jpg";
+import adc_sims from "./img/noise_shaping.jpg";
 
 const nRows = 3;
 const nCols = 4;
 
 export default function Projects() {
-  let images = [arduino, seismograph, cadd, plane, cannon, transceiver,
+  let images = [arduino, seismograph, cadd, bandgap, cannon, transceiver,
                 zynet, bedframe, cnc, amplifier, processor, adc_sims];
 
   return (

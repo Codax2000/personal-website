@@ -34,7 +34,7 @@ export default function NavMenu() {
             <NavDropdown.Item href="#/cannon">Rubber Band Cannon</NavDropdown.Item>
             <NavDropdown.Item href="#/transceiver">Wireline Transceiver</NavDropdown.Item>
             <NavDropdown.Item href="#/cnn">VLSI Capstone</NavDropdown.Item>
-            <NavDropdown.Item href="#/amplifier">Switch-Cap Amplifier</NavDropdown.Item>
+            <NavDropdown.Item href="#/sc_amp">Switch-Cap Amplifier</NavDropdown.Item>
             <NavDropdown.Item href="#/processor">RISC Microprocessor</NavDropdown.Item>
             <NavDropdown.Item href="#/adc_sims">Matlab ADCs</NavDropdown.Item>
           </NavDropdown>

@@ -20,7 +20,7 @@ import cnc from "./img/chess.jpg";
 import amplifier from "./img/amplifier.jpg";
 import data from "./data.json";
 import processor from "./img/processor.jpg";
-import adc_sims from "./img/placeholder.jpg";
+import adc_sims from "./img/noise_shaping.jpg";
 
 const nRows = 3;
 const nCols = 4;

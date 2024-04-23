@@ -2,7 +2,7 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "The analog capstone was a schematic-only wireline transceiver built to AMD's 12.5 Gb/s specification in FreePDK 45nm. We used a 12\" channel model that seriously degraded the signal to the point that it would need equalization to properly transmit.",
+      "The analog capstone was a schematic-only wireline transceiver built to AMD's 12.5 Gb/s specification in GPDK 45nm. We used a 12\" channel model that seriously degraded the signal to the point that it would need equalization to properly transmit.",
       "I was on a team with 6 people, where each person had a block in this mixed-signal system. There were 6 blocks in our system:",
       "1. Serializer",
       "2. CM Driver",
@@ -13,7 +13,7 @@
       "I was in charge of overall equalization specifications, which I calculated using a Matlab model. I then helped in the design of the FIR filter by working with the CM driver."  
     ],
     "image": {
-      "caption": "Overall Cadence schematic"
+      "caption": "Overall block diagram"
     }
   },
   "approach": {

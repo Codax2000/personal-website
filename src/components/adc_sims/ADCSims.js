@@ -9,8 +9,8 @@ import { Container } from "react-bootstrap";
 import ArticleWithImage from "../templates/ArticleWithImage";
 import data from "./data.json";
 import DSM2_block from './img/dsm2_block.jpg';
-import DSM2 from './img/placeholder.jpg';
-import SAR_EF from './img/placeholder.jpg';
+import DSM2 from './img/dsm2_fft.jpg';
+import SAR_EF from './img/sar_comparison.jpg';
 
 export default function ADCSims() {
   return (

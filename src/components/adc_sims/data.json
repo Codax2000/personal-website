@@ -12,7 +12,8 @@
   "sim2": {
     "title": "2nd Order FFT Simulation",
     "content": [
-      "At right is the FFT output from the 2nd order delta-sigma modulator. It is shown with and without DAC mismatch. Notice the harmonics with DAC mismatch. With standard rotational data-weighted averaging (DWA), the harmonics are nearly eliminated. Shown at right is a comparison between ideal 2nd-order DSM, DSM with DAC mismatch, and DSM with DWA."
+      "At right is the FFT output from the 2nd order delta-sigma modulator. It is shown with and without DWA to account for DAC mismatch. Notice the harmonics with DAC mismatch. With standard rotational data-weighted averaging (DWA), the harmonics are nearly eliminated and the SNDR is greatly increased. Shown at right is a comparison of noise spectra of a 2nd-order DSM with and without DWA.",
+      "The red line down the middle of the plot marks the ADC bandwidth. Since delta-sigma modulators are oversampling converters, the ideal is to shape the quantization noise out of band. The greater the oversampling ratio (OSR), the better the SNDR. In this case, the OSR was 64."
     ],
     "image": {
       "caption": "2nd-order FFT Comparison"
@@ -21,7 +22,7 @@
   "final": {
     "title": "SAR ADC with Redundancy",
     "content": [
-      "The class final project was to use Matlab to model a set-and-down SAR ADC with redundancy. At right is the SAR output with an input sweep of Vin. There is an error in the first bit comparison of 0.0625. Notice that with redundancy, there is no DNL error regardless of the first bit comparison. "  
+      "The class final project was to use Matlab to model a set-and-down noise shaping SAR ADC with redundancy. At right is a 4-bit SAR output with an input sweep of Vin from -1 V to +1 V. There is an error in the first bit comparison of 0.0625 in the first plot. Notice that with redundancy included in the second plot, there is no DNL error regardless of the first bit comparison."  
     ],
     "image": {
       "caption": "SAR with ramp input"

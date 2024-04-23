@@ -35,15 +35,26 @@
       "caption": "Final ICC layout"
     }
   },
+  "testing": {
+    "title": "Unit Testing",
+    "content": [
+      "The reason our testing went so smoothly from Vivado to ILA was that I had been trained in basic assertion testing in my previous computer science classes. Therefore, we wrote the testcases and simply compiled them to either the internal testing module or to the simulationt testbench.",
+      "At right are two columns of hexadecimal numbers representing two different columns of outputs. The left side is a column produced by Eugene's matlab model. The right side was gathered and exported from Vivado. Finally, there is an exact comparison by formula in the final column."  
+    ],
+    "image": {
+      "caption": "Data from Vivado ILA"
+    }
+  },
   "results": {
     "title": "Results",
     "content": [
       "One of the most difficult parts of this project was in managing the immense scale. SAPR took a week, and by the time that it had finished, we did not have time to run it again. It would have been better to run SAPR on smaller segments, such as individual layers, and then place them manually in the toplevel design. However, I did not have enough time or experience enough to do so.",
       "Since each layer needed an individual SRAM, I used an SRAM generator instead of the Vivado memory macros and placed blockages in the IC Compiler floorplan so that the SRAMs would fit and not cause problems. The final APR was mostly DRC clean, except for some problems with the SRAM. At that point, we were successful with the FPGA implementation and therefore stopped refining the APR layout.",
-      "We tested our design on the FPGA by using the internal logic analyzer (ILA) native to Vivado. At right is the final output waveform from the design. We synthesized a module that tested the design using known inputs and outputs. We had previously simulated the expected results in Vivado using assertion testing, so we already knew what outputs we were expecting. All we then had to do was capture the outputs in the ILA and compare them to the Matlab simulation. All testcases were successful, marking a successful resolution of the project."
+      "We tested our design on the FPGA by using the internal logic analyzer (ILA) native to Vivado. At right is the final output waveform from the design that we captured from Vivado. We synthesized a module that tested the design using known inputs and outputs. We had previously simulated the expected results in Vivado using assertion testing, so we already knew what outputs we were expecting. All we then had to do was capture the outputs in the ILA and compare them to the Matlab simulation. All testcases were successful, marking a successful resolution of the project.",
+      "You can find the code on my GitHub page, under the 'fir-cnn-rtl' repository."
     ],
     "image": {
-      "caption": "Data from Vivado ILA"
+      "caption": "Vivado ILA screenshot"
     }
   }
 }

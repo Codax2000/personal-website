@@ -8,10 +8,11 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import ArticleWithImage from "../templates/ArticleWithImage";
 import data from "./data.json";
-import block_diagram from './img/placeholder.jpg';
-import vivado_placed from './img/placeholder.jpg';
-import ila_sims from './img/placeholder.jpg';
-import icc_apr from './img/placeholder.jpg';
+import block_diagram from './img/block_diagram.jpg';
+import vivado_placed from './img/layout_vivado.png';
+import ila_sims from './img/ILA_output.jpg';
+import testcases from './img/testcases_table.png';
+import icc_apr from './img/layout_with_sram.png';
 
 export default function NeuralNetworkReport() {
   return (
@@ -35,6 +36,12 @@ export default function NeuralNetworkReport() {
           content={data["apr"]["content"]}
           graph={icc_apr}
           caption={data["apr"]["image"]["caption"]}
+        />
+        <ArticleWithImage
+          title={data["testing"]["title"]}
+          content={data["testing"]["content"]}
+          graph={testcases}
+          caption={data["testing"]["image"]["caption"]}
         />
         <ArticleWithImage
           title={data["results"]["title"]}

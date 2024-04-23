@@ -8,9 +8,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import ArticleWithImage from "../templates/ArticleWithImage";
 import data from "./data.json";
-import schematic from './img/placeholder.jpg';
-import eye_diagram from './img/placeholder.jpg';
-import matlab_plot from './img/placeholder.jpg';
+import schematic from './img/block_diagram.jpg';
+import eye_diagram from './img/eye_diagram.png';
+import matlab_plot from './img/eye_heights.png';
 
 export default function WirelineTransceiverReport() {
   return (

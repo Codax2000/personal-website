@@ -1,13 +1,13 @@
 {
   "statement": [
-    "I am an electical engineering Master's student and hobbyist software developer based in Seattle, WA, currently attending classes at the University of Michigan. I appreciate clean, efficient design and have worked on multiple projects in several areas, including research, aircraft controls, and full stack web development.",
-    "I specialize in analog and mixed-signal IC design with an additional background in Digital VLSI and software and embedded systems. I am equally experienced with Python and with Matlab, and I am also familiar with web development and data science.",
+    "I am an electical engineer and amateur software developer based in Seattle, WA, currently working at Texas Instruments in Federal Way. I appreciate clean, efficient design and have worked on multiple projects in several areas, including integrated circuit research, aircraft controls, and full stack web development.",
+    "I specialize in analog and mixed-signal IC design with an additional background in Digital VLSI, software, and embedded systems. I am equally experienced with Python and with Matlab, and I am also familiar with web development and data science.",
     "In my spare time, I enjoy classic literature, hiking, fishing, and chess."
   ],
   "schools": [
     {
       "main": "University of Michigan",
-      "details": "M.S. in Electrical Engineering (IP)",
+      "details": "M.S. in Electrical Engineering",
       "date": "August 2023 - December 2024"
     },
     {
@@ -24,8 +24,18 @@
   "jobs": [
     {
       "main": "Texas Instruments",
+      "details": "Digital IC Design Engineer",
+      "date": "March 2025 - Current"
+    },
+    {
+      "main": "University of Michigan",
+      "details": "Digital VLSI Teaching Assistant",
+      "date": "August 2024 - December 2024"
+    },
+    {
+      "main": "Texas Instruments",
       "details": "Analog IC Design Intern",
-      "date": "May 2024 - August 2024 (Upcoming)"
+      "date": "May 2024 - August 2024"
     },
     {
       "main": "MICL at University of Michigan",

@@ -7,7 +7,7 @@ research, and software development. This is also hosted on GitHub pages, under
 
 ## About
 
-This is the frontend only, built with React, D3, and Bootstrap. It is my playground
+This is the frontend only, built with React, Vite, D3, and Bootstrap. It is my playground
 for pushing myself to build and learn new ideas and web design concepts. It was
 initially deployed to Microsoft Azure and backed by a Spring Boot API, but that
 became difficult to manage and extremely slow, and Github Pages was a good alternative.

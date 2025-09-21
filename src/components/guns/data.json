@@ -16,8 +16,8 @@
       "The results of the previous section beg the question of where the worst counties are. The skewed distribution above makes a centroid map well-suited to this task."
     ],
     "after":[
-      "From this graph, it is again evident that there are relatively few counties which account for almost all the crime in the US. The biggest ones include Chicago, LA, Detroit, Seattle, and several areas of the east coast. The scale on the right shows that a small circle on the map still corresponds to 2000 incidents, which is a huge amount, based on the distribution above.",
-      "Therefore, any county with a visible circle on this map has an unusually high amount of gun violence."
+      "From this graph, it is again evident that there are relatively few counties which account for almost all the crime in the US, which makes statistical analysis very difficult. The biggest ones include Chicago, LA, Detroit, Seattle, and several areas of the east coast. The scale on the right shows that a small circle on the map still corresponds to 2000 incidents, which is a huge amount, based on the distribution above.",
+      "Therefore, any county with a circle larger than a dot on this map has an unusually high amount of gun violence."
     ]
   },
   "about": {

@@ -31,7 +31,7 @@ footer {
       rgba(146, 146, 146, 0.4),
       rgba(146, 146, 146, 0.4)
     ),
-    url("./img/seattle-skyline-cc.jpg");
+    url("./assets/seattle-skyline-cc.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

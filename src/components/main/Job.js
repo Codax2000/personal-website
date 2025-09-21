@@ -4,7 +4,6 @@
  *
  * Formatting for a Job, can then be mapped to
  */
-import React from "react";
 
 export default function Job(props) {
   return (

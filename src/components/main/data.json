@@ -140,24 +140,22 @@
       "title": "Languages",
       "skills": [
         "SystemVerilog",
-        "Matlab",
         "Python",
+        "Matlab",
         "HTML & CSS",
         "JavaScript",
-        "Python",
         "Java"
       ]
     },
     {
       "title": "Libraries",
       "skills": [
-        "Scikit-Learn",
+        "UVM",
+        "PyTorch",
         "Matplotlib",
         "Numpy",
         "Pandas",
-        "React.js",
-        "Pandas",
-        "Flask"
+        "React.js"
       ]
     },
     {
@@ -166,7 +164,7 @@
         "Cadence Virtuoso",
         "Cadence Innovus",
         "Synopsis Design Compiler",
-        "Matlab Communications Toolbox",
+        "Cadence Xcelium",
         "Autodesk Fusion 360",
         "SolidWorks"
       ]
@@ -179,8 +177,7 @@
         "Data Visualization",
         "Iterative Design",
         "Data Analysis",
-        "Prototyping",
-        "Teamwork"
+        "Rapid Prototyping"
       ]
     }
   ],

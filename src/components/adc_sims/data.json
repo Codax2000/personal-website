@@ -1,6 +1,6 @@
 {
   "abstract": {
-    "title": "Overall Design",
+    "title": "Delta-Sigma Modulation",
     "content": [
       "Using an ideal model of a flash quantizer, I modeled a 2nd order delta-sigma modulator. The block diagram is at right. Since the digital filters are complicated and often not implemented on chip in research, they are also not added in my simulation. Instead of the final output, I ran the FFT on the quantizer output.",
       "The input, u[n], is a continuous analog signal, and the output, v[n], is the quantized digital output with shaped output noise."
@@ -19,13 +19,23 @@
       "caption": "2nd-order FFT Comparison"
     }
   },
-  "final": {
+  "redundancy": {
     "title": "SAR ADC with Redundancy",
     "content": [
       "The class final project was to use Matlab to model a set-and-down noise shaping SAR ADC with redundancy. At right is a 4-bit SAR output with an input sweep of Vin from -1 V to +1 V. There is an error in the first bit comparison of 0.0625 in the first plot. Notice that with redundancy included in the second plot, there is no DNL error regardless of the first bit comparison."  
     ],
     "image": {
       "caption": "SAR with ramp input"
+    }
+  },
+  "research": {
+    "title": "2nd-Order IADC Research",
+    "content": [
+      "I did research into the effectiveness of different DEM schemes in an experimental IADC.",
+      "This work was published in June of 2025."
+    ],
+    "image": {
+      "caption": "Final DEM Scheme Comparison"
     }
   }
 }

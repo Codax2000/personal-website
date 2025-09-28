@@ -75,9 +75,69 @@
   ],
   "projects": [
     {
+      "name": "NS-SAR PCB",
+      "url": "./sar_pcb",
+      "short": "A noise-shaping SAR ADC implemented on a PCB with an FPGA backend"
+    },
+    {
+      "name": "LSTM Acceleration",
+      "url": "./lstm",
+      "short": "LSTM neural net implementation on a Xilinx MPSoC"
+    },
+    {
+      "name": "Constellations",
+      "url": "./constellations_nn",
+      "short": "PyTorch prediction of the constellation of digital signals"
+    },
+    {
+      "name": "ADCs in Matlab",
+      "url": "./adc_sims",
+      "short": "Matlab simulations of modern ADCs"
+    },
+    {
+      "name": "RISC-II",
+      "url": "./processor",
+      "short": "A 200 MHz, 2-stage, tapeout-ready microprocessor"
+    },
+    {
+      "name": "FAST Neural Net",
+      "url": "./cnn",
+      "short": "A neural network for full-duplex SI cancellation on a Xilinx RFSoC"
+    },
+    {
+      "name": "Wireline Transceiver",
+      "url": "./transceiver",
+      "short": "12.5 Gbps wireline transceiver in FreePDK 45nm"
+    },
+    {
+      "name": "SC Amplifier",
+      "url": "./sc_amp",
+      "short": "A 10 MHz switch-capacitor sample-and-hold circuit in 130nm"
+    },
+    {
+      "name": "Bandgap Reference",
+      "url": "./bandgap",
+      "short": "Designed a low-voltage bandgap voltage reference in 130nm CMOS"
+    },
+    {
       "name": "Controls",
       "url": "./controls",
       "short": "Aircraft controls for competition RC aircraft using Arduino"
+    },
+    {
+      "name": "Embedded Cannon",
+      "url": "./cannon",
+      "short": "Embedded programming meets 3D printing for some Arduino fun"
+    },
+    {
+      "name": "Gun Violence Research",
+      "url": "./guns",
+      "short": "Data programming to try and find the sources of gun violence"
+    },
+    {
+      "name": "CNC Chess Set",
+      "url": "./chess",
+      "short": "Cutting an aluminum chess set using a CNC lathe and 5-axis mill"
     },
     {
       "name": "EarthquakeWatch",
@@ -90,49 +150,9 @@
       "short": "Winning entry for 3D design competition with SolidWorks"
     },
     {
-      "name": "Bandgap Reference",
-      "url": "./bandgap",
-      "short": "Designed a low-voltage bandgap voltage reference in 130nm CMOS"
-    },
-    {
-      "name": "Embedded Cannon",
-      "url": "./cannon",
-      "short": "Embedded programming meets 3D printing for some Arduino fun"
-    },
-    {
-      "name": "Wireline Transceiver",
-      "url": "./transceiver",
-      "short": "12.5 Gbps wireline transceiver in FreePDK 45nm"
-    },
-    {
-      "name": "FAST Neural Net",
-      "url": "./cnn",
-      "short": "A neural network for full-duplex SI cancellation on a Xilinx RFSoC"
-    },
-    {
       "name": "CADathon Reloaded",
       "url": "./bed",
       "short": "3rd place 3D modeling entry using SolidWorks, now with animation"
-    },
-    {
-      "name": "CNC Chess Set",
-      "url": "./chess",
-      "short": "Cutting an aluminum chess set using a CNC lathe and 5-axis mill"
-    },
-    {
-      "name": "SC Amplifier",
-      "url": "./sc_amp",
-      "short": "A 10 MHz switch-capacitor sample-and-hold circuit in 130nm"
-    },
-    {
-      "name": "RISC-II",
-      "url": "./processor",
-      "short": "A 200 MHz, 2-stage, tapeout-ready microprocessor"
-    },
-    {
-      "name": "ADCs in Matlab",
-      "url": "./adc_sims",
-      "short": "Matlab simulations of modern ADCs"
     }
   ],
   "skills": [

@@ -2,12 +2,46 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "At the University of Washington, the pre-capstone class for embedded systems, ECE 474, focused on embedded C programming. The final project focused on using FreeRTOS. I worked with a partner, Robert Crist (https://www.linkedin.com/in/robert-crist) on a project in which we used FreeRTOS to build a rubber band gun inspired by Star Wars. I unfortunately can't yet publish the repository we used, since it contained both our work for the homework assignments and for the final project.",
-      "We designed the rubber band gun to be controllable in the lateral direction by joystick, and the sensor on the front detects the distance to the nearest target and set the pitch. We were able to hit targets accurately between 2 and almost 8 feet, at which point air resistance would cause simple kinematics equations we used to break down.",
-      "I used a 3D printer to print the body and the legs of the device, and the rectangular slots are precisely sized to hold standard servo motors. The microcontroller used was an Atmel 328 on board an Arduino Mega. We didn't have time or energy to clean up the housing, but it would have been fun to refine this project and make a dedicated PCB for it."
+      "The goal of this project was to gain familiarity with PyTorch machine learning library. I wanted to see how I could apply machine learning to the classes I was taking at the time, which surrounded communications and signal processing. It occurred to me that it would be interesting to try and predict the constellation from which a particular data vector was drawn.",
+      "There are multiple issues with this problem. The first and most important is that, unlike most image classification problems, each point in the vector is not tied to any particular constellation point. Instead, each point in the vector is associated with a point in time, which is potentially difficult to translate to any kind of prediction.",
+      "An analytical solution is possible; For each IQ point in the received vector, calculate the minimum Euclidean distance for each constellation, and classify the point according to the minimum Euclidean distance. Then, once all the points are classified, assume that the constellation with the lowest mean Euclidean distance to the given vector is the constellation from which the data were drawn. However, this poses problems. The most significant is that it assumes knowledge of the constellation from which the data may have been drawn, whereas a neural network simply learns the most likely constellation to produce the correct result.",
+      "However, a convolutional neural network was proven to be fully capable at differentiating between three different common constellations.",
+      "The next step in this network would be to add channel fading to the generated dataset, which would make the convolutional layers potentially much more difficult to compute.",
+      "The code for this project can be found on my GitHub page, under the EECS 453 final project repository."
     ],
     "image": {
-      "caption": "3D printed base assembly before electronics installation"
+      "caption": "Comparison of received (noisy) data with constellations that are correct (above) and incorrect (below). Notice that d_E, the mean Euclidean distance to the constellation, is much smaller for the correct constellation."
+    }
+  },
+  "methodology": {
+    "title": "Methodology",
+    "content": [
+      "There were two halves to this problem: data generation and model training.",
+      "Data generation was relatively straightforward. I wrote a Python script to generate several different simple constellations. Then, I drew sample vectors of length 512 from each constellation and corrupted them with a range of different SNR values using NumPy. Then, I saved them to an appropriate filetype for feeding into the PyTorch model.",
+      "Model training was more difficult. I reasoned that the goal would be similar to the analytical solution, so the first layer in the neural network should be a convolutional layer that would, ideally, mimic the effect of taking the Euclidean distance to every possible constellation point. Then, based on which convolutions were post present in the data, a fully-connected network would predict the most likely constellation source."
+    ],
+    "image": {
+      "caption": "Three of the simulated ideal constellations superimposed on top of each other."
+    }
+  },
+  "results": {
+    "title": "Results",
+    "content": [
+      "The model was a success, and was able to predict the correct constellation 100% of the time, if the SNR was greater than about -1 dB. It does seem reasonable that, as the minimum SNR goes down, the data become less and less recognizable.",
+      "Another aspect was that the amount of computation does not scale as much as the analytical solution; The analytical solution is an O(M*N) solution, as it calculates the minimum Euclidean distance to each constellation point, for each piece of data in the vector. Therefore, it would grow linearly with both the number of constellations and the size of the data. Instead, the neural network approach is O(N), where N is the size of the data vector, and since it has a fixed number of convolutions, does not scale with the number of constellations, except potentially to drop in test accuracy."
+    ],
+    "image": {
+      "caption": "Test error vs. dataset SNR. Above -1 dB, the model is very good at predicting the vector constellation."
+    }
+  },
+  "next" : {
+    "title" : "Further Work",
+    "content": [
+      "It would be interesting to add channel fading to the model's dataset. Channel fading can be modeled as a multiplication by a complex number, so in theory should map to a convolution. I would expect that another convolutional layer prepended to this model would be able to still match the prediction. The idea would be that the first convolutional layer would predict the channel fading, and that the second layer would predict the most likely constellation points, as it does now.",
+      "However, with the limited knowledge and time I had, I was not able to get this twist working. It would be interesting to also apply this to a real-world application, and then to see whether it has surveillance or emergency response applications."
+    ],
+    "image": {
+      "caption": "A data vector that has been through a lossy communications channel, such that it is both faded and rotated."
     }
   }
 }

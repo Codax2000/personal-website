@@ -2,12 +2,46 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "At the University of Washington, the pre-capstone class for embedded systems, ECE 474, focused on embedded C programming. The final project focused on using FreeRTOS. I worked with a partner, Robert Crist (https://www.linkedin.com/in/robert-crist) on a project in which we used FreeRTOS to build a rubber band gun inspired by Star Wars. I unfortunately can't yet publish the repository we used, since it contained both our work for the homework assignments and for the final project.",
-      "We designed the rubber band gun to be controllable in the lateral direction by joystick, and the sensor on the front detects the distance to the nearest target and set the pitch. We were able to hit targets accurately between 2 and almost 8 feet, at which point air resistance would cause simple kinematics equations we used to break down.",
-      "I used a 3D printer to print the body and the legs of the device, and the rectangular slots are precisely sized to hold standard servo motors. The microcontroller used was an Atmel 328 on board an Arduino Mega. We didn't have time or energy to clean up the housing, but it would have been fun to refine this project and make a dedicated PCB for it."
+      "The goal of this project was to reproduce the results of an IEEE paper from 2023, titled \"A Unified Parallel CORDIC-Based Hardware Architecture for LSTM Network Acceleration\". The paper in question was published from Rice, and focused on CORDIC-based acceleration of neural network multiply-and-accumulate (MAC) and activation function blocks. The circuit in the original paper was implemented on a Xylinx FPGA, and my team intended to reproduce the implementation.",
+      "The architecture of the LSTM cell (at right), stipulates that the entire matrix multiply block should be done at once, resulting in a single outer-product systolic 4 X M X N matrix multiplication array.",
+      "Additionally, there is a serial activation function block comprised of a CORDIC-based sigmoid and tanh functions.",
+      "My team implemented the given design as closely as we could, given the roughly 6 weeks we had from start to finish. We designed every block with an AXI-based handshake that made control logic somewhat complex but made top-level integration very simple. At the end, we were able to reproduce most of the original work's results, and were ready to deploy to an FPGA board, had we had one available.",
+      "The code for this project is available on my GitHub page, under the rnn-eecs598-final repository."
     ],
     "image": {
-      "caption": "3D printed base assembly before electronics installation"
+      "caption": "Architecture of original work's LSTM cell."
+    }
+  },
+  "methodology_1": {
+    "title": "CORDIC Multiply-and-Accumulate (MAC)",
+    "content": [
+      "We designed our MAC cells based on the binary-to-bipolar recoding (BBR) method cited in the original paper. It was mostly successful, with the heatmap of the outputs shown at right. The bright lines indicated computations of larger error, and we did not have time to try and change the algorithm to produce lower error, such as by radix re-partitioning or some similar optimization.",
+      "We started with a fixed-point Python model of the MAC cell, which allowed us to first tune the algorithm that we were using and then to generate testbench data for the HDL block. Then, the block was implemented in SystemVerilog and tested against the Python data."
+    ],
+    "image": {
+      "caption": "Heatmap of the implemented CORDIC MAC."
+    }
+  },
+  "methodology_2": {
+    "title": "CORDIC Activation Function",
+    "content": [
+      "The activation function block was more difficult. It featured 3 different functions that were all computed via CORDIC: sinh, cosh, and linear divide. Sigmoid could then be easily transformed to tanh by the equation tanh(x) = 1 - 2sigmoid(-2x). Once sigmoid and tanh functions were both implemented, they could be combined and pipelined into the LSTM activation cell.",
+      "Once again, we started in Python. It was a much more complex cell than the MAC function, and there were a lot more moving parts, so we started with the sinh and cosh functions. Once both functions were working in floating-point as a reference, we ran them in Python using fixed-point math. Finally, we coded the activation function in Python with the CORDIC algorithm to generate test data and to make sure that nothing was lost in translation. Only once the Python data was what we wanted did we finally write it in SystemVerilog and run an HDL sim.",
+      "The HDL results are shown at right, plotted using matplotlib. It is shown that the quantization error is very small between the HDL and the ideal implementations, except for the boundaries, where the actual value of the activation function is less important and quantization error is hard to avoid."
+    ],
+    "image": {
+      "caption": "Floating-point vs. HDL activation functions, with quantization error shown above each plot."
+    }
+  },
+  "results": {
+    "title": "Accelerator Results",
+    "content": [
+      "We then trained a recursive neural network on the same dataset as the original work, the Grand St. Bernard dataset, which aims to predict temperature at one point, given the previous temperature data and the current temperature at several other points in a nearby area.",
+      "The model was trained in floating-point and then quantized, and the results are shown at right. Our accelerator was off from the floating point prediction by relatively little, and the normalized output temperature was similar to the original work's error. However, without specific knowledge of the original training methodology, we were not able to reduce the error. However, we were still very happy with the results, as we were able to confirm the results of the original paper.",
+      "We were also able to close timing for synthesis and implementation on a Xilinx FPGA, though we were not able to actually run it for want of an appropriate board. Our final maximum clock speed was roughly 150 MHz."
+    ],
+    "image": {
+      "caption": "Floating-point and HDL network predictions, plotted over time."
     }
   }
 }

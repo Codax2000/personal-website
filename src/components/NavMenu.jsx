@@ -25,7 +25,7 @@ export default function NavMenu() {
           >
             <img src={linkedin} height={height} alt="My LinkedIn Profile" />
           </Nav.Link>
-          <Nav.Link href="/personal-website">Home</Nav.Link>
+          <Nav.Link href="/personal-website/">Home</Nav.Link>
           <Nav.Link href="mailto:aknowlt@umich.edu">Contact Me</Nav.Link>
           <NavDropdown title="Featured Projects" id="basic-nav-dropdown">
             <NavDropdown.Item href="#/adc_sims">Matlab ADCs</NavDropdown.Item>

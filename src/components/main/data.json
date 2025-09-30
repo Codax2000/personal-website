@@ -125,9 +125,9 @@
       "short": "Aircraft controls for competition RC aircraft using Arduino"
     },
     {
-      "name": "Embedded Cannon",
+      "name": "Embedded Rubber",
       "url": "./cannon",
-      "short": "Embedded programming meets 3D printing for some Arduino fun"
+      "short": "A rubber band launcher for an embedded systems pre-capstone class"
     },
     {
       "name": "Gun Violence Research",

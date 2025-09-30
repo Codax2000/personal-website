@@ -17,6 +17,7 @@ import GunResearchReport from "./components/guns/GunResearchReport.jsx";
 import EarthquakeWatch from "./components/earthquakes/components/EarthquakeWatch.jsx";
 import ConstellationsNeuralNet from "./components/constellations_neural_net/ConstellationsNeuralNet.jsx";
 import LSTMAccelerator from "./components/lstm_accelerator/LSTMAccelerator.jsx";
+import NSSAR_PCB from "./components/ns_sar_pcb/NSSAR_PCB.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="/earthquakewatch" element={<EarthquakeWatch />} />
         <Route path="/constellations_nn" element={<ConstellationsNeuralNet />} />
         <Route path="/lstm" element={<LSTMAccelerator />} />
+        <Route path="/sar_pcb" element={<NSSAR_PCB />} />
       </Routes>
       <Footer />
     </div>

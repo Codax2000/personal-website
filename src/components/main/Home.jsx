@@ -14,7 +14,7 @@ export default function Home() {
           Hi, I'm Alex
         </h2>
         <p>
-          I'm an Electrical Engineer doing IC Design and Verification.
+          I'm an Electrical Engineer specializing in IC Design and Verification.
         </p>
       </Container>
     </div>

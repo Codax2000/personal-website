@@ -28,14 +28,14 @@ export default function NavMenu() {
           <Nav.Link href="/personal-website/">Home</Nav.Link>
           <Nav.Link href="mailto:aknowlt@umich.edu">Contact Me</Nav.Link>
           <NavDropdown title="Featured Projects" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#/lstm">LSTM Acceleration</NavDropdown.Item>
+            <NavDropdown.Item href="#/constellations_nn">Constellations Neural Network</NavDropdown.Item>
             <NavDropdown.Item href="#/adc_sims">Matlab ADCs</NavDropdown.Item>
             <NavDropdown.Item href="#/sc_amp">Switch-Cap Amplifier</NavDropdown.Item>
             <NavDropdown.Item href="#/processor">RISC Microprocessor</NavDropdown.Item>
             <NavDropdown.Item href="#/cnn">VLSI Capstone</NavDropdown.Item>
             <NavDropdown.Item href="#/transceiver">Wireline Transceiver</NavDropdown.Item>
             <NavDropdown.Item href="#/bandgap">Bandgap Reference</NavDropdown.Item>
-            <NavDropdown.Item href="#/earthquakewatch">EarthquakeWatch</NavDropdown.Item>
-            <NavDropdown.Item href="#/cannon">Rubber Band Cannon</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

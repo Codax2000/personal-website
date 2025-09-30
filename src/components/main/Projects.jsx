@@ -21,13 +21,17 @@ import amplifier from "./img/amplifier.jpg";
 import data from "./data.json";
 import processor from "./img/processor.jpg";
 import adc_sims from "./img/noise_shaping.jpg";
+import revolvers from "./img/gun.jpg"
+import lstm from "./img/lstm_plot.jpg"
+import constellation from "./img/constellation.jpg"
+import ns_sar from "./img/ns_sar_adc.jpg"
 
-const nRows = 3;
+const nRows = 4;
 const nCols = 4;
 
 export default function Projects() {
-  let images = [arduino, seismograph, cadd, bandgap, cannon, transceiver,
-                zynet, bedframe, cnc, amplifier, processor, adc_sims];
+  let images = [ns_sar, lstm, constellation, adc_sims, processor, zynet, transceiver, amplifier, bandgap, arduino, cannon,
+                revolvers, cnc, seismograph, cadd, bedframe];
 
   return (
     <Container fluid id="projects" className="front-article">

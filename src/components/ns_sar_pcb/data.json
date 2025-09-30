@@ -1,0 +1,23 @@
+{
+  "abstract": {
+    "title": "Abstract",
+    "content": [
+      "The goal of this project will be to physically build the circuit that I had simulated for my graduate research. The research in question surrounded an incremental noise-shaping SAR ADC with a low OSR. My intention with this project is to reproduce the spirit of the paper with discrete components, instead of taping out a chip.",
+      "The analog frontend will be built of discrete components, and will involve a bootstrapped sample-and-hold circuit, a Silva-Steensgard delta-sigma modulator, and a SAR ADC using a discrete comparator. I plan to use LTSpice to simulate the analog frontend before assembling it on a custom PCB.",
+      "The digital backend, with clocking logic, SAR logic, SPI, and control registers, will all be implemented on an FPGA. I am doing initial digital simulations in Xilinx Vivado before choosing an appropritate FPGA."
+    ],
+    "image": {
+      "caption": "High-level block diagram"
+    }
+  },
+  "introduction": {
+    "title": "Python Simulation",
+    "content": [
+      "To determine the realistic specs for this design, I started with Python simulations. I have a Python model in which I can specify DAC mismatch, the number of quantizer bits, and other similar key specs. I then plan to implement the digital backend first, with an ideal SystemVerilog real number model of the analog frontend. The real number model will match the Python simulation.",
+      "I plan to verify the digital backend first using UVM, and only once the digital is written to my satisfaction will I begin the analog frontend."
+    ],
+    "image": {
+      "caption": "Example FFT of Python output"
+    }
+  }
+}

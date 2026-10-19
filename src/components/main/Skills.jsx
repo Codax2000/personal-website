@@ -6,7 +6,7 @@
  * the appropriate skill cards
  */
 
-import { Container, CardGroup, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import SkillCard from "./SkillCard";
 import data from "./data.json";
 
@@ -15,15 +15,17 @@ export default function Skills() {
     <Container fluid id="skills" className="front-article">
       <Container className="text-left">
         <Row>
-          <Col xs={3}>
+          <Col xs={12} md={3}>
             <h2>My Skills</h2>
           </Col>
           <Col>
-            <CardGroup className="d-flex justify-content-center">
-              {data["skills"].map((item, i) => (
-                <SkillCard key={i} state={item} />
+            <Row className="g-0">
+              {data["skills"].map((item) => (
+                <Col key={item.title} xs={12} sm={6} md={3} className="mb-3 mb-md-0">
+                  <SkillCard state={item} />
+                </Col>
               ))}
-            </CardGroup>
+            </Row>
           </Col>
         </Row>
       </Container>

@@ -13,7 +13,7 @@ export default function About() {
     <Container fluid id="about" className="front-article">
       <Container className="text-left">
         <Row>
-          <Col xs={3}>
+          <Col xs={12} md={3}>
             <h2>About Me</h2>
           </Col>
           <Col>

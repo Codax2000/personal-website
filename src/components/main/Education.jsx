@@ -14,7 +14,7 @@ export default function Education() {
     <Container fluid id="education" className="front-article">
       <Container className="text-left">
         <Row>
-          <Col xs={3}>
+          <Col xs={12} md={3}>
             <h2>Education</h2>
           </Col>
           <Col>

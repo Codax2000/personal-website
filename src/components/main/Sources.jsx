@@ -11,7 +11,7 @@ export default function Sources() {
     <Container fluid id="projects" className="front-article">
       <Container>
         <Row>
-          <Col xs={3}>
+          <Col xs={12} md={3}>
             <h2>Materials Used</h2>
           </Col>
           <Col>

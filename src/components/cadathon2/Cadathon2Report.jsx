@@ -60,7 +60,9 @@ export default function CadathonReport() {
       <Container>
         <h2>Animation</h2>
         <div className="text-center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/1SXr4EXTk2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div className="video-embed">
+          <iframe src="https://www.youtube.com/embed/1SXr4EXTk2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
         </div>
       </Container>
       <Container>

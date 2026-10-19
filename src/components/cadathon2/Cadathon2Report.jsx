@@ -61,7 +61,7 @@ export default function CadathonReport() {
         <h2>Animation</h2>
         <div className="text-center">
           <div className="video-embed">
-          <iframe src="https://www.youtube.com/embed/1SXr4EXTk2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/1SXr4EXTk2M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div>
       </Container>
@@ -72,7 +72,7 @@ export default function CadathonReport() {
           className="d-flex justify-content-between flex-wrap"
         >
           {gallery.map((item, i) => (
-            <div className="m-2">
+            <div key={i} className="m-2">
               <img src={item["url"]} alt={item["caption"]} />
               <figcaption className="text-muted">{item["caption"]}</figcaption>
             </div>

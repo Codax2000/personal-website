@@ -18,7 +18,7 @@ export default function About() {
           </Col>
           <Col>
             {data["statement"].map((item, i) => (
-              <p key={1}>{item}</p>
+              <p key={i}>{item}</p>
             ))}
           </Col>
         </Row>

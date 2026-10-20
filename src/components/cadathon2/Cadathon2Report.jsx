@@ -10,13 +10,13 @@ import { Container } from "react-bootstrap";
 import ArticleWithImage from "../templates/ArticleWithImage";
 import data from "./data.json";
 
-import bed from "./img/bed.JPG";
-import panel_tilt from "./img/control_panel_in_place_tilt.JPG";
-import panel_explode from "./img/exploded_control_panel_with_lines.JPG";
-import tank_explode from "./img/exploded_tank_with_lines.JPG";
-import light from "./img/light_in_place.JPG";
-import outlet from "./img/outlet.JPG";
-import tank from "./img/tank.JPG";
+import bed from "./img/bed.jpg";
+import panel_tilt from "./img/control_panel_in_place_tilt.jpg";
+import panel_explode from "./img/exploded_control_panel_with_lines.jpg";
+import tank_explode from "./img/exploded_tank_with_lines.jpg";
+import light from "./img/light_in_place.jpg";
+import outlet from "./img/outlet.jpg";
+import tank from "./img/tank.jpg";
 
 const gallery = [
   {

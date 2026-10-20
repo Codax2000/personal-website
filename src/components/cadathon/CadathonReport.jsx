@@ -10,14 +10,14 @@ import { Container } from "react-bootstrap";
 import ArticleWithImage from "../templates/ArticleWithImage.jsx";
 import data from "./data.json";
 
-import overall from "./img/overall.JPG";
-import front from "./img/front-controls.PNG";
-import fire from "./img/fire.JPG";
-import locker from "./img/locker-open.PNG";
-import open from "./img/open-up.PNG";
-import seat from "./img/seat.JPG";
-import suspension from "./img/suspension.JPG";
-import wheel from "./img/wheel-front.JPG";
+import overall from "./img/overall.jpg";
+import front from "./img/front-controls.png";
+import fire from "./img/fire.jpg";
+import locker from "./img/locker-open.png";
+import open from "./img/open-up.png";
+import seat from "./img/seat.jpg";
+import suspension from "./img/suspension.jpg";
+import wheel from "./img/wheel-front.jpg";
 
 const gallery = [
   {

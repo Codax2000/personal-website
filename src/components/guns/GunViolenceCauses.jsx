@@ -26,7 +26,7 @@ export default function GunViolenceCauses() {
         <Container>
           <Row>
             {data["causes"]["correlation-graphs"].map((item, i) => (
-              <Col key={i}>
+              <Col key={i} xs={12} lg={4}>
                 <div id={item["id"]} />
                 <figcaption className="text-muted mb-4">
                   {`Fig. 4.${i + 1} - # of Incidents vs. ${item["caption"]}`}
@@ -41,14 +41,14 @@ export default function GunViolenceCauses() {
           </p>
         ))}
         <Row>
-          <Col className="pl-0">
+          <Col xs={12} lg={6} className="pl-0">
             {data["causes"]["ml-analysis"].map((item, i) => (
               <p className="text-left" key={i}>
                 {item}
               </p>
             ))}
           </Col>
-          <Col>
+          <Col xs={12} lg={6}>
             <Table responsive>
               <thead>
                 <tr>

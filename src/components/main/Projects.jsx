@@ -6,7 +6,7 @@
  * links for each one.
  */
 
-import { Container, Col, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import arduino from "./img/arduino.jpg";
 import cadd from "./img/cadd.jpg";
@@ -26,32 +26,25 @@ import lstm from "./img/lstm_plot.jpg"
 import constellation from "./img/constellation.jpg"
 import ns_sar from "./img/ns_sar_adc.jpg"
 
-const nRows = 4;
-const nCols = 4;
-
 export default function Projects() {
-  let images = [ns_sar, lstm, constellation, adc_sims, processor, zynet, transceiver, amplifier, bandgap, arduino, cannon,
+  const images = [ns_sar, lstm, constellation, adc_sims, processor, zynet, transceiver, amplifier, bandgap, arduino, cannon,
                 revolvers, cnc, seismograph, cadd, bedframe];
 
   return (
     <Container fluid id="projects" className="front-article">
       <Container>
         <h2 className="text-center mb-4">Some Things I've Worked On</h2>
-        {Array.from(Array(nRows).keys()).map((item, i) =>
-          <Row>
-            <Col className="d-flex justify-content-around mb-5">
-              {data["projects"].slice(nCols * i, nCols * (i + 1)).map((item, j) => (
-                <ProjectCard
-                  key={i * nRows + j}
-                  image={images[i * nCols + j]}
-                  name={item.name}
-                  url={item.url}
-                  short={item.short}
-                />
-              ))}
-            </Col>
-          </Row>
-        )}
+        <div className="project-grid">
+          {data["projects"].map((item, i) => (
+            <ProjectCard
+              key={item.url}
+              image={images[i]}
+              name={item.name}
+              url={item.url}
+              short={item.short}
+            />
+          ))}
+        </div>
       </Container>
     </Container>
   );

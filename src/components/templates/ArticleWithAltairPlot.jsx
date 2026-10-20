@@ -18,7 +18,7 @@ export default function ArticleWithAltairPlot(props) {
     <Container fluid className="report-article">
       <Container>
         <h2>{title}</h2>
-        <div className="d-flex mt-4">
+        <div className="d-flex flex-column flex-lg-row mt-4 article-split">
           <div>
             {content.map((item, i) => (
               <p key={i} className="text-left">
@@ -26,8 +26,8 @@ export default function ArticleWithAltairPlot(props) {
               </p>
             ))}
           </div>
-          <div>
-            <div id={id} alt={caption} className="ml-2 mb-2" />
+          <div className="article-figure flex-shrink-0">
+            <div id={id} alt={caption} className="ml-lg-2 mb-2" />
             <figcaption className="text-muted mb-4">{caption}</figcaption>
           </div>
         </div>

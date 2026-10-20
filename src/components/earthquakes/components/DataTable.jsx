@@ -9,7 +9,7 @@ import { Table } from 'react-bootstrap'
 
 export default function DataTable({ data, page, numPages, itemsPerPage }) {
     return (
-        <Table striped bordered>
+        <Table responsive striped bordered>
             <thead>
                 <tr>
                     <th>Id</th>

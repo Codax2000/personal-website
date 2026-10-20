@@ -304,7 +304,7 @@ export default function QuakeMap({ earthquakes }) {
   useEffect(() => drawVariable(), [drawVariable, earthquakes]);
 
   return (
-    <div id="viz" className="d-flex flex-column align-items-center mb-2">
+    <div id="viz" className="viz-scroll d-flex flex-column mb-2">
       <svg id="map" ref={mapRef} height={MAP_HEIGHT} width={WIDTH}>
         <g id="map-zoom">
           <g id="tiles"></g>

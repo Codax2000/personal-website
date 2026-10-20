@@ -13,7 +13,7 @@ export default function Experience() {
     <Container fluid id="experience" className="front-article">
       <Container className="text-left">
         <Row>
-          <Col xs={3}>
+          <Col xs={12} md={3}>
             <h2>Experience</h2>
           </Col>
           <Col>

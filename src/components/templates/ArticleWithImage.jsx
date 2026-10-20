@@ -16,7 +16,7 @@ export default function ArticleWithImage(props) {
     <Container fluid className="report-article">
       <Container>
         <h2>{title}</h2>
-        <div className="d-flex mt-4">
+        <div className="d-flex flex-column flex-lg-row mt-4 article-split">
           <div>
             {content.map((item, i) => (
               <p key={i} className="text-left mr-4">
@@ -24,12 +24,12 @@ export default function ArticleWithImage(props) {
               </p>
             ))}
           </div>
-          <div>
+          <div className="article-figure flex-shrink-0">
             <img
               src={graph}
               alt={caption}
               width={STANDARD_WIDTH}
-              className="mx-2 mb-2"
+              className="mx-lg-2 mb-2 img-fluid"
             />
             <figcaption className="text-muted mb-4">{caption}</figcaption>
           </div>

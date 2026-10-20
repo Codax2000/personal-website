@@ -249,3 +249,10 @@ footer {
 .ellipsis .sr-only {
   display: none;
 }
+
+/* The collapsed navbar has no horizontal padding in Bootstrap 5 beta. */
+@media (max-width: 767.98px) {
+  .navbar {
+    padding-left: 0.75rem;
+  }
+}

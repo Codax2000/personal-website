@@ -14,7 +14,7 @@ export default function Experience() {
       <Container className="text-left">
         <Row>
           <Col xs={12} md={3}>
-            <h2>Experience</h2>
+            <h2 className="section-heading">Experience</h2>
           </Col>
           <Col>
             <ul className="list-unstyled">

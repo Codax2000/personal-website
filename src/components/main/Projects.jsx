@@ -33,7 +33,7 @@ export default function Projects() {
   return (
     <Container fluid id="projects" className="front-article">
       <Container>
-        <h2 className="text-center mb-4">Some Things I've Worked On</h2>
+        <h2 className="section-heading text-center mb-4">Some Things I've Worked On</h2>
         <div className="project-grid">
           {data["projects"].map((item, i) => (
             <ProjectCard

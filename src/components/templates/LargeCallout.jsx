@@ -1,11 +1,11 @@
 export default function LargeCallout(props) {
   return (
-    <li>
+    <li className="entry">
       <div className="callout-header">
-        <p className="clear-spacing lead callout-main">{props.details.main}</p>
-        <p className="clear-spacing callout-date">{props.details.date}</p>
+        <p className="clear-spacing lead callout-main entry-title">{props.details.main}</p>
+        <p className="clear-spacing callout-date meta-label">{props.details.date}</p>
       </div>
-      <p className="text-left">{props.details.details}</p>
+      <p className="text-left entry-detail">{props.details.details}</p>
     </li>
   );
 }

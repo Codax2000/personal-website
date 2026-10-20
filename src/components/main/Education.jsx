@@ -15,7 +15,7 @@ export default function Education() {
       <Container className="text-left">
         <Row>
           <Col xs={12} md={3}>
-            <h2>Education</h2>
+            <h2 className="section-heading">Education</h2>
           </Col>
           <Col>
             <ul className="list-unstyled">

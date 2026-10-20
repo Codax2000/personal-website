@@ -12,13 +12,14 @@ export default function Sources() {
       <Container>
         <Row>
           <Col xs={12} md={3}>
-            <h2>Materials Used</h2>
+            <h2 className="section-heading">Materials Used</h2>
           </Col>
           <Col>
             <p className="mb-1">{data["sources"]["statement"]}</p>
             {data["sources"]["citations"].map((item, i) => (
-              <p key={i} className="mb-0 px-3">
-                {item["creator"]}&nbsp;-&nbsp;
+              <p key={i} className="mb-0 px-3 citation">
+                <span className="meta-label">{item["creator"]}</span>
+                <span className="citation-sep">&nbsp;-&nbsp;</span>
                 <a href={item["link"]}>{item["name"]}</a>
               </p>
             ))}

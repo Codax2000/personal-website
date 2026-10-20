@@ -1,3 +1,30 @@
+/*
+  Shared tokens. Every value is already on the site via Bootstrap 5.0 beta
+  (body, text-muted, bg-light, border, primary) or a direct tint of primary.
+  Naming them is the system. Treatments that use them are mobile-only;
+  see the "Mobile system" block at the bottom of this file.
+*/
+:root {
+  --ink: #212529;
+  --muted: #6c757d;
+  --surface: #f8f9fa;
+  --paper: #ffffff;
+  --line: #dee2e6;
+  --accent: #0d6efd;
+  --accent-soft: #e7f1ff;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --radius: 0.25rem;
+  --label-size: 0.75rem;
+  --label-tracking: 0.06em;
+  --heading-size: 1.35rem;
+  --title-size: 1.05rem;
+}
+
 nav img {
   height: 24px;
   opacity: 0.9;
@@ -248,4 +275,208 @@ footer {
 /* disable aria on pagination ellipses */
 .ellipsis .sr-only {
   display: none;
+}
+
+/*
+  Mobile system (under the md breakpoint, 768px).
+  One heading, one meta label, one surface card. Desktop rules above are untouched.
+*/
+@media (max-width: 767.98px) {
+  .front-article {
+    margin: var(--space-6) 0;
+  }
+
+  .section-heading {
+    margin-bottom: var(--space-4);
+    color: var(--ink);
+    font-size: var(--heading-size);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .section-heading::after {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2px;
+    margin-top: var(--space-2);
+    background: var(--accent);
+  }
+
+  .section-heading.text-center::after {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .meta-label {
+    margin: 0;
+    color: var(--muted);
+    font-size: var(--label-size);
+    font-weight: 600;
+    letter-spacing: var(--label-tracking);
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  .entry {
+    margin-bottom: var(--space-3);
+    padding: var(--space-3);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+
+  .entry .callout-header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    row-gap: var(--space-1);
+  }
+
+  .entry .callout-date {
+    margin-left: 0;
+    white-space: normal;
+  }
+
+  .entry .entry-title {
+    margin: 0;
+    color: var(--ink);
+    font-size: var(--title-size);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .entry .entry-detail {
+    margin: var(--space-1) 0 0;
+    color: var(--muted);
+  }
+
+  .skill-card {
+    background: var(--surface);
+    border: 1px solid var(--line) !important;
+    border-radius: var(--radius);
+  }
+
+  .skill-card .card-body {
+    padding: var(--space-3) !important;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: var(--space-2) 0 0;
+  }
+
+  .skill-chip {
+    padding: 0.15rem 0.6rem;
+    color: var(--accent);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.5;
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+  }
+
+  .project-link {
+    margin-bottom: var(--space-4);
+  }
+
+  .project-tile {
+    background: var(--paper);
+    border-color: var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .project-card-copy .entry-title {
+    color: var(--ink);
+    font-size: var(--title-size);
+    font-weight: 600;
+  }
+
+  .project-card-copy .entry-detail {
+    color: var(--muted);
+  }
+
+  .citation {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin-bottom: var(--space-3) !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .citation-sep {
+    display: none;
+  }
+
+  .nav-sheet {
+    position: fixed;
+    inset: 0;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-5) var(--space-3);
+    overflow-y: auto;
+    color: var(--ink);
+    background: var(--surface);
+  }
+
+  .nav-sheet-close {
+    align-self: flex-end;
+    min-height: 44px;
+    padding: 0 var(--space-2);
+    color: var(--muted);
+    font-size: var(--label-size);
+    font-weight: 600;
+    letter-spacing: var(--label-tracking);
+    text-transform: uppercase;
+    background: transparent;
+    border: 0;
+  }
+
+  .nav-sheet-link,
+  .nav-sheet-project {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    color: var(--ink);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .nav-sheet-link {
+    font-size: var(--heading-size);
+    letter-spacing: -0.01em;
+  }
+
+  .nav-sheet-label {
+    margin: var(--space-4) 0 var(--space-2);
+  }
+
+  .nav-sheet-project {
+    font-size: var(--title-size);
+  }
+
+  .nav-sheet-social {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: auto;
+    padding-top: var(--space-4);
+  }
+
+  .nav-sheet-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .nav-sheet a:focus-visible,
+  .nav-sheet button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
 }

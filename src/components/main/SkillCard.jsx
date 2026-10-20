@@ -10,13 +10,13 @@ import { Card } from 'react-bootstrap';
 
 export default function SkillCard(props) {
   return (
-    <Card className="border-0">
+    <Card className="border-0 skill-card">
       <Card.Body className="pt-0 px-0">
-        <Card.Title>
+        <Card.Title className="meta-label">
           {props.state.title}
         </Card.Title>
-        <ul className="list-unstyled">
-          {props.state.skills.map((item, i) => <li key={i}>{item}</li>)}
+        <ul className="list-unstyled skill-list">
+          {props.state.skills.map((item, i) => <li key={i} className="skill-chip">{item}</li>)}
         </ul>
       </Card.Body>
     </Card>

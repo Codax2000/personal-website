@@ -16,7 +16,7 @@ export default function Skills() {
       <Container className="text-left">
         <Row>
           <Col xs={12} md={3}>
-            <h2>My Skills</h2>
+            <h2 className="section-heading">My Skills</h2>
           </Col>
           <Col>
             <Row className="g-0">

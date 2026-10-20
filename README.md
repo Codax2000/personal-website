@@ -14,10 +14,18 @@ became difficult to manage and extremely slow, and Github Pages was a good alter
 
 ## Deployment
 
-All that is necessary to deploy this site is to run `npm run deploy` in the
-command line, and the website files will be deployed to the `gh-pages` branch
-of this repo. After this, changes should always be pushed to the `master` branch
-to save the updates.
+The site is hosted on GitHub Pages from the `gh-pages` branch:
+[codax2000.github.io/personal-website](http://codax2000.github.io/personal-website).
+
+Pushing to `main`, including merging a pull request, runs the
+[Build and deploy workflow](.github/workflows/deploy.yml). That workflow
+installs dependencies, builds the site, and publishes the `dist/` folder to
+`gh-pages`. You can rerun it from the Actions tab with **Run workflow**.
+Pull requests build the site and do not deploy it, so merging to `main` is
+what publishes.
+
+`npm run deploy` still works as a local fallback. It builds the site and
+pushes `dist/` to `gh-pages` from your machine.
 
 ## Projects
 

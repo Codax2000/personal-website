@@ -82,45 +82,45 @@ export default function NavMenu() {
       {open && (
         <div
           id="mobile-sheet"
-          className="mobile-sheet"
+          className="mobile-sheet mobile-sheet-directory"
           role="dialog"
           aria-modal="true"
           aria-label="Site menu"
         >
-          <button
-            type="button"
-            className="mobile-sheet-close"
-            onClick={() => setOpen(false)}
-          >
-            Close
-          </button>
-          <div className="mobile-sheet-inner">
-            <nav className="mobile-sheet-primary" aria-label="Primary">
-              <a href="/personal-website/" onClick={() => setOpen(false)}>
-                Home
-              </a>
-              <a href="mailto:aknowlt@umich.edu">Contact</a>
-            </nav>
-            <p className="mobile-sheet-label">Featured projects</p>
-            <nav className="mobile-sheet-projects" aria-label="Featured projects">
-              {PROJECTS.map(([href, label]) => (
-                <a key={href} href={href} onClick={() => setOpen(false)}>
-                  {label}
-                </a>
-              ))}
-            </nav>
-            <div className="mobile-sheet-social">
-              <a href="https://github.com/Codax2000" target="_blank" rel="noreferrer">
-                <img src={github} alt="My GitHub Page" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/alexander-knowlton/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={linkedin} alt="My LinkedIn Profile" />
-              </a>
+          <header className="sheet-header">
+            <div>
+              <p className="sheet-name">Alex Knowlton</p>
+              <p className="sheet-kicker">Electrical engineer</p>
             </div>
+            <button type="button" className="mobile-sheet-close" onClick={() => setOpen(false)}>
+              Close
+            </button>
+          </header>
+          <nav className="sheet-links" aria-label="Primary">
+            <a href="/personal-website/" onClick={() => setOpen(false)}>Home</a>
+            <a href="mailto:aknowlt@umich.edu">Contact</a>
+          </nav>
+          <p className="sheet-group">Featured projects</p>
+          <nav className="sheet-links" aria-label="Featured projects">
+            {PROJECTS.map(([href, label]) => (
+              <a key={href} href={href} onClick={() => setOpen(false)}>
+                {label}
+              </a>
+            ))}
+          </nav>
+          <div className="sheet-footer">
+            <a href="https://github.com/Codax2000" target="_blank" rel="noreferrer">
+              <img src={github} alt="My GitHub Page" />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/alexander-knowlton/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedin} alt="My LinkedIn Profile" />
+              LinkedIn
+            </a>
           </div>
         </div>
       )}

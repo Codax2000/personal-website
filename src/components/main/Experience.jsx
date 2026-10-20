@@ -17,12 +17,14 @@ export default function Experience() {
             <h2>Experience</h2>
           </Col>
           <Col>
-            <div className="d-md-none experience-timeline">
+            <div className="d-md-none experience-cards">
               {data["jobs"].map((item) => (
-                <article key={item.main + item.date} className="timeline-item">
-                  <p className="timeline-date">{item.date}</p>
-                  <h3 className="timeline-company">{item.main}</h3>
-                  <p className="timeline-role">{item.details}</p>
+                <article key={item.main + item.date} className="role-card">
+                  <h3>{item.details}</h3>
+                  <div className="role-meta">
+                    <p>{item.main}</p>
+                    <p>{item.date}</p>
+                  </div>
                 </article>
               ))}
             </div>

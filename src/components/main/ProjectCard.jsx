@@ -30,8 +30,8 @@ export default function ProjectCard(props) {
           </Card.Text>
         </Card.ImgOverlay>
         <Card.Body className="d-lg-none project-card-copy">
-          <Card.Title className="text-center h5">{name}</Card.Title>
-          <Card.Text className="text-center mb-0">{short}</Card.Text>
+          <Card.Title className="text-start h5">{name}</Card.Title>
+          <Card.Text className="text-start mb-0">{short}</Card.Text>
         </Card.Body>
       </Card>
     </Link>

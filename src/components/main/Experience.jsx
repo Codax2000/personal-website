@@ -17,7 +17,16 @@ export default function Experience() {
             <h2>Experience</h2>
           </Col>
           <Col>
-            <ul className="list-unstyled">
+            <div className="d-md-none experience-timeline">
+              {data["jobs"].map((item) => (
+                <article key={item.main + item.date} className="timeline-item">
+                  <p className="timeline-date">{item.date}</p>
+                  <h3 className="timeline-company">{item.main}</h3>
+                  <p className="timeline-role">{item.details}</p>
+                </article>
+              ))}
+            </div>
+            <ul className="list-unstyled d-none d-md-block">
               {data["jobs"].map((item, i) => (
                 <LargeCallout key={i} details={item} />
               ))}

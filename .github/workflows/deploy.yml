@@ -1,0 +1,53 @@
+# Builds the Vite site and, on main, publishes dist/ to the gh-pages branch.
+# GitHub Pages already serves that branch, so no Pages setting change is required.
+# Pull requests build only; merging to main is what publishes the site.
+
+name: Build and deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Publishing dist/ to gh-pages needs contents: write on the built-in token.
+# Pull requests never run the deploy step.
+permissions:
+  contents: write
+
+# One run per ref. An in-progress deploy is left to finish; a newer push waits
+# instead of publishing at the same time. Pull-request builds cancel when a
+# newer commit is pushed to that PR.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages

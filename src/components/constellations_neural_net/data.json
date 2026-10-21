@@ -18,7 +18,7 @@
     "content": [
       "There were two halves to this problem: data generation and model training.",
       "Data generation was relatively straightforward. I wrote a Python script to generate several different simple constellations. Then, I drew sample vectors of length 512 from each constellation and corrupted them with a range of different SNR values using NumPy. Then, I saved them to an appropriate filetype for feeding into the PyTorch model.",
-      "Model training was more difficult. I reasoned that the goal would be similar to the analytical solution, so the first layer in the neural network should be a convolutional layer that would, ideally, mimic the effect of taking the Euclidean distance to every possible constellation point. Then, based on which convolutions were post present in the data, a fully-connected network would predict the most likely constellation source."
+      "Model training was more difficult. I reasoned that the goal would be similar to the analytical solution, so the first layer in the neural network should be a convolutional layer that would, ideally, mimic the effect of taking the Euclidean distance to every possible constellation point. Then, based on which convolutions were most present in the data, a fully-connected network would predict the most likely constellation source."
     ],
     "image": {
       "caption": "Three of the simulated ideal constellations superimposed on top of each other."

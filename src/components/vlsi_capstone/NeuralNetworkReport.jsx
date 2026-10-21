@@ -18,7 +18,7 @@ export default function NeuralNetworkReport() {
   return (
     <Container fluid className="report-article">
       <Container fluid className="report-article">
-        <h1 className="text-center">Convolutonal Neural Network</h1>
+        <h1 className="text-center">Convolutional Neural Network</h1>
         <ArticleWithImage
           title={data["abstract"]["title"]}
           content={data["abstract"]["content"]}

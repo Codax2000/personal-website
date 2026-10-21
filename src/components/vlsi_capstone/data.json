@@ -38,8 +38,8 @@
   "testing": {
     "title": "Unit Testing",
     "content": [
-      "The reason our testing went so smoothly from Vivado to ILA was that I had been trained in basic assertion testing in my previous computer science classes. Therefore, we wrote the testcases and simply compiled them to either the internal testing module or to the simulationt testbench.",
-      "At right are two columns of hexadecimal numbers representing two different columns of outputs. The left side is a column produced by Eugene's matlab model. The right side was gathered and exported from Vivado. Finally, there is an exact comparison by formula in the final column."  
+      "The reason our testing went so smoothly from Vivado to ILA was that I had been trained in basic assertion testing in my previous computer science classes. Therefore, we wrote the testcases and simply compiled them to either the internal testing module or to the simulation testbench.",
+      "At right are two columns of hexadecimal numbers representing two different columns of outputs. The left side is a column produced by Eugene's matlab model. The right side was gathered and exported from Vivado. Finally, there is an exact comparison by formula in the final column."
     ],
     "image": {
       "caption": "Data from Vivado ILA"

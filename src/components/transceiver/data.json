@@ -10,7 +10,7 @@
       "4. CTLE Filter",
       "5. StrongARM Latch",
       "6. Deserializer",
-      "I was in charge of overall equalization specifications, which I calculated using a Matlab model. I then helped in the design of the FIR filter by working with the CM driver."  
+      "I was in charge of overall equalization specifications, which I calculated using a Matlab model. I then helped in the design of the FIR filter by working with the CM driver."
     ],
     "image": {
       "caption": "Overall block diagram"
@@ -19,7 +19,7 @@
   "approach": {
     "title": "System Design",
     "content": [
-      "I was in charge of determining system parameters for equalization. This meant solving a convolutiona matrix to find the optimal tap values for the FIR filter and optimal pole and zero locations for CTLE. The goal was to minimize ISIs and therefore open the channel eye as far as possible.",
+      "I was in charge of determining system parameters for equalization. This meant solving a convolution matrix to find the optimal tap values for the FIR filter and optimal pole and zero locations for CTLE. The goal was to minimize ISIs and therefore open the channel eye as far as possible.",
       "I used the Matlab SerDes toolbox to design the system. I had a formula for ideal tap weights, and since we knew the channel impulse response already, I simply swept the DC gain and peaking gain for CTLE and computed ideal tap weights for each pair of values. Once that was done, I plotted the eye diagram height and together we picked the most achievable design that would still give us a large eye opening.",
       "At right is the Matlab plot we referenced with a 3-tap FIR filter with no pre-taps. It is clear that the eye diagram opens wider with certain pole and zero locations, but these come at the expense of high power. This is also a filtered view, we used many more possibilities but these were the best options we saw."
     ],

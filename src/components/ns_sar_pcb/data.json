@@ -3,8 +3,8 @@
     "title": "Abstract",
     "content": [
       "The goal of this project will be to physically build the circuit that I had simulated for my graduate research. The research in question surrounded an incremental noise-shaping SAR ADC with a low OSR. My intention with this project is to reproduce the spirit of the paper with discrete components, instead of taping out a chip.",
-      "The analog frontend will be built of discrete components, and will involve a bootstrapped sample-and-hold circuit, a Silva-Steensgard delta-sigma modulator, and a SAR ADC using a discrete comparator. I plan to use LTSpice to simulate the analog frontend before assembling it on a custom PCB.",
-      "The digital backend, with clocking logic, SAR logic, SPI, and control registers, will all be implemented on an FPGA. I am doing initial digital simulations in Xilinx Vivado before choosing an appropritate FPGA."
+      "The analog frontend will be built of discrete components, and will involve a bootstrapped sample-and-hold circuit, a Silva-Steensgaard delta-sigma modulator, and a SAR ADC using a discrete comparator. I plan to use LTSpice to simulate the analog frontend before assembling it on a custom PCB.",
+      "The digital backend, with clocking logic, SAR logic, SPI, and control registers, will all be implemented on an FPGA. I am doing initial digital simulations in Xilinx Vivado before choosing an appropriate FPGA."
     ],
     "image": {
       "caption": "High-level block diagram"

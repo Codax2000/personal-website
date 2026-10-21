@@ -16,6 +16,12 @@
   },
   "results": [
     "The package was experimental, and my group was the first to attempt such a task at the University of Washington. It was highly successful, and the controls responded smoothly during flight.",
-    "See the code on my personal GitHub page."
+    {
+      "text": "See the code on my personal GitHub page.",
+      "link": {
+        "phrase": "personal GitHub page",
+        "href": "https://github.com/Codax2000/dbf-avionics-2020-2021"
+      }
+    }
   ]
 }

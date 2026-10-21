@@ -2,11 +2,13 @@
  * Alex Knowlton
  * 9/15/2020
  *
- * Standard article with image. Takes an Array of Strings to turn
- * into a paragraph, a title, and a url, caption. Lays everything out with standard formatting.
+ * Standard article with image. Takes an array of paragraphs, a title,
+ * and a url, caption. A paragraph is a string, or
+ * { text, link: { phrase, href } } when one phrase should be a link.
  */
 import React from "react";
 import { Container } from "react-bootstrap";
+import ParagraphText from "./ParagraphText";
 
 export default function ArticleWithImage(props) {
   let { title, content, graph, caption } = props;
@@ -20,7 +22,7 @@ export default function ArticleWithImage(props) {
           <div>
             {content.map((item, i) => (
               <p key={i} className="text-left mr-4">
-                {item}
+                <ParagraphText item={item} />
               </p>
             ))}
           </div>

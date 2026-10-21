@@ -7,7 +7,13 @@
       "An analytical solution is possible; For each IQ point in the received vector, calculate the minimum Euclidean distance for each constellation, and classify the point according to the minimum Euclidean distance. Then, once all the points are classified, assume that the constellation with the lowest mean Euclidean distance to the given vector is the constellation from which the data were drawn. However, this poses problems. The most significant is that it assumes knowledge of the constellation from which the data may have been drawn, whereas a neural network simply learns the most likely constellation to produce the correct result.",
       "However, a convolutional neural network was proven to be fully capable at differentiating between three different common constellations.",
       "The next step in this network would be to add channel fading to the generated dataset, which would make the convolutional layers potentially much more difficult to compute.",
-      "The code for this project can be found on my GitHub page, under the EECS 453 final project repository."
+      {
+        "text": "The code for this project can be found on my GitHub page, under the EECS 453 final project repository.",
+        "link": {
+          "phrase": "EECS 453 final project repository",
+          "href": "https://github.com/Codax2000/eecs-453-final-project"
+        }
+      }
     ],
     "image": {
       "caption": "Comparison of received (noisy) data with constellations that are correct (above) and incorrect (below). Notice that d_E, the mean Euclidean distance to the constellation, is much smaller for the correct constellation."

@@ -6,7 +6,13 @@
       "The architecture of the LSTM cell (at right), stipulates that the entire matrix multiply block should be done at once, resulting in a single outer-product systolic 4 X M X N matrix multiplication array.",
       "Additionally, there is a serial activation function block comprised of a CORDIC-based sigmoid and tanh functions.",
       "My team implemented the given design as closely as we could, given the roughly 6 weeks we had from start to finish. We designed every block with an AXI-based handshake that made control logic somewhat complex but made top-level integration very simple. At the end, we were able to reproduce most of the original work's results, and were ready to deploy to an FPGA board, had we had one available.",
-      "The code for this project is available on my GitHub page, under the rnn-eecs598-final repository."
+      {
+        "text": "The code for this project is available on my GitHub page, under the rnn-eecs598-final repository.",
+        "link": {
+          "phrase": "rnn-eecs598-final repository",
+          "href": "https://github.com/Codax2000/rnn-eecs598-final"
+        }
+      }
     ],
     "image": {
       "caption": "Architecture of original work's LSTM cell."

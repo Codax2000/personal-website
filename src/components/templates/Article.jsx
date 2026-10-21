@@ -2,11 +2,13 @@
  * Alex Knowlton
  * 9/15/2020
  *
- * Standard article, takes a String title and Array of Strings as props,
- * laying them out nicely for reading.
+ * Standard article, takes a String title and an array of paragraphs,
+ * laying them out nicely for reading. A paragraph is a string, or
+ * { text, link: { phrase, href } } when one phrase should be a link.
  */
 
 import { Container } from "react-bootstrap";
+import ParagraphText from "./ParagraphText";
 
 export default function Article(props) {
   let { title, content } = props;
@@ -17,7 +19,7 @@ export default function Article(props) {
         <h2>{title}</h2>
         {content.map((item, i) => (
           <p key={i} className="text-left">
-            {item}
+            <ParagraphText item={item} />
           </p>
         ))}
       </Container>

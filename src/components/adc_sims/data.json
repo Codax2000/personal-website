@@ -29,10 +29,17 @@
     }
   },
   "research": {
-    "title": "2nd-Order IADC Research",
+    "title": "Second-Order IADC Research",
     "content": [
       "I did research into the effectiveness of different DEM schemes in an experimental IADC.",
-      "This work was published in June of 2025."
+      "This work was published in June of 2025.",
+      {
+        "text": "S. Song, T. Kang, A. Knowlton, S. Lee, and M. P. Flynn, \"An NS-SAR Quantizer-Based Pipeline Incremental Delta-Sigma ADC Using a Current-Regulated Floating Ring Amplifier and Two-Phase Miller Negative-C,\" 2025 Symposium on VLSI Technology and Circuits, Kyoto, Japan, June 2025. DOI: https://doi.org/10.23919/VLSITechnologyandCir65189.2025.11075190",
+        "link": {
+          "phrase": "https://doi.org/10.23919/VLSITechnologyandCir65189.2025.11075190",
+          "href": "https://doi.org/10.23919/VLSITechnologyandCir65189.2025.11075190"
+        }
+      }
     ],
     "image": {
       "caption": "Final DEM Scheme Comparison"

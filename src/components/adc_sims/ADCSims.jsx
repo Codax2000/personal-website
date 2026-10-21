@@ -6,6 +6,7 @@
  */
 
 import { Container } from "react-bootstrap";
+import Article from "../templates/Article";
 import ArticleWithImage from "../templates/ArticleWithImage";
 import data from "./data.json";
 import DSM2_block from './img/dsm2_block.jpg';
@@ -34,6 +35,10 @@ export default function ADCSims() {
           content={data["redundancy"]["content"]}
           graph={SAR_EF}
           caption={data["redundancy"]["image"]["caption"]}
+        />
+        <Article
+          title={data["research"]["title"]}
+          content={data["research"]["content"]}
         />
       </Container>
     </Container>

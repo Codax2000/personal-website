@@ -17,10 +17,10 @@ export default function HomePage() {
     <div>
       <Home />
       <About />
-      <Experience />
-      <Education />
-      <Skills />
       <Projects />
+      <Education />
+      <Experience />
+      <Skills />
       <Sources />
     </div>
   );

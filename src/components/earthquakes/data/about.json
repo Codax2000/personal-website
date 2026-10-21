@@ -2,7 +2,7 @@
   "about": [
     "I developed this project to learn more about React.js, D3.js, and Spring Boot. Initially, this project was deployed to Microsoft Azure, but I redeployed to github due to a problem with speed and blocked CORS requests. It was more straightforward to turn this into a purely frontend project.",
     "This meant that the rest API I developed in Spring Boot is no longer necessary, since I pull directly from the USGS earthquake feed.",
-    "The scatterplot on the bottom has linked brushing, so you can click and drag on the scatterplot to see the corresponding quakes appear on the map, with size corresponding to their magnitude on the ricther scale. Additionally, you can pan and zoom the map, and the quakes will scale accordingly. Also, if you click while zoomed in, the map will reset to the default zoom.",
+    "The scatterplot on the bottom has linked brushing, so you can click and drag on the scatterplot to see the corresponding quakes appear on the map, with size corresponding to their magnitude on the Richter scale. Additionally, you can pan and zoom the map, and the quakes will scale accordingly. Also, if you click while zoomed in, the map will reset to the default zoom.",
     "This was also an experience using various React hooks, including useEffect and useState. I also used useCallback to stop the map from re-rendering areas that are constant, such as the base countries and the scale on the bottom right.",
     "It was also my first time implementing pagination, which I did using the bootstrap styling and the React useState hook."
   ]

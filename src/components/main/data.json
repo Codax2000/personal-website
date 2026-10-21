@@ -23,9 +23,14 @@
   ],
   "jobs": [
     {
+      "main": "SpaceX",
+      "details": "RFIC Engineer",
+      "date": "December 2025 - Present"
+    },
+    {
       "main": "Texas Instruments",
       "details": "Digital IC Design Engineer",
-      "date": "March 2025 - Current"
+      "date": "March 2025 - December 2025"
     },
     {
       "main": "University of Michigan",

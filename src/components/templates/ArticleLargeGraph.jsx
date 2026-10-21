@@ -21,7 +21,7 @@ export default function ArticleLargeGraph(props) {
         <div className="mt-4">
           <div>
             {beforeContent.map((item, i) => (
-              <p key={i} className="text-left">
+              <p key={i} className="text-start">
                 {item}
               </p>
             ))}
@@ -32,7 +32,7 @@ export default function ArticleLargeGraph(props) {
           </div>
           <div>
             {afterContent.map((item, i) => (
-              <p key={i} className="text-left">
+              <p key={i} className="text-start">
                 {item}
               </p>
             ))}

@@ -262,6 +262,6 @@ footer {
 }
 
 /* disable aria on pagination ellipses */
-.ellipsis .sr-only {
+.ellipsis .visually-hidden {
   display: none;
 }

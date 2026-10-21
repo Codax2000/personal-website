@@ -11,7 +11,7 @@ import data from "./data.json";
 export default function Experience() {
   return (
     <Container fluid id="experience" className="front-article">
-      <Container className="text-left">
+      <Container className="text-start">
         <Row>
           <Col xs={12} md={3}>
             <h2>Experience</h2>

@@ -9,7 +9,7 @@ import { Container } from 'react-bootstrap';
 export default function Home() {
   return (
     <div fluid className="d-flex align-items-center mb-0" id="home">
-      <Container className="text-white text-left">
+      <Container className="text-white text-start">
         <h2 className="display-4">
           Hi, I'm Alex
         </h2>

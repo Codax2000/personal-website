@@ -19,7 +19,7 @@ export default function GunViolenceCauses() {
       <Container>
         <h2>What Causes Gun Violence?</h2>
         {data["causes"]["intro"].map((item, i) => (
-          <p className="text-left" key={i + 10}>
+          <p className="text-start" key={i + 10}>
             {item}
           </p>
         ))}
@@ -36,14 +36,14 @@ export default function GunViolenceCauses() {
           </Row>
         </Container>
         {data["causes"]["graph-analysis"].map((item, i) => (
-          <p className="text-left" key={i}>
+          <p className="text-start" key={i}>
             {item}
           </p>
         ))}
         <Row>
-          <Col xs={12} lg={6} className="pl-0">
+          <Col xs={12} lg={6} className="ps-0">
             {data["causes"]["ml-analysis"].map((item, i) => (
-              <p className="text-left" key={i}>
+              <p className="text-start" key={i}>
                 {item}
               </p>
             ))}
@@ -59,7 +59,7 @@ export default function GunViolenceCauses() {
               <tbody>
                 {data["causes"]["ml-results"].map((d, i) => (
                   <tr key={i}>
-                    <td className="text-left">{d["input"]}</td>
+                    <td className="text-start">{d["input"]}</td>
                     <td>{d["mse"]}</td>
                   </tr>
                 ))}

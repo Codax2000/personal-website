@@ -12,7 +12,7 @@ import data from "./data.json";
 export default function Education() {
   return (
     <Container fluid id="education" className="front-article">
-      <Container className="text-left">
+      <Container className="text-start">
         <Row>
           <Col xs={12} md={3}>
             <h2>Education</h2>

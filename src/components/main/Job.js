@@ -12,7 +12,7 @@ export default function Job(props) {
         <p className="clear-spacing lead">{props.details.position}</p>
         <p className="clear-spacing">{props.details.date}</p>
       </div>
-      <p className="text-right">{props.details.company}</p>
+      <p className="text-end">{props.details.company}</p>
     </li>
   );
 }

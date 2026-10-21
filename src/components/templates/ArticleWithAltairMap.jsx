@@ -20,7 +20,7 @@ export default function ArticleWithAltairMap(props) {
         <div className="mt-4">
           <div>
             {beforeContent.map((item, i) => (
-              <p key={i} className="text-left">
+              <p key={i} className="text-start">
                 {item}
               </p>
             ))}
@@ -31,7 +31,7 @@ export default function ArticleWithAltairMap(props) {
           </div>
           <div>
             {afterContent.map((item, i) => (
-              <p key={i} className="text-left">
+              <p key={i} className="text-start">
                 {item}
               </p>
             ))}

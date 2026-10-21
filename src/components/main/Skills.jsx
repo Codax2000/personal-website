@@ -13,7 +13,7 @@ import data from "./data.json";
 export default function Skills() {
   return (
     <Container fluid id="skills" className="front-article">
-      <Container className="text-left">
+      <Container className="text-start">
         <Row>
           <Col xs={12} md={3}>
             <h2>My Skills</h2>

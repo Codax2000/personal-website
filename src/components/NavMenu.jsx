@@ -15,7 +15,7 @@ export default function NavMenu() {
     <Navbar bg="light" expand="md">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
+        <Nav className="me-auto">
           <Nav.Link href="https://github.com/Codax2000" target="_blank">
             <img src={github} height={height} alt="My GitHub Page" />
           </Nav.Link>

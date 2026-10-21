@@ -21,7 +21,7 @@ export default function ArticleWithImage(props) {
         <div className="d-flex flex-column flex-lg-row mt-4 article-split">
           <div>
             {content.map((item, i) => (
-              <p key={i} className="text-left mr-4">
+              <p key={i} className="text-start me-4">
                 <ParagraphText item={item} />
               </p>
             ))}

@@ -21,13 +21,13 @@ export default function ArticleWithAltairPlot(props) {
         <div className="d-flex flex-column flex-lg-row mt-4 article-split">
           <div>
             {content.map((item, i) => (
-              <p key={i} className="text-left">
+              <p key={i} className="text-start">
                 {item}
               </p>
             ))}
           </div>
           <div className="article-figure flex-shrink-0">
-            <div id={id} alt={caption} className="ml-lg-2 mb-2" />
+            <div id={id} alt={caption} className="ms-lg-2 mb-2" />
             <figcaption className="text-muted mb-4">{caption}</figcaption>
           </div>
         </div>

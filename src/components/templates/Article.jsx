@@ -18,7 +18,7 @@ export default function Article(props) {
       <Container>
         <h2>{title}</h2>
         {content.map((item, i) => (
-          <p key={i} className="text-left">
+          <p key={i} className="text-start">
             <ParagraphText item={item} />
           </p>
         ))}

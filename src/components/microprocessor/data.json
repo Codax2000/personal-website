@@ -2,7 +2,7 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "My team designed a 2-stage, 16-bit, RISC microprocessor capable of running a subset of the RISC-V instruction set. We also added a ring-oscillator based physically unclonable function (PUF) block.",
+      "My team designed a 2-stage, 16-bit RISC microprocessor that runs a 16-bit RISC instruction set provided by the University of Michigan course, loosely modeled on RISC-V. We also added a ring-oscillator based physically unclonable function (PUF) block.",
       "Another graduate student, Rahul Narasimha (https://www.linkedin.com/in/rahulnnarasimha/) and I generally became the design leads due to a better understanding of the architecture and more experience in digital IC design.",
       "We tested the design by running Spectre simulations on the datapath and Verilog simulations on anything higher-level than that. The final simulation was to run the first several elements of the Fibonacci sequence. At right is the datapath schematic, which has several larger blocks, including data memory, a left shifter, an ALU, and a regfile."
     ],

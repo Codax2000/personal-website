@@ -5,12 +5,12 @@
       "The analog capstone was a schematic-only wireline transceiver built to AMD's 12.5 Gb/s specification in GPDK 45 nm. We used a 12\" channel model that seriously degraded the signal to the point that it would need equalization to properly transmit.",
       "I was on a team with 6 people, where each person had a block in this mixed-signal system. There were 6 blocks in our system:",
       "1. Serializer",
-      "2. CM Driver",
+      "2. CML Driver",
       "3. FIR Filter",
       "4. CTLE Filter",
       "5. StrongARM Latch",
       "6. Deserializer",
-      "I was in charge of overall equalization specifications, which I calculated using a MATLAB model. I then helped in the design of the FIR filter by working with the current-mode (CM) driver."
+      "I was in charge of overall equalization specifications, which I calculated using a MATLAB model. I then helped in the design of the FIR filter by working with the current-mode logic (CML) driver."
     ],
     "image": {
       "caption": "Overall block diagram"

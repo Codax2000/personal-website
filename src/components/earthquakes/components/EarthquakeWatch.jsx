@@ -24,7 +24,7 @@ export default function EarthquakeWatch() {
       <Article title="About This Project" content={about["about"]} id="about" />
       <p className="shoutout">
       To see the code for this project or to see my other projects, visit{" "}
-        <a href="https://github.com/Codax2000/earthquake-website">my GitHub</a>{" "}
+        <a href="https://github.com/Codax2000/personal-website/tree/main/src/components/earthquakes">my GitHub</a>{" "}
         or please reach out to me.
       </p>
       <br />

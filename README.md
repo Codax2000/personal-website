@@ -3,7 +3,7 @@
 This repo is an online version of my resume and
 an exposition of various projects I've done. This includes engineering,
 research, and software development. This is also hosted on GitHub pages, under
-[this link](http://codax2000.github.io/personal-website).
+[this link](https://codax2000.github.io/personal-website).
 
 ## About
 
@@ -15,7 +15,7 @@ became difficult to manage and extremely slow, and Github Pages was a good alter
 ## Deployment
 
 The site is hosted on GitHub Pages from the `gh-pages` branch:
-[codax2000.github.io/personal-website](http://codax2000.github.io/personal-website).
+[codax2000.github.io/personal-website](https://codax2000.github.io/personal-website).
 
 Pushing to `main`, including merging a pull request, runs the
 [Build and deploy workflow](.github/workflows/deploy.yml). That workflow

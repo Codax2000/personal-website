@@ -23,7 +23,7 @@
     "title": "Monte Carlo Results",
     "content": [
       "The distribution of the settled reference voltage shows a mean of 541 mV and a standard deviation of 12.9 mV. The roughly bell-shaped distribution indicates that the startup circuit is working well, and therefore the yield is relatively high, even with 500 samples.",
-      "If the startup circuit was not working, we would have seen (and did see early in development) low outliers, where the startup circuit never kicked in. Since there are no outliers, we concluded that the startup circuit is functional."
+      "If the startup circuit were not working, we would have seen (and did see early in development) low outliers, where the startup circuit never kicked in. Since there are no outliers, we concluded that the startup circuit is functional."
     ],
     "image": {
       "caption": "Distribution of reference voltage"
@@ -32,9 +32,9 @@
   "corners": {
     "title": "Process Corner Results",
     "content": [
-      "The last notable requirement was to ensure behavior over PVT variation. This meant using the FF and SS process corners, in addition to supply voltage variation of 10% and a temperature sweep from 0 to 70 degrees Celsius.",
+      "The last notable requirement was to ensure behavior over PVT variation. This meant using the FF and SS process corners, in addition to supply voltage variation of ±10% and a temperature sweep from 0 to 70 degrees Celsius.",
       "The simulation at right is the temperature sweep. The temperature variation is less than 50 ppm/°C.",
-      "The central red line is the TT corner with a supply voltage of 1.2 V. Note that even though the variation looks dramatic, the Y axis only spans about 2 mV. Careful reading of the dropped markers shows the voltage variation over temperature."
+      "The central red line is the TT corner with a supply voltage of 1.2 V. Note that even though the variation looks dramatic, the y-axis only spans about 2 mV. Careful reading of the dropped markers shows the voltage variation over temperature."
     ],
     "image": {
       "caption": "Temperature sweep with corner variation"

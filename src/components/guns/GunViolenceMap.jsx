@@ -16,7 +16,7 @@ export default function GunViolenceAreas() {
       title="Where Does the Most Gun Violence Occur?"
       beforeContent={data["county_map"]["before"]}
       id={MAP_ID}
-      caption="Figure 4.1 - Number of Gun-related Crimes by County, 2014-2018"
+      caption="Figure 3.2 - Number of Gun-related Crimes by County, 2014-2018"
       afterContent={data["county_map"]["after"]}
     />
   );

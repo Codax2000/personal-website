@@ -3,7 +3,7 @@
     "title": "Abstract",
     "content": [
       "In my senior year of high school, I began to learn chess, and I wanted a set to travel with. However, I didn't like any of the designs that I saw on Amazon, so I decided to make my own. I had access to an impressive machine shop and equally impressive CAD tools, so I decided to make my own set out of aluminum.",
-      "At right is one of the original renderings of the entire set. I modeled each piece in SolidWorks and exported the STL files to Rhino 3D, where I was then able to render them with Flamingo. The board is a later project and one that I could cut on standard woodworking tools. I have a model and a process planned, but the pieces will come first.",
+      "At right is one of the original renderings of the entire set. I modeled each piece in SolidWorks and exported the STL files to Rhino 3D, where I was then able to render them with Flamingo. The board is a later project and one that I could cut with standard woodworking tools. I have a model and a process planned, but the pieces will come first.",
       "I was able to cut a wooden version of the knight, but am investigating options for fabricating it out of aluminum, since it requires at least a 4th axis to manufacture easily. I turned the other pieces on a Haas 4-tool CNC lathe. Unfortunately, I did not have the foresight to take videos at the time, and my backup models were stolen with my laptop just before college."
     ],
     "image": {

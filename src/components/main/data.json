@@ -1,6 +1,6 @@
 {
   "statement": [
-    "I am an electrical engineer and amateur software developer based in Seattle, WA, currently working at Texas Instruments in Federal Way. I appreciate clean, efficient design and have worked on multiple projects in several areas, including integrated circuit research, aircraft controls, and full stack web development.",
+    "I am an electrical engineer and amateur software developer based in Seattle, WA, currently working at Texas Instruments in Federal Way. I appreciate clean, efficient design and have worked on multiple projects in several areas, including integrated circuit research, aircraft controls, and full-stack web development.",
     "I specialize in analog and mixed-signal IC design with an additional background in Digital VLSI, software, and embedded systems. I am equally experienced with Python and with MATLAB, and I am also familiar with web development and data science.",
     "In my spare time, I enjoy classic literature, hiking, fishing, and chess."
   ],
@@ -17,7 +17,7 @@
     },
     {
       "main": "Glacier Peak High School",
-      "details": "High School Degree, Valedictorian, National Merit Letter of Commendation",
+      "details": "High School Diploma, Valedictorian, National Merit Letter of Commendation",
       "date": "September 2015 - June 2019"
     }
   ],
@@ -122,7 +122,7 @@
     {
       "name": "Bandgap Reference",
       "url": "./bandgap",
-      "short": "Designed a low-voltage bandgap voltage reference in 130 nm CMOS"
+      "short": "A low-voltage bandgap voltage reference in 130 nm CMOS"
     },
     {
       "name": "Controls",
@@ -130,7 +130,7 @@
       "short": "Aircraft controls for competition RC aircraft using Arduino"
     },
     {
-      "name": "Embedded Rubber",
+      "name": "Rubber Band Gun",
       "url": "./cannon",
       "short": "A rubber band launcher for an embedded systems pre-capstone class"
     },
@@ -138,7 +138,7 @@
       "name": "Gun Violence Research",
       "url": "./guns",
       "hidden": true,
-      "short": "Data programming to try and find the sources of gun violence"
+      "short": "Data programming to try to find the sources of gun violence"
     },
     {
       "name": "CNC Chess Set",
@@ -238,6 +238,6 @@
         "link": "https://openverse.org/image/a8e1774a-5893-4c3f-bc86-0f151820746d?q=737"
       }
     ],
-    "statement": "There are several images and a logo on this site that I have used for backgrounds the page icon. All photos were either used from Creative Commons at time of citation or from a website with the required credit. Here is credit to the creators and links to where I found them. The SolidWorks drawings were mine and my partner's, whose LinkedIn is present, and I can't find my partner for the gun violence research. All other pictures were taken either by me or by other members of teams I was working with at the time."
+    "statement": "There are several images and a logo on this site that I have used for backgrounds and the page icon. All photos were either used from Creative Commons at time of citation or from a website with the required credit. Here is credit to the creators and links to where I found them. The SolidWorks drawings were mine and my partner's, whose LinkedIn is linked on that project page, and I can't find my partner for the gun violence research. All other pictures were taken either by me or by other members of teams I was working with at the time."
   }
 }

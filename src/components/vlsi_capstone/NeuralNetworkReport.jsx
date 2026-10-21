@@ -30,24 +30,28 @@ export default function NeuralNetworkReport() {
           content={data["approach"]["content"]}
           graph={vivado_placed}
           caption={data["approach"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["apr"]["title"]}
           content={data["apr"]["content"]}
           graph={icc_apr}
           caption={data["apr"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["testing"]["title"]}
           content={data["testing"]["content"]}
           graph={testcases}
           caption={data["testing"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["results"]["title"]}
           content={data["results"]["content"]}
           graph={ila_sims}
           caption={data["results"]["image"]["caption"]}
+          loading="lazy"
         />
       </Container>
     </Container>

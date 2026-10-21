@@ -29,18 +29,21 @@ export default function LSTMAccelerator() {
           content={data["methodology_1"]["content"]}
           graph={mac}
           caption={data["methodology_1"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["methodology_2"]["title"]}
           content={data["methodology_2"]["content"]}
           graph={afb}
           caption={data["methodology_2"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["results"]["title"]}
           content={data["results"]["content"]}
           graph={performance}
           caption={data["results"]["image"]["caption"]}
+          loading="lazy"
         />
       </Container>
     </Container>

@@ -70,7 +70,7 @@ export default function CadathonReport() {
         >
           {gallery.map((item, i) => (
             <div key={i} className="m-2">
-              <img src={item["url"]} alt={item["caption"]} />
+              <img src={item["url"]} alt={item["caption"]} loading="lazy" />
               <figcaption className="text-muted">{item["caption"]}</figcaption>
             </div>
           ))}

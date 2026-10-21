@@ -28,12 +28,14 @@ export default function SwitchCapAmplifier() {
           content={data["design"]["content"]}
           graph={simulation1}
           caption={data["design"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["results"]["title"]}
           content={data["results"]["content"]}
           graph={simulation2}
           caption={data["results"]["image"]["caption"]}
+          loading="lazy"
         />
       </Container>
     </Container>

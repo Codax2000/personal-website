@@ -28,12 +28,14 @@ export default function Microprocessor() {
           content={data["design"]["content"]}
           graph={layout}
           caption={data["design"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["results"]["title"]}
           content={data["results"]["content"]}
           graph={final_simulation}
           caption={data["results"]["image"]["caption"]}
+          loading="lazy"
         />
       </Container>
     </Container>

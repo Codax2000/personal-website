@@ -29,6 +29,7 @@ export default function AvionicsReport() {
         content={data["issues"]}
         graph={wiring}
         caption={data["captions"]["issues"]}
+        loading="lazy"
       />
       <Article title={"Results"} content={data["results"]} />
     </Container>

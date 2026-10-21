@@ -27,6 +27,7 @@ export default function NeuralNetwork() {
           content={data["knight"]["content"]}
           graph={knight}
           caption={data["knight"]["image"]["caption"]}
+          loading="lazy"
         />
       </Container>
     </Container>

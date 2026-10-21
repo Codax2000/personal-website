@@ -18,7 +18,7 @@ export default function ProjectCard(props) {
   return (
     <Link to={url} className="project-link">
       <Card className="project-tile">
-        <Card.Img src={image} alt={name} className="project-card" />
+        <Card.Img src={image} alt={name} className="project-card" loading="lazy" />
         <Card.ImgOverlay
           className="project-overlay d-none d-lg-flex flex-column justify-content-center"
           onMouseEnter={() => setHovered(true)}

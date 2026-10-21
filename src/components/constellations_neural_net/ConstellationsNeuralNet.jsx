@@ -29,18 +29,21 @@ export default function ConstellationsNeuralNet() {
           content={data["methodology"]["content"]}
           graph={constellations}
           caption={data["methodology"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["results"]["title"]}
           content={data["results"]["content"]}
           graph={error_vs_snr}
           caption={data["results"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["next"]["title"]}
           content={data["next"]["content"]}
           graph={fading}
           caption={data["next"]["image"]["caption"]}
+          loading="lazy"
         />
       </Container>
     </Container>

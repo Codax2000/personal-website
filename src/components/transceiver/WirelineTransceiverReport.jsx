@@ -28,12 +28,14 @@ export default function WirelineTransceiverReport() {
           content={data["approach"]["content"]}
           graph={matlab_plot}
           caption={data["approach"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["results"]["title"]}
           content={data["results"]["content"]}
           graph={eye_diagram}
           caption={data["results"]["image"]["caption"]}
+          loading="lazy"
         />
       </Container>
     </Container>

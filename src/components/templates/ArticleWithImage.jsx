@@ -11,7 +11,7 @@ import { Container } from "react-bootstrap";
 import ParagraphText from "./ParagraphText";
 
 export default function ArticleWithImage(props) {
-  let { title, content, graph, caption } = props;
+  let { title, content, graph, caption, loading } = props;
   const STANDARD_WIDTH = 350;
 
   return (
@@ -32,6 +32,7 @@ export default function ArticleWithImage(props) {
               alt={caption}
               width={STANDARD_WIDTH}
               className="mb-2 img-fluid"
+              loading={loading}
             />
             <figcaption className="text-muted mb-4">{caption}</figcaption>
           </div>

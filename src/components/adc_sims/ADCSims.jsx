@@ -29,12 +29,14 @@ export default function ADCSims() {
           content={data["sim2"]["content"]}
           graph={DSM2}
           caption={data["sim2"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["redundancy"]["title"]}
           content={data["redundancy"]["content"]}
           graph={SAR_EF}
           caption={data["redundancy"]["image"]["caption"]}
+          loading="lazy"
         />
         <Article
           title={data["research"]["title"]}

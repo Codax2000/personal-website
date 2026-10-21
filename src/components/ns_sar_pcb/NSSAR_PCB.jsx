@@ -28,6 +28,7 @@ export default function NSSAR_PCB() {
           content={data["introduction"]["content"]}
           graph={python_fft}
           caption={data["introduction"]["image"]["caption"]}
+          loading="lazy"
         />
       </Container>
     </Container>

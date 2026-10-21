@@ -29,18 +29,21 @@ export default function BandgapReferenceReport() {
           content={data["transient"]["content"]}
           graph={transient}
           caption={data["transient"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["monte_carlo"]["title"]}
           content={data["monte_carlo"]["content"]}
           graph={monte_carlo}
           caption={data["monte_carlo"]["image"]["caption"]}
+          loading="lazy"
         />
         <ArticleWithImage
           title={data["corners"]["title"]}
           content={data["corners"]["content"]}
           graph={corners}
           caption={data["corners"]["image"]["caption"]}
+          loading="lazy"
         />
       </Container>
     </Container>

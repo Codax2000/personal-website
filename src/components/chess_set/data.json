@@ -3,7 +3,7 @@
     "title": "Abstract",
     "content": [
       "In my senior year of high school, I began to learn chess, and I wanted a set to travel with. However, I didn't like any of the designs that I saw on Amazon, so I decided to make my own. I had access to an impressive machine shop and equally impressive CAD tools, so I decided to make my own set out of aluminum.",
-      "At right is one of the original renderings of the entire set. I modeled each piece in SolidWorks and exported the STL files to Rhino 3D, where I was then able to render them with Flamingo. The board is a later project and one that I could cut with standard woodworking tools. I have a model and a process planned, but the pieces will come first.",
+      "The figure shows one of the original renderings of the entire set. I modeled each piece in SolidWorks and exported the STL files to Rhino 3D, where I was then able to render them with Flamingo. The board is a later project and one that I could cut with standard woodworking tools. I have a model and a process planned, but the pieces will come first.",
       "I was able to cut a wooden version of the knight, but am investigating options for fabricating it out of aluminum, since it requires at least a 4th axis to manufacture easily. I turned the other pieces on a Haas 4-tool CNC lathe. Unfortunately, I did not have the foresight to take videos at the time, and my backup models were stolen with my laptop just before college."
     ],
     "image": {
@@ -14,7 +14,7 @@
     "title": "5-Axis Knight Machining",
     "content": [
       "The main problem was the knight, since it is the only piece on the board that cannot be turned and still look like a traditional knight. It would be immensely difficult to cut on a 3-axis machine, but not nearly so difficult on a 5-axis machine. Luckily for me, the UW has just such a machine in one of the engineering makerspaces.",
-      "At right is a 1 3/8 to 1 scale model in wood that I successfully cut." 
+      "The figure shows a 1 3/8 to 1 scale model in wood that I successfully cut." 
     ],
     "image": {
       "caption": "5-axis machined chess knight"

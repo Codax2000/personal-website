@@ -17,7 +17,7 @@
       "While Eugene developed the central blocks, of which he had a much deeper understanding, I developed the handshake system we used for inter-layer communication in addition to the convolutional and fully connected layers.",
       "Eugene built the Global Average Pooling and Batch Normalization layers, in addition to training the neural network and generating memory files.",
       "I built the fully connected layers and convolutional layers. One of the main difficulties was that the convolutional layers especially were small, but required a lot of resources. Eugene and I solved it by mapping the convolutional layers to DSP slices on the board. This effectively led to the layer being pipelined, and it took less area as well. However, the logic is much more complicated and the code was very difficult to write.",
-      "At right is the final placed design showing logic utilization on the RFSoC. It is clear that the utilization is high, but it still fits on the board."
+      "The figure shows the final placed design, with logic utilization on the RFSoC. It is clear that the utilization is high, but it still fits on the board."
     ],
     "image": {
       "caption": "Placed design in Xilinx Vivado"
@@ -39,7 +39,7 @@
     "title": "Unit Testing",
     "content": [
       "The reason our testing went so smoothly from Vivado to ILA was that I had been trained in basic assertion testing in my previous computer science classes. Therefore, we wrote the testcases and simply compiled them to either the internal testing module or to the simulation testbench.",
-      "At right are two columns of hexadecimal numbers representing two different columns of outputs. The left side is a column produced by Eugene's MATLAB model. The right side was gathered and exported from Vivado. Finally, there is an exact comparison by formula in the final column."
+      "The figure shows two columns of hexadecimal numbers representing two different columns of outputs. The left side is a column produced by Eugene's MATLAB model. The right side was gathered and exported from Vivado. Finally, there is an exact comparison by formula in the final column."
     ],
     "image": {
       "caption": "Data from Vivado ILA"
@@ -50,7 +50,7 @@
     "content": [
       "One of the most difficult parts of this project was in managing the immense scale. SAPR took a week, and by the time that it had finished, we did not have time to run it again. It would have been better to run SAPR on smaller segments, such as individual layers, and then place them manually in the top-level design. However, I did not have enough time or experience to do so.",
       "Since each layer needed an individual SRAM, I used an SRAM generator instead of the Vivado memory macros and placed blockages in the IC Compiler floorplan so that the SRAMs would fit and not cause problems. The final APR was mostly DRC-clean, except for some problems with the SRAM. At that point, we were successful with the FPGA implementation and therefore stopped refining the APR layout.",
-      "We tested our design on the FPGA by using the internal logic analyzer (ILA) native to Vivado. At right is the final output waveform from the design that we captured from Vivado. We synthesized a module that tested the design using known inputs and outputs. We had previously simulated the expected results in Vivado using assertion testing, so we already knew what outputs we were expecting. All we then had to do was capture the outputs in the ILA and compare them to the MATLAB simulation. All testcases were successful, marking a successful resolution of the project.",
+      "We tested our design on the FPGA by using the internal logic analyzer (ILA) native to Vivado. The figure shows the final output waveform from the design that we captured from Vivado. We synthesized a module that tested the design using known inputs and outputs. We had previously simulated the expected results in Vivado using assertion testing, so we already knew what outputs we were expecting. All we then had to do was capture the outputs in the ILA and compare them to the MATLAB simulation. All testcases were successful, marking a successful resolution of the project.",
       "I have not made this code public, but I am very happy to discuss it. Please contact me if you'd like to discuss this project."
     ],
     "image": {

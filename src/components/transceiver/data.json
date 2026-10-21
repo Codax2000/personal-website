@@ -21,7 +21,7 @@
     "content": [
       "I was in charge of determining system parameters for equalization. This meant solving a convolution matrix to find the optimal tap values for the FIR filter and optimal pole and zero locations for CTLE. The goal was to minimize ISI and therefore open the channel eye as far as possible.",
       "I used the MATLAB SerDes Toolbox to design the system. I had a formula for ideal tap weights, and since we knew the channel impulse response already, I simply swept the DC gain and peaking gain for CTLE and computed ideal tap weights for each pair of values. Once that was done, I plotted the eye diagram height and together we picked the most achievable design that would still give us a large eye opening.",
-      "At right is the MATLAB plot we referenced with a 3-tap FIR filter with no pre-taps. It is clear that the eye diagram opens wider with certain pole and zero locations, but these come at the expense of high power. This is also a filtered view; we evaluated many more options, but these were the best."
+      "The figure shows the MATLAB plot we referenced with a 3-tap FIR filter with no pre-taps. It is clear that the eye diagram opens wider with certain pole and zero locations, but these come at the expense of high power. This is also a filtered view; we evaluated many more options, but these were the best."
     ],
     "image": {
       "caption": "MATLAB eye opening vs. pole and zero locations"

@@ -2,7 +2,7 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "I took the UW digital VLSI capstone class with a mix of graduate and undergraduate students. I worked with Eugene Liu (https://www.linkedin.com/in/eugeneliu2023) to implement a convolutional neural network on a Xilinx FPGA for eventually tuning RF frontends.",
+      "I took the UW digital VLSI capstone class with a mix of graduate and undergraduate students. I worked with Eugene Liu (https://www.linkedin.com/in/eugeneliu2023) to implement a convolutional neural network on a Xilinx FPGA for tuning the self-interference cancellation coefficients of a full-duplex RF frontend.",
       "Our project had two possible endpoints. The first, which we did not think we could achieve, was to fit the neural network onto a Xilinx RFSoC FPGA. The second, which was unexpectedly difficult, was to lay the neural net out in FreePDK 45 nm using Synopsys Design Compiler and IC Compiler.",
       "Eugene and I not only successfully implemented and tested the network on the FPGA, but we also laid it out in 45 nm FreePDK with support for SRAM via an off-chip handshake protocol. We did not test the laid out version, but were able to successfully prove functionality on the FPGA.",
       "As a result, Eugene and I won the VLSI capstone competition out of 11 teams, which were a mix of graduate and undergraduate students. Further work with this project would involve testing the laid out version and integrating the FPGA project into a larger RF system."

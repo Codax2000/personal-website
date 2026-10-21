@@ -17,7 +17,7 @@
     },
     {
       "main": "Glacier Peak High School",
-      "details": "High School Degree, Valedictorian, National Merit Letter of Recommendation",
+      "details": "High School Degree, Valedictorian, National Merit Letter of Commendation",
       "date": "September 2015 - June 2019"
     }
   ],
@@ -45,7 +45,7 @@
     {
       "main": "MICL at University of Michigan",
       "details": "Graduate Student Research Assistant",
-      "date": "October 2023 - Present"
+      "date": "October 2023 - December 2024"
     },
     {
       "main": "FAST Lab at the University of Washington",
@@ -102,17 +102,17 @@
     {
       "name": "RISC-II",
       "url": "./processor",
-      "short": "A 200 MHz, 2-stage, tapeout-ready microprocessor"
+      "short": "A 200 MHz, 2-stage microprocessor with a full I/O ring"
     },
     {
       "name": "FAST Neural Net",
       "url": "./cnn",
-      "short": "A neural network for full-duplex SI cancellation on a Xilinx RFSoC"
+      "short": "A neural network for tuning full-duplex SI cancellation on a Xilinx RFSoC"
     },
     {
       "name": "Wireline Transceiver",
       "url": "./transceiver",
-      "short": "12.5 Gb/s wireline transceiver in FreePDK 45 nm"
+      "short": "12.5 Gb/s wireline transceiver in GPDK 45 nm"
     },
     {
       "name": "SC Amplifier",

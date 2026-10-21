@@ -10,7 +10,7 @@
       "4. CTLE Filter",
       "5. StrongARM Latch",
       "6. Deserializer",
-      "I was in charge of overall equalization specifications, which I calculated using a MATLAB model. I then helped in the design of the FIR filter by working with the CM driver."
+      "I was in charge of overall equalization specifications, which I calculated using a MATLAB model. I then helped in the design of the FIR filter by working with the current-mode (CM) driver."
     ],
     "image": {
       "caption": "Overall block diagram"

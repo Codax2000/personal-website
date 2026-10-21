@@ -24,7 +24,7 @@
   "results": {
     "title": "SHA Results",
     "content": [
-      "At right is the final switched-cap transient results. Shown on the top is the input voltage, a 100 MHz sinusoidal wave. Below that is the SHA output voltage.",
+      "At right is the final switched-cap transient results. Shown on the top is the input voltage, a 1 MHz sinusoidal wave. Below that is the SHA output voltage.",
       "One of the difficulties with the biasing was that I wanted to use minimal current for the bias network to equally minimize power. I therefore used stacked devices in the triode region to generate a higher voltage to bias the NMOS cascode devices.",
       "My favorite part of this design was in using a DDA circuit to bias the PMOS load devices. It uses smaller devices and does not load the output, which I count as a bonus, though it does burn static current. I could then accurately gauge the effectiveness of the circuit without having to worry about whether devices were in saturation.",
       "The transient data at right shows the DDA circuit in action in holding the common-mode voltage of the output relatively stable. The output voltage is also clearly sampling and holding a copy of the input and multiplying it by a constant."      

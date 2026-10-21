@@ -30,8 +30,8 @@ export default function NavMenu() {
           <NavDropdown title="Featured Projects" id="basic-nav-dropdown">
             <NavDropdown.Item href="#/lstm">LSTM Acceleration</NavDropdown.Item>
             <NavDropdown.Item href="#/constellations_nn">Constellations Neural Network</NavDropdown.Item>
-            <NavDropdown.Item href="#/adc_sims">Matlab ADCs</NavDropdown.Item>
-            <NavDropdown.Item href="#/sc_amp">Switch-Cap Amplifier</NavDropdown.Item>
+            <NavDropdown.Item href="#/adc_sims">MATLAB ADCs</NavDropdown.Item>
+            <NavDropdown.Item href="#/sc_amp">Switched-Capacitor Amplifier</NavDropdown.Item>
             <NavDropdown.Item href="#/processor">RISC Microprocessor</NavDropdown.Item>
             <NavDropdown.Item href="#/cnn">VLSI Capstone</NavDropdown.Item>
             <NavDropdown.Item href="#/transceiver">Wireline Transceiver</NavDropdown.Item>

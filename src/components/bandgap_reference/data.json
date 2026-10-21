@@ -2,7 +2,7 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "For EECS 413 at the University of Michigan, my team was tasked with designing a bandgap voltage reference. As part of the assignment, we were given a power spec of 100 uW, and we decided to implement the circuit such that it would work with a supply voltage of 1.2 V. I worked with three teammates, and my job was to design and lay out the bandgap core. Pratik Joshi designed the startup circuit, and Guanchen Tao worked with Yuhao Yuan to design the amplifier for the core.",
+      "For EECS 413 at the University of Michigan, my team was tasked with designing a bandgap voltage reference. As part of the assignment, we were given a power spec of 100 µW, and we decided to implement the circuit such that it would work with a supply voltage of 1.2 V. I worked with three teammates, and my job was to design and lay out the bandgap core. Pratik Joshi designed the startup circuit, and Guanchen Tao worked with Yuhao Yuan to design the amplifier for the core.",
       "Shown at right is the overall schematic of the low-voltage bandgap reference. The left of the schematic is a startup circuit that ensures the reference voltage settles at the correct value."
     ],
     "image": {

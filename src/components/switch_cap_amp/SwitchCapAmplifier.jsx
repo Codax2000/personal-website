@@ -16,7 +16,7 @@ export default function SwitchCapAmplifier() {
   return (
     <Container fluid className="report-article">
       <Container fluid className="report-article">
-        <h1 className="text-center">Switched-capacitor Amplifier</h1>
+        <h1 className="text-center">Switched-Capacitor Amplifier</h1>
         <ArticleWithImage
           title={data["abstract"]["title"]}
           content={data["abstract"]["content"]}

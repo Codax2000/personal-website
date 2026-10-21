@@ -16,13 +16,13 @@
       "The results of the previous section beg the question of where the worst counties are. The skewed distribution above makes a centroid map well-suited to this task."
     ],
     "after":[
-      "From this graph, it is again evident that there are relatively few counties which account for almost all the crime in the US, which makes statistical analysis very difficult. The biggest ones include Chicago, LA, Detroit, Seattle, and several areas of the east coast. The scale on the right shows that a small circle on the map still corresponds to 2000 incidents, which is a huge amount, based on the distribution above.",
+      "From this graph, it is again evident that there are relatively few counties which account for almost all the crime in the US, which makes statistical analysis very difficult. The biggest ones include Chicago, LA, Detroit, Seattle, and several areas of the East Coast. The scale on the right shows that a small circle on the map still corresponds to 2000 incidents, which is a huge amount, based on the distribution above.",
       "Therefore, any county with a circle larger than a dot on this map has an unusually high amount of gun violence."
     ]
   },
   "about": {
-    "methods": "This project was originally done in Winter 2020, in CSE 163, Data Programming with Python. Data was organized into county using geospatial analysis with Geopandas. The plots were originally done with Matplotlib and Seaborn, but I have since gone back and redone them with Altair, which provides a cleaner look. The machine learning was done with scikit-learn, using the DecisionTreeRegressor model. I did this project originally with a partner named Cody Murphy, but I rewrote this project for the web alone.",
-    "github": "The code for this project is not on my github, as the code is messy and the files are disorganized. I am working to remedy this problem, but please feel free to contact me if you would like to discuss it.",
+    "methods": "This project was originally done in Winter 2020, in CSE 163, Data Programming with Python. Data was organized into county using geospatial analysis with GeoPandas. The plots were originally done with Matplotlib and Seaborn, but I have since gone back and redone them with Altair, which provides a cleaner look. The machine learning was done with scikit-learn, using the DecisionTreeRegressor model. I did this project originally with a partner named Cody Murphy, but I rewrote this project for the web alone.",
+    "github": "The code for this project is not on my GitHub, as the code is messy and the files are disorganized. I am working to remedy this problem, but please feel free to contact me if you would like to discuss it.",
     "databases": [
       {
         "link": "https://github.com/jamesqo/gun-violence-data",

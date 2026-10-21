@@ -16,7 +16,7 @@ export default function Microprocessor() {
   return (
     <Container fluid className="report-article">
       <Container fluid className="report-article">
-        <h1 className="text-center">A 2-stage RISC Microprocessor</h1>
+        <h1 className="text-center">A 2-Stage RISC Microprocessor</h1>
         <ArticleWithImage
           title={data["abstract"]["title"]}
           content={data["abstract"]["content"]}

@@ -1,7 +1,7 @@
 {
   "statement": [
     "I am an electrical engineer and amateur software developer based in Seattle, WA, currently working at Texas Instruments in Federal Way. I appreciate clean, efficient design and have worked on multiple projects in several areas, including integrated circuit research, aircraft controls, and full stack web development.",
-    "I specialize in analog and mixed-signal IC design with an additional background in Digital VLSI, software, and embedded systems. I am equally experienced with Python and with Matlab, and I am also familiar with web development and data science.",
+    "I specialize in analog and mixed-signal IC design with an additional background in Digital VLSI, software, and embedded systems. I am equally experienced with Python and with MATLAB, and I am also familiar with web development and data science.",
     "In my spare time, I enjoy classic literature, hiking, fishing, and chess."
   ],
   "schools": [
@@ -95,9 +95,9 @@
       "short": "PyTorch prediction of the constellation of digital signals"
     },
     {
-      "name": "ADCs in Matlab",
+      "name": "ADCs in MATLAB",
       "url": "./adc_sims",
-      "short": "Matlab simulations of modern ADCs"
+      "short": "MATLAB simulations of modern ADCs"
     },
     {
       "name": "RISC-II",
@@ -112,17 +112,17 @@
     {
       "name": "Wireline Transceiver",
       "url": "./transceiver",
-      "short": "12.5 Gbps wireline transceiver in FreePDK 45nm"
+      "short": "12.5 Gb/s wireline transceiver in FreePDK 45 nm"
     },
     {
       "name": "SC Amplifier",
       "url": "./sc_amp",
-      "short": "A 10 MHz switch-capacitor sample-and-hold circuit in 130nm"
+      "short": "A 10 MHz switched-capacitor sample-and-hold circuit in 130 nm"
     },
     {
       "name": "Bandgap Reference",
       "url": "./bandgap",
-      "short": "Designed a low-voltage bandgap voltage reference in 130nm CMOS"
+      "short": "Designed a low-voltage bandgap voltage reference in 130 nm CMOS"
     },
     {
       "name": "Controls",
@@ -166,7 +166,7 @@
       "skills": [
         "SystemVerilog",
         "Python",
-        "Matlab",
+        "MATLAB",
         "HTML & CSS",
         "JavaScript",
         "Java"
@@ -178,7 +178,7 @@
         "UVM",
         "PyTorch",
         "Matplotlib",
-        "Numpy",
+        "NumPy",
         "Pandas",
         "React.js"
       ]
@@ -188,7 +188,7 @@
       "skills": [
         "Cadence Virtuoso",
         "Cadence Innovus",
-        "Synopsis Design Compiler",
+        "Synopsys Design Compiler",
         "Cadence Xcelium",
         "Autodesk Fusion 360",
         "SolidWorks"
@@ -215,7 +215,7 @@
       },
       {
         "creator": "gabriella_levine",
-        "name": "arduino",
+        "name": "Arduino",
         "link": "https://search.creativecommons.org/photos/343a650e-f10b-49bd-9ff9-b4d9cfad642e"
       },
       {

@@ -16,7 +16,7 @@ export default function WirelineTransceiverReport() {
   return (
     <Container fluid className="report-article">
       <Container fluid className="report-article">
-        <h1 className="text-center">High-speed Wireline Communication</h1>
+        <h1 className="text-center">High-Speed Wireline Communication</h1>
         <ArticleWithImage
           title={data["abstract"]["title"]}
           content={data["abstract"]["content"]}

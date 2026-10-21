@@ -2,7 +2,7 @@
   "abstract": {
     "title": "Abstract",
     "content": [
-      "The goal of this project was to reproduce the results of an IEEE paper from 2023, titled \"A Unified Parallel CORDIC-Based Hardware Architecture for LSTM Network Acceleration\". The paper in question was published from Rice, and focused on CORDIC-based acceleration of neural network multiply-and-accumulate (MAC) and activation function blocks. The circuit in the original paper was implemented on a Xylinx FPGA, and my team intended to reproduce the implementation.",
+      "The goal of this project was to reproduce the results of an IEEE paper from 2023, titled \"A Unified Parallel CORDIC-Based Hardware Architecture for LSTM Network Acceleration\". The paper in question was published from Rice, and focused on CORDIC-based acceleration of neural network multiply-and-accumulate (MAC) and activation function blocks. The circuit in the original paper was implemented on a Xilinx FPGA, and my team intended to reproduce the implementation.",
       "The architecture of the LSTM cell (at right), stipulates that the entire matrix multiply block should be done at once, resulting in a single outer-product systolic 4 X M X N matrix multiplication array.",
       "Additionally, there is a serial activation function block comprised of a CORDIC-based sigmoid and tanh functions.",
       "My team implemented the given design as closely as we could, given the roughly 6 weeks we had from start to finish. We designed every block with an AXI-based handshake that made control logic somewhat complex but made top-level integration very simple. At the end, we were able to reproduce most of the original work's results, and were ready to deploy to an FPGA board, had we had one available.",
@@ -36,7 +36,7 @@
   "results": {
     "title": "Accelerator Results",
     "content": [
-      "We then trained a recursive neural network on the same dataset as the original work, the Grand St. Bernard dataset, which aims to predict temperature at one point, given the previous temperature data and the current temperature at several other points in a nearby area.",
+      "We then trained a recurrent neural network on the same dataset as the original work, the Grand St. Bernard dataset, which aims to predict temperature at one point, given the previous temperature data and the current temperature at several other points in a nearby area.",
       "The model was trained in floating-point and then quantized, and the results are shown at right. Our accelerator was off from the floating point prediction by relatively little, and the normalized output temperature was similar to the original work's error. However, without specific knowledge of the original training methodology, we were not able to reduce the error. However, we were still very happy with the results, as we were able to confirm the results of the original paper.",
       "We were also able to close timing for synthesis and implementation on a Xilinx FPGA, though we were not able to actually run it for want of an appropriate board. Our final maximum clock speed was roughly 150 MHz."
     ],

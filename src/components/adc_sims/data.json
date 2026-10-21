@@ -22,7 +22,7 @@
   "redundancy": {
     "title": "SAR ADC with Redundancy",
     "content": [
-      "The class final project was to use Matlab to model a set-and-down noise shaping SAR ADC with redundancy. At right is a 4-bit SAR output with an input sweep of Vin from -1 V to +1 V. There is an error in the first bit comparison of 0.0625 in the first plot. Notice that with redundancy included in the second plot, there is no DNL error regardless of the first bit comparison."
+      "The class final project was to use MATLAB to model a set-and-down noise shaping SAR ADC with redundancy. At right is a 4-bit SAR output with an input sweep of Vin from -1 V to +1 V. There is an error in the first bit comparison of 0.0625 in the first plot. Notice that with redundancy included in the second plot, there is no DNL error regardless of the first bit comparison."
     ],
     "image": {
       "caption": "SAR with ramp input"

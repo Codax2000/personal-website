@@ -16,7 +16,7 @@ export default function ADCSims() {
   return (
     <Container fluid className="report-article">
       <Container fluid className="report-article">
-        <h1 className="text-center">ADC Simulations in Matlab</h1>
+        <h1 className="text-center">ADC Simulations in MATLAB</h1>
         <ArticleWithImage
           title={data["abstract"]["title"]}
           content={data["abstract"]["content"]}

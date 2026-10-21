@@ -186,6 +186,22 @@ footer {
   height: auto;
 }
 
+/* Desktop row: size the figure to the image, then stretch the caption to
+   that width so it wraps under the photo. A shrink-wrapped flex item
+   otherwise grows to the caption's single-line length. */
+@media (min-width: 992px) {
+  .article-figure {
+    width: max-content;
+    max-width: 100%;
+    margin-left: 0.5rem;
+  }
+
+  .article-figure > figcaption {
+    width: 0;
+    min-width: 100%;
+  }
+}
+
 .video-embed {
   position: relative;
   width: 100%;

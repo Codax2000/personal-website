@@ -31,7 +31,7 @@ export default function ArticleWithImage(props) {
               src={graph}
               alt={caption}
               width={STANDARD_WIDTH}
-              className="mx-lg-2 mb-2 img-fluid"
+              className="mb-2 img-fluid"
             />
             <figcaption className="text-muted mb-4">{caption}</figcaption>
           </div>

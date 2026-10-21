@@ -30,15 +30,21 @@ export default function Projects() {
   const images = [ns_sar, lstm, constellation, adc_sims, processor, zynet, transceiver, amplifier, bandgap, arduino, cannon,
                 revolvers, cnc, seismograph, cadd, bedframe];
 
+  // Cards with "hidden": true stay in data.json (and their image stays at the
+  // same index here) but are not shown. Remove the flag to show the card again.
+  const visibleProjects = data["projects"]
+    .map((item, i) => ({ item, image: images[i] }))
+    .filter(({ item }) => !item.hidden);
+
   return (
     <Container fluid id="projects" className="front-article">
       <Container>
         <h2 className="text-center mb-4">Some Things I've Worked On</h2>
         <div className="project-grid">
-          {data["projects"].map((item, i) => (
+          {visibleProjects.map(({ item, image }) => (
             <ProjectCard
               key={item.url}
-              image={images[i]}
+              image={image}
               name={item.name}
               url={item.url}
               short={item.short}

@@ -28,17 +28,21 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/controls" element={<AvionicsReport />} />
-        <Route path="/cadd" element={<CadathonReport />} />
-        <Route path="/bed" element={<Cadathon2Report />} />
+        {/* Hidden: CADathon and CADathon Reloaded. Restore these routes and
+            remove "hidden": true on the matching cards in main/data.json. */}
+        {/* <Route path="/cadd" element={<CadathonReport />} /> */}
+        {/* <Route path="/bed" element={<Cadathon2Report />} /> */}
         <Route path="/bandgap" element={<BandgapReference />} />
         <Route path="/cannon" element={<RubberBandCannon />} />
         <Route path="/transceiver" element={<WirelineTransceiverReport />} />
         <Route path="/cnn" element={<NeuralNetworkReport />} />
-        <Route path="/chess" element={<ChessSetReport />} />
+        {/* Hidden: CNC Chess Set. Restore this route and remove "hidden": true. */}
+        {/* <Route path="/chess" element={<ChessSetReport />} /> */}
         <Route path="/sc_amp" element={<SwitchCapAmplifier />} />
         <Route path="/processor" element={<Microprocessor />} />
         <Route path="/adc_sims" element={<ADCSims />} />
-        <Route path="/guns" element={<GunResearchReport />} />
+        {/* Hidden: gun violence pages. Restore this route and remove "hidden": true. */}
+        {/* <Route path="/guns" element={<GunResearchReport />} /> */}
         <Route path="/earthquakewatch" element={<EarthquakeWatch />} />
         <Route path="/constellations_nn" element={<ConstellationsNeuralNet />} />
         <Route path="/lstm" element={<LSTMAccelerator />} />

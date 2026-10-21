@@ -137,11 +137,13 @@
     {
       "name": "Gun Violence Research",
       "url": "./guns",
+      "hidden": true,
       "short": "Data programming to try and find the sources of gun violence"
     },
     {
       "name": "CNC Chess Set",
       "url": "./chess",
+      "hidden": true,
       "short": "Cutting an aluminum chess set using a CNC lathe and 5-axis mill"
     },
     {
@@ -152,11 +154,13 @@
     {
       "name": "CADathon",
       "url": "./cadd",
+      "hidden": true,
       "short": "Winning entry for 3D design competition with SolidWorks"
     },
     {
       "name": "CADathon Reloaded",
       "url": "./bed",
+      "hidden": true,
       "short": "3rd place 3D modeling entry using SolidWorks, now with animation"
     }
   ],
